@@ -20,9 +20,12 @@ $layoutwidth : 978;
 body{
 	font-size: 1em;
 	line-height: 21px;}
+#entries{@include grid(8,true);}
+#sidebar{@include grid(4);}
+#footer{clear: both;}
 
-/* #entries{@include grid(8);} */
-/* #sidebar{@include grid(4,true);} */
+/*  */
+/* # */
 /* #footer{@include grid(12,true);} */
 /*
 

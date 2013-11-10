@@ -24,13 +24,11 @@ body{
 	line-height: 21px;
 }
 
+#entries{@include grid(7,true);}
+#sidebar{@include grid(5);}
+#footer{clear: both;}
 
 /*
-
-
-#footer{@include grid(12, true);}
-
-
 #nav_primary{@include grid(12,true);
 	ul {
 		li{

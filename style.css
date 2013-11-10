@@ -1,9 +1,9 @@
 /*
-Theme Name: SkinnerBase Responsive
+Theme Name: Swirls Galore Responsive
 Theme URI: www.ervirath.com
 Author: Kat Skinner
 Author URI: http://katskinner.com
-Description: A theme made by yours truely, Kat Skinner. This theme is built from SkinnerBase, a base theme that I made; it contains excerpts and code gathered from some of the best Wordpress themes online.
+Description: A theme made by yours truely, Kat Skinner, and the wonderful Hisham beshayer. This theme is built from SkinnerBase, a base theme that I made; it contains excerpts and code gathered from some of the best Wordpress themes online.
 Version: 0.3
 License: Attribution-NonCommercial-NoDerivs. CC BY-NC-ND.
 License URI: http://creativecommons.org/licenses/
@@ -692,12 +692,20 @@ body:before {
     font-size: 0.9em;
     line-height: 21px; }
 
+  #entries {
+    float: left;
+    width: 428px;
+    margin-left: 0; }
+
+  #sidebar {
+    float: left;
+    width: 300px;
+    margin-left: 20px; }
+
+  #footer {
+    clear: both; }
+
   /*
-  
-  
-  #footer{@include grid(12, true);}
-  
-  
   #nav_primary{@include grid(12,true);
   	ul {
   		li{
@@ -797,8 +805,21 @@ body:before {
     font-size: 1em;
     line-height: 21px; }
 
-  /* #entries{@include grid(8);} */
-  /* #sidebar{@include grid(4,true);} */
+  #entries {
+    float: left;
+    width: 642px;
+    margin-left: 0; }
+
+  #sidebar {
+    float: left;
+    width: 306px;
+    margin-left: 30px; }
+
+  #footer {
+    clear: both; }
+
+  /*  */
+  /* # */
   /* #footer{@include grid(12,true);} */
   /*
   
@@ -1545,3 +1566,7 @@ div.menu li {
 
 h3.widget-title {
   font-variant: small-caps; }
+
+#footer ul {
+  list-style: none;
+  padding: 0px; }
