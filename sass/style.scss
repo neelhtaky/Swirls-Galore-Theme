@@ -1,0 +1,298 @@
+/*
+Theme Name: SkinnerBase Responsive
+Theme URI: www.ervirath.com
+Author: Kat Skinner
+Author URI: http://katskinner.com
+Description: A theme made by yours truely, Kat Skinner. This theme is built from SkinnerBase, a base theme that I made; it contains excerpts and code gathered from some of the best Wordpress themes online.
+Version: 0.3
+License: Attribution-NonCommercial-NoDerivs. CC BY-NC-ND.
+License URI: http://creativecommons.org/licenses/
+Tags: white, two-columns, responsive, custom-header
+*/
+
+/* IMPORT STYLES */
+@import "mixins";
+@import "normalize"; /* reset style sheet */
+@import "typography";
+@import "wp-core";
+
+/* IMPORT GRID SYSTEM and testing banner sizes */
+body:before{
+	font-size: 300%;
+ 	font-weight: bold;
+ 	position: fixed;
+ 	bottom: 60px;
+ 	width: 100%;
+ 	text-align: center;
+ 	color: $white;
+}
+@media only screen and (min-width:0px) and (max-width: 767px){
+	@import "300";
+/*
+	 body:before {
+	 	content: "300 ~ 0 to 479px";
+        background-color: hsla(90,60%,40%,0.7);}
+*/}
+@media only screen and (min-width: 768px) and (max-width:1001px) {
+	@import "748";
+    body:before {
+        content: "748 ~ 768 to 1001px";
+        background-color: hsla(180,60%,40%,0.7);}}
+@media screen and (min-width:1002px) and (max-width:1247px){
+	@import "978";
+	/*
+body:before {
+        content: "978 ~ 1002 to 1247px";
+        background-color: hsla(270,60%,40%,0.7);}
+*/}
+@media screen and (min-width:1248px) and (max-width:1407px){
+	@import "1218";
+	/*
+body:before {
+        content: "1218 ~ 1248 to 1407px";
+        background-color: hsla(360,60%,40%,0.7);}
+*/}
+@media screen and (min-width:1408px){
+	@import "1378";
+	/*
+body:before {
+        content: "1378 ~ 1408 and Above";
+        background-color: hsla(360,60%,40%,0.7);}
+*/}
+
+/******************************************************************
+SITE WIDE STYLES
+******************************************************************/
+body{
+	font-family: $sans-serif;
+	color: $text-col;
+	font-size: 100%;}
+#container{box-shadow: 0px 0px 200px #f2e8d1;}
+a[href]:after {
+	content: '\f442';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+}
+a[href*="quickneed"], a[href^="/"], a[href^="#"], a[href^="mailto:"], a[href^="javascript:"] { display: inline;}
+a[href*="quickneed"]:after, a[href^="/"]:after, a[href^="#"]:after, a[href^="mailto:"]:after, a[href^="javascript:"]:after {content: none;}
+a[rel="author"]:before{
+	color: $text-col;
+	content: '\f304';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+}
+a[rel="category tag"]:before{
+	color: $text-col;
+	content: '\f301';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+}
+p.tags:before{
+	color: $text-col;
+	content: '\f302';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+}
+time{
+	font-size: 0.9em;
+	font-weight: normal;
+	font-style: italic;
+	&:before{
+		content: '\f303';
+		display: inline-block;
+		-webkit-font-smoothing: antialiased;
+		font: normal 16px/1 'Genericons';
+		vertical-align:text-bottom;
+	}
+}
+a.comments-link{
+	font-size: 0.9em;
+	text-decoration: none;
+	color: $text-col;
+	&:before{
+		color: $text-col;
+		content: '\f300';
+		display: inline-block;
+		-webkit-font-smoothing: antialiased;
+		font: normal 16px/1 'Genericons';
+		vertical-align: top;
+	}
+}
+::selection {
+background:$alert-blue;
+color:#555;
+}
+
+::-moz-selection {
+background:$alert-blue;
+color:#555;
+}
+
+::-webkit-selection {
+background:$alert-blue;
+color:#555;
+}
+
+
+#site_title {
+	text-align: center;
+	h1 a{
+		font-variant: small-caps;
+		background: -moz-linear-gradient(top, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(180,146,191,1)), color-stop(100%, rgba(157,100,165,1)));
+		background: -webkit-linear-gradient(top, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
+		background: -o-linear-gradient(top, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
+		background: -ms-linear-gradient(top, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
+		background: linear-gradient(to bottom, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b492bf', endColorstr='#9d64a5', GradientType=0 );
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+#description{
+	text-align: center;
+	font-style: italic;
+	font-size: 0.9em;
+	margin-top: -15px;
+}
+
+.menu_header {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-image: url('library/images/navbar.jpg');
+    background-repeat: repeat;
+    font-family: $serif;
+    font-variant: small-caps;
+	font-size: 1.1em;
+	border: 1px dashed darken($col-tan, 5%);
+	box-shadow: 0px 0px 15px $col-tan;
+}
+.menu_header a{
+    display: block;
+    line-height: 40px;
+    padding: 10px 10px 0px 10px;
+    text-decoration: none;
+    font-weight: normal;
+    overflow-y: hidden;
+	font-variant: small-caps;
+	color: #92278f;
+	&:first-letter{
+		font-family: $beautiful-es;
+		font-size: 60px;}
+	}
+.menu_header ul,
+    div.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_header li,
+    div.menu li {
+    float: left;
+    position: relative;
+}
+.menu_header ul ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    float: left;
+    width: 180px;
+    z-index: 99999;
+    a{
+	    background: #fff;
+		line-height: 2em;
+		padding: 10px 10px 0px 10px;
+		width: 160px;
+		height: auto;
+
+		&:first-letter{
+			font-family: $beautiful-es;
+			font-size: 60px;
+		}
+    }
+}
+.menu_header ul li:hover > ul {
+    display: block;
+}
+.menu_header li:hover > a,
+.menu_header ul ul :hover > a {
+    background: $col-tan;
+}
+.menu_header ul li.current_page_item > a,
+.menu_header ul li.current-menu-ancestor > a,
+.menu_header ul li.current-menu-item > a,
+.menu_header ul li.current-menu-parent > a {
+    color: $col-tan;
+}
+
+.thumbnail{
+	width: 293px;
+	height: 166px;
+	overflow: hidden;
+	background: #f4f4f4;
+    border: 1px solid $col-tan;
+    margin-left: -3px;
+    position: relative;
+    &:before{
+	    border: 1px solid white;
+        content: '';
+        width: 291px;
+        height: 164px;
+        position: absolute;
+    }
+    &:after{
+	    content: '';
+        position: absolute;
+        width: 289px;
+        height: 162px;
+        border: 1px solid $col-tan;
+        left: 1px; top: 1px;
+    }
+    &:hover{
+	    -moz-box-shadow: 1px 1px 3px $col-tan;
+		-webkit-box-shadow: 1px 1px 3px $col-tan;
+        box-shadow: 1px 1px 3px $col-tan;
+        -webkit-transition:all .5s ease-in;
+    }
+}
+.post_content {
+	h2{
+		font-family: $sans-serif;
+		font-size: 1.3em;
+		a{
+			color: $col-orange;
+			text-decoration: none;
+			font-weight: normal;
+			font-variant: small-caps;
+			text-transform: capitalize;
+		}
+	}
+}
+#sidebar{
+	font-family: $serif;
+	ul{
+		list-style: none;
+		padding: 0px;
+		ul li{
+			padding-left: 15px;
+		}
+	}
+}
+h3.widget-title{
+	font-variant: small-caps;
+}

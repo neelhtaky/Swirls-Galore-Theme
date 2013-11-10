@@ -1,0 +1,1424 @@
+/*
+Theme Name: SkinnerBase Responsive
+Theme URI: www.ervirath.com
+Author: Kat Skinner
+Author URI: http://katskinner.com
+Description: A theme made by yours truely, Kat Skinner. This theme is built from SkinnerBase, a base theme that I made; it contains excerpts and code gathered from some of the best Wordpress themes online.
+Version: 0.3
+License: Attribution-NonCommercial-NoDerivs. CC BY-NC-ND.
+License URI: http://creativecommons.org/licenses/
+Tags: white, two-columns, responsive, custom-header
+*/
+/* IMPORT STYLES */
+.alert-help, .alert-info, .alert-error, .alert-success {
+  padding: 5px 10px;
+  border: 1px solid; }
+
+.alert-help {
+  border-color: #e8dc59;
+  background: #ebe16f; }
+
+.alert-info {
+  border-color: #bfe4f4;
+  background: #d5edf8; }
+
+.alert-error {
+  border-color: #f8cdce;
+  background: #fbe3e4; }
+
+.alert-success {
+  border-color: #deeaae;
+  background: #e6efc2; }
+
+.alignright {
+  text-align: right; }
+
+.alignleft {
+  text-align: left; }
+
+.aligncenter {
+  text-align: center; }
+
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* reset style sheet */
+/******************************************************************
+TYPOGRAPHY
+******************************************************************/
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the
+	library/fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('library/fonts/font-name.eot');
+    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/font-name.woff') format('woff'),
+             url('library/fonts/font-name.ttf') format('truetype'),
+             url('library/fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Genericons';
+  src: url("library/fonts/genericons-regular-webfont.eot");
+  src: url("library/fonts/genericons-regular-webfont.eot?#iefix") format("embedded-opentype"), url("library/fonts/genericons-regular-webfont.woff") format("woff"), url("library/fonts/genericons-regular-webfont.ttf") format("truetype"), url("library/fonts/genericons-regular-webfont.svg#genericonsregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ornaments';
+  src: url("library/fonts/ornaments_labels_and_frames.eot");
+  src: url("library/fonts/ornaments_labels_and_frames.eot?#iefix") format("embedded-opentype"), url("library/fonts/ornaments_labels_and_frames.woff") format("woff"), url("library/fonts/ornaments_labels_and_frames.ttf") format("truetype"), url("library/fonts/ornaments_labels_and_frames.svg#") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Beautiful-es';
+  src: url("library/fonts/Beautiful-ES.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+/*
+use the best ampersand
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+  font-style: italic; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+/* WORDPRESS CORE
+-------------------------------------------------------------------------------*/
+/* == WordPress WYSIWYG Editor Styles == */
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
+/* IMPORT GRID SYSTEM and testing banner sizes */
+body:before {
+  font-size: 300%;
+  font-weight: bold;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  color: white; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  /******************************************************************
+  300px - 8 Columns
+  
+  div.col1 { width: 27px; }
+  div.col2 { width: 66px; }
+  div.col3 { width: 105px; }
+  div.col4 { width: 144px; }
+  div.col5 { width: 183px; }
+  div.col6 { width: 222px; }
+  div.col7 { width: 261px; }
+  div.col8 { width: 300px; }
+  ******************************************************************/
+  /*
+  
+  978 Grid System CSS Framework
+  http://978.gs
+  
+  Copyright (c) 2011 Brothers Roloff
+  http://www.brothersroloff.com
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  */
+  .layout-300 {
+    width: 300px;
+    margin: 0px auto; }
+
+  .row {
+    height: 1%; }
+
+  .row-end {
+    clear: both;
+    font: 1px/1px sans-serif;
+    height: 1px;
+    overflow: hidden; }
+
+  width: 300px;
+  margin: 0px auto;
+  body {
+    font-size: 0.8em;
+    line-height: 21px; }
+
+  #site_title h1 a {
+    font: 50px 'Georgia', Arial, sans-serif; }
+
+  #entries {
+    padding: 5px; }
+
+  /*
+  #container{@include grid(8);}
+  body{
+  	font-size: 0.9em;
+  	line-height: 21px;}
+  #nav_primary{
+  	ul {margin: 0px;
+  		li{
+  			a{
+  				@include grid(4, true);
+  				text-align: center;
+  			}
+  		}
+  	}
+  }
+  img.wp-post-image,
+  img.attachment-thumbnail,
+  img.attachment-medium,
+  img.attachment-large,
+  img.attachment-full {width:100%;
+  height: auto;
+  margin-top: 20px;
+  }
+  ol.commentlist{@include grid(8, true);}
+  ol.commentlist li {margin-top: 5px !important;}
+  #respond{@include grid(8,true);}
+  #footer{@include grid(8, true);}
+  */
+  /*
+  	 body:before {
+  	 	content: "300 ~ 0 to 479px";
+          background-color: hsla(90,60%,40%,0.7);}
+  */ }
+@media only screen and (min-width: 768px) and (max-width: 1001px) {
+  /******************************************************************
+  748px - 12 Columns
+  
+  div.col1 { width: 44px; }
+  div.col2 { width: 108px; }
+  div.col3 { width: 172px; }
+  div.col4 { width: 236px; }
+  div.col5 { width: 300px; }
+  div.col6 { width: 364px; }
+  div.col7 { width: 428px; }
+  div.col8 { width: 492px; }
+  div.col9 { width: 556px; }
+  div.col10 { width: 620px; }
+  div.col11 { width: 684px; }
+  div.col12 { width: 748px; }
+  ******************************************************************/
+  /*
+  
+  978 Grid System CSS Framework
+  http://978.gs
+  
+  Copyright (c) 2011 Brothers Roloff
+  http://www.brothersroloff.com
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  */
+  .layout-748 {
+    width: 748px;
+    margin: 0px auto; }
+
+  .row {
+    height: 1%; }
+
+  .row-end {
+    clear: both;
+    font: 1px/1px sans-serif;
+    height: 1px;
+    overflow: hidden; }
+
+  width: 748px;
+  margin: 0px auto;
+  body {
+    font-size: 0.9em;
+    line-height: 21px; }
+
+  /*
+  
+  
+  #footer{@include grid(12, true);}
+  
+  
+  #nav_primary{@include grid(12,true);
+  	ul {
+  		li{
+  			@include grid(2,true);
+  		}
+  	}
+  }
+  
+  .thumbnail{
+  }
+  img.wp-post-image,
+  img.attachment-thumbnail,
+  img.attachment-medium,
+  img.attachment-large,
+  img.attachment-full {
+  }
+  
+  #sidebar ul li{
+  	.medium_rectangle{}
+  	.square_button{}
+  	.square_button:nth-last-child(-n+2){}
+  	.square_button:nth-child(2n){}
+  }
+  #sidebar .widget_archive, #sidebar .widget_categories, #sidebar .widget_recent_entries, #sidebar .widget_meta{
+  }
+  #footer{@include grid(12,true);
+  	li:nth-child(odd){}
+  	.widget{}
+  }
+  #copyatt{
+  	@include grid(12, true);
+  	p{
+  		@include grid(4);}
+  }
+  */
+    /*
+body:before {
+        content: "748 ~ 768 to 1001px";
+        background-color: hsla(180,60%,40%,0.7);}
+*/ }
+@media screen and (min-width: 1002px) and (max-width: 1247px) {
+  /******************************************************************
+  978px - 12 Columns
+  
+  div.col1 { width: 54px; }
+  div.col2 { width: 138px; }
+  div.col3 { width: 222px; }
+  div.col4 { width: 306px; }
+  div.col5 { width: 390px; }
+  div.col6 { width: 474px; }
+  div.col7 { width: 558px; }
+  div.col8 { width: 642px; }
+  div.col9 { width: 726px; }
+  div.col10 { width: 810px; }
+  div.col11 { width: 894px; }
+  div.col12 { width: 978px; }
+  ******************************************************************/
+  /*
+  
+  978 Grid System CSS Framework
+  http://978.gs
+  
+  Copyright (c) 2011 Brothers Roloff
+  http://www.brothersroloff.com
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  */
+  .layout-978 {
+    width: 978px;
+    margin: 0px auto; }
+
+  .row {
+    height: 1%; }
+
+  .row-end {
+    clear: both;
+    font: 1px/1px sans-serif;
+    height: 1px;
+    overflow: hidden; }
+
+  body {
+    font-size: 1em;
+    line-height: 21px; }
+
+  /* #entries{@include grid(8);} */
+  /* #sidebar{@include grid(4,true);} */
+  /* #footer{@include grid(12,true);} */
+  /*
+  
+  
+  
+  
+  
+  
+  #nav_top{@include grid(12,true);
+  	ul{margin-left: -30px;
+  		li{
+  			@include grid(2);
+  			text-align: center;}
+  	}
+  }
+  #search{
+  	@include grid(12);
+  	padding-top:10px;
+  	input[type=search] {
+  		margin-left: 40%;
+  		margin-bottom: 20px;
+  		width: 132px;
+  		height: 20px;
+  	}
+  }
+  #under_search{
+  	@include grid(12, true);
+  		&:after{top: -0.37em;}}
+  
+  ::-webkit-input-placeholder {color: transparent;}
+  :-moz-placeholder { color: transparent;}
+  ::-moz-placeholder {color: transparent;}
+  :-ms-input-placeholder {color: transparent;}
+  
+  #site_title {text-align: center;@include grid(12, true);}
+  #description{margin-top: -1.3em; margin-bottom: -10px;}
+  
+  #nav_primary{@include grid(12,true);
+  	ul { margin-top: 5px; margin-bottom: 5px;
+  		li{
+  			@include grid(3,true);
+  			margin-right: 20px;
+  			text-align: center;
+  			&:nth-child(4n+4){margin-right: 0px;}
+  			&:nth-child(-n+4){padding-bottom: 10px;}
+  		}
+  	}
+  }
+  #splash{
+  	img{
+  		height: auto;
+  		width: 978px;
+  	}
+  
+  	#splash_text{
+  		@include grid(4);
+  		background: $white;
+  		margin-top: 15px;
+  		margin-left: 60.2%;
+  		padding: 5px 30px 0px 20px;
+  
+  		h3{
+  			padding-top: 5px;
+  			margin-top: 5px;
+  			padding-bottom: 10px;
+  		}
+  	}
+  }
+  .thumbnail{@include grid(3,true); padding-right: 10px;max-height: 150px; overflow: hidden;}
+  img.wp-post-image,
+  img.attachment-thumbnail,
+  img.attachment-medium,
+  img.attachment-large,
+  img.attachment-full {width:100%;
+  height: auto;
+  
+  }
+  #respond input[type=text], textarea {
+  	width: 98% !important;}
+  #sidebar hr{
+  	@include grid(4,true);
+  	margin-top: 20px;
+  	margin-bottom: 20px;}
+  #sidebar ul li{
+  	.medium_rectangle{padding-bottom:0px; padding-top:10px;}
+  	.square_button{padding-top: 30px;}
+  	.square_button:nth-last-child(-n+2){padding-bottom: 0px;}
+  	.square_button:nth-child(2n){padding-right: 46px;}
+  }
+  #sidebar .widget:not(.widget_text){
+  	@include grid(2,true);
+  	&:nth-child(3n+1){
+  	margin-right: 30px;}
+  }
+  #footer{
+  	@include grid(12,true);
+  	li{
+  		@include grid(3);
+  		&:first-child{@include grid(3,true);}
+  	}
+  }
+  #footer hr{
+  	@include grid(12,true);
+  	margin-top: 25px;
+  }
+  #copyatt{
+  	@include grid(12, true);
+  	p{
+  		margin-left: 0px !important;
+  		@include grid(4);
+  		margin-right: 13px;}
+  }
+  */
+  	/*
+  body:before {
+          content: "978 ~ 1002 to 1247px";
+          background-color: hsla(270,60%,40%,0.7);}
+  */ }
+@media screen and (min-width: 1248px) and (max-width: 1407px) {
+  /******************************************************************
+  1218px - 16 Columns
+  
+  div.col1 { width: 48px; }
+  div.col2 { width: 126px; }
+  div.col3 { width: 204px; }
+  div.col4 { width: 282px; }
+  div.col5 { width: 360px; }
+  div.col6 { width: 438px; }
+  div.col7 { width: 516px; }
+  div.col8 { width: 594px; }
+  div.col9 { width: 672px; }
+  div.col10 { width: 750px; }
+  div.col11 { width: 828px; }
+  div.col12 { width: 906px; }
+  div.col13 { width: 984px; }
+  div.col14 { width: 1062px; }
+  div.col15 { width: 1140px; }
+  div.col16 { width: 1218px; }
+  ******************************************************************/
+  /*
+  
+  978 Grid System CSS Framework
+  http://978.gs
+  
+  Copyright (c) 2011 Brothers Roloff
+  http://www.brothersroloff.com
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  */
+  .layout-1218 {
+    width: 1218px;
+    margin: 0px auto; }
+
+  .row {
+    height: 1%; }
+
+  .row-end {
+    clear: both;
+    font: 1px/1px sans-serif;
+    height: 1px;
+    overflow: hidden; }
+
+  /*
+  body{
+  	font-size: 1em;
+  	line-height: 21px;}
+  
+  #entries{@include grid(11, true);}
+  #sidebar{@include grid(5);}
+  #footer{@include grid(16, true);}
+  
+  #nav_top{@include grid(13,true);
+  	ul{margin-left: -30px;
+  		li{
+  			@include grid(3);}
+  	}
+  }
+  #search{
+  	@include grid(3);
+  	padding-top:10px;
+  	margin-bottom: -5px;
+  	input[type=search] {
+  		margin-bottom: 20px;
+  		width: 200px;
+  		height: 20px;
+  	}
+  }
+  #under_search{
+  	@include grid(16, true);
+  		&:after{top: -0.37em;}}
+  
+  ::-webkit-input-placeholder {color: transparent;}
+  :-moz-placeholder { color: transparent;}
+  ::-moz-placeholder {color: transparent;}
+  :-ms-input-placeholder {color: transparent;}
+  
+  #header{
+  	@include grid(16, true);
+  }
+  #site_title {text-align: center;
+  }
+  #description{margin-top: -1.3em; margin-bottom: -10px;}
+  
+  #nav_primary{@include grid(16,true);
+  	ul { margin-top: 5px; margin-bottom: 5px;margin-left: 156px;
+  		li{
+  			@include grid(3,true);
+  			text-align: center;
+  			margin-bottom: 5px;
+  		}
+  	}
+  }
+  #splash{
+  
+  	img{
+  		height: auto;
+  		width: 1218px;
+  	}
+  
+  	#splash_text{
+  		@include grid(5);
+  		background: $white;
+  		margin-top: 15px;
+  		margin-left: 64%;
+  		padding: 5px 30px 0px 20px;
+  
+  		h3{
+  			padding-top: 5px;
+  			margin-top: 5px;
+  			padding-bottom: 10px;
+  		}
+  	}
+  }
+  .thumbnail{@include grid(4,true);
+  	padding-right: 15px;
+  	max-height: 300px;
+  	overflow: hidden;}
+  img.wp-post-image,
+  img.attachment-thumbnail,
+  img.attachment-medium,
+  img.attachment-large,
+  img.attachment-full {width:100%;
+  height: auto;
+  
+  }
+  #respond input[type=text], textarea {
+  	width: 98% !important;}
+  #sidebar hr{
+  	@include grid(5,true);
+  	margin-top: 20px;
+  	margin-bottom: 20px;
+  	&:after{top: -0.37em;}}
+  #sidebar ul li{
+  	.medium_rectangle{padding-bottom:0px; padding-top:10px;margin-left: 30px;}
+  	.square_button{padding-top: 30px;margin-left: 31px;}
+  	.square_button:nth-last-child(-n+2){padding-bottom: 0px;}
+  	.square_button:nth-child(2n){padding-right: 13px;}
+  }
+  #sidebar .widget:not(.widget_text){
+  	@include grid(2,true);
+  	&:nth-child(3n+1){
+  	margin-right: 30px;}
+  }
+  #footer{
+  	@include grid(16,true);
+  	li{
+  		@include grid(4);
+  		&:first-child{@include grid(4,true);}
+  	}
+  }
+  #footer hr{
+  	@include grid(16,true);
+  	margin-top: 25px;
+  	&:after{top: -0.37em;}
+  }
+  #copyatt{
+  	@include grid(16, true);
+  	p{
+  		margin-left: 0px !important;
+  		@include grid(5);
+  		margin-right: 45px;}
+  }
+  */
+  	/*
+  body:before {
+          content: "1218 ~ 1248 to 1407px";
+          background-color: hsla(360,60%,40%,0.7);}
+  */ }
+@media screen and (min-width: 1408px) {
+  /******************************************************************
+  1378PX - 16 Columns
+  
+  For reference:
+  div.col1 { width: 58px; }
+  div.col2 { width: 146px; }
+  div.col3 { width: 234px; }
+  div.col4 { width: 322px; }
+  div.col5 { width: 410px; }
+  div.col6 { width: 498px; }
+  div.col7 { width: 586px; }
+  div.col8 { width: 674px; }
+  div.col9 { width: 762px; }
+  div.col10 { width: 850px; }
+  div.col11 { width: 938px; }
+  div.col12 { width: 1026px; }
+  div.col13 { width: 1114px; }
+  div.col14 { width: 1202px; }
+  div.col15 { width: 1290px; }
+  div.col16 { width: 1378px; }
+  
+  ******************************************************************/
+  /*
+  
+  978 Grid System CSS Framework
+  http://978.gs
+  
+  Copyright (c) 2011 Brothers Roloff
+  http://www.brothersroloff.com
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  */
+  .layout-1378 {
+    width: 1378px;
+    margin: 0px auto; }
+
+  .row {
+    height: 1%; }
+
+  .row-end {
+    clear: both;
+    font: 1px/1px sans-serif;
+    height: 1px;
+    overflow: hidden; }
+
+  body {
+    font-size: 1.1em;
+    line-height: 21px; }
+
+  #entries {
+    width: 850px;
+    display: block;
+    float: left; }
+
+  #sidebar {
+    width: 410px;
+    display: block;
+    float: left; }
+
+  #footer {
+    clear: both;
+    width: 1378px; }
+
+  /*
+  
+  h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a{
+  	line-height: 1.2em !important;
+  }
+  
+  
+  #sidebar{@include grid(5);}
+  #footer{@include grid(16, true);}
+  #nav_top{@include grid(13,true);
+  	ul{margin-left: -30px;
+  		li{
+  			@include grid(3);}
+  	}
+  }
+  #search{
+  	@include grid(3);
+  	padding-top:10px;
+  	margin-bottom: -5px;
+  	input[type=search] {
+  		margin-bottom: 20px;
+  		width: 200px;
+  		height: 20px;
+  	}
+  }
+  #under_search{
+  	@include grid(16, true);
+  		&:after{top: -0.37em;}}
+  
+  ::-webkit-input-placeholder {color: transparent;}
+  :-moz-placeholder { color: transparent;}
+  ::-moz-placeholder {color: transparent;}
+  :-ms-input-placeholder {color: transparent;}
+  #header{
+  	@include grid(16, true);
+  }
+  #site_title {text-align: center;}
+  #description{margin-top: -1.3em; margin-bottom: -10px;}
+  
+  #nav_primary{@include grid(16,true);
+  	ul { margin-top: 5px; margin-bottom: 5px;margin-left: 126px;
+  		li{
+  			@include grid(3,true);
+  			text-align: center;
+  			margin-bottom: 5px;
+  		}
+  	}
+  }
+  #splash{
+  
+  
+  	background-size: 1378 auto;
+  	background-repeat: no-repeat;
+  
+  	img{
+  	width: auto;
+  	height: auto;
+  	}
+  
+  	#splash_text{
+  		@include grid(5);
+  		background: $white;
+  		margin-top: 15px;
+  		margin-left: 64%;
+  		padding: 5px 30px 0px 20px;
+  
+  		h3{
+  			padding-top: 5px;
+  			margin-top: 5px;
+  			padding-bottom: 10px;
+  		}
+  	}
+  }
+  
+  .thumbnail{@include grid(4,true);
+  	padding-right: 15px;
+  	max-height: 300px;
+  	overflow: hidden;}
+  img.wp-post-image,
+  img.attachment-thumbnail,
+  img.attachment-medium,
+  img.attachment-large,
+  img.attachment-full {width:100%;
+  height: auto;
+  
+  }
+  
+  a.read_more{width: 120px !important;}
+  
+  #respond input[type=text], textarea {
+  	width: 98% !important;}
+  #sidebar hr{
+  	@include grid(5,true);
+  	margin-top: 20px;
+  	margin-bottom: 20px;
+  	&:after{top: -0.37em;}}
+  #sidebar ul li{
+  	.medium_rectangle{padding-bottom:0px; padding-top:10px;margin-left: 30px;}
+  	.square_button{padding-top: 30px;margin-left: 31px;}
+  	.square_button:nth-last-child(-n+2){padding-bottom: 0px;}
+  	.square_button:nth-child(2n){padding-right: 13px;}
+  }
+  #sidebar .widget:not(.widget_text){
+  	@include grid(2,true);
+  	margin-left: 20px;
+  	&:nth-child(3n+1){
+  		margin-left: 30px;}
+  }
+  #footer{
+  	@include grid(16,true);
+  	li{
+  		margin-top: 0px;
+  		@include grid(4);
+  		&:first-child{@include grid(4,true);}
+  		ul li{
+  			margin-bottom: 15px;
+  			margin-left: 0px;
+  		}
+  	}
+  }
+  #footer hr{
+  	@include grid(16,true);
+  	&:after{top: -0.37em;}
+  }
+  #copyatt{
+  	@include grid(16, true);
+  	p{
+  		margin-top: 0px;
+  		margin-left: 0px !important;
+  		@include grid(5);
+  		margin-right: 45px;}
+  }
+  */
+  	/*
+  body:before {
+          content: "1378 ~ 1408 and Above";
+          background-color: hsla(360,60%,40%,0.7);}
+  */ }
+/******************************************************************
+SITE WIDE STYLES
+******************************************************************/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444444; }
+
+#container {
+  box-shadow: 0px 0px 200px #f2e8d1; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    color: #ffa145;
+    text-decoration: underline; }
+
+#nav_primary {
+  background-image: url("library/images/1378_03.jpg");
+  background-repeat: repeat;
+  list-style: none;
+  overflow: auto; }
+  #nav_primary ul {
+    padding-left: 0px;
+    list-style: none;
+    display: inline;
+    float: left; }
+    #nav_primary ul li {
+      overflow-y: hidden;
+      font-variant: small-caps;
+      background: #91278f;
+      background: -moz-linear-gradient(top, #91278f 0%, #672d91 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, #91278f), color-stop(100%, #672d91));
+      background: -webkit-linear-gradient(top, #91278f 0%, #672d91 100%);
+      background: -o-linear-gradient(top, #91278f 0%, #672d91 100%);
+      background: -ms-linear-gradient(top, #91278f 0%, #672d91 100%);
+      background: linear-gradient(to bottom, #91278f 0%, #672d91 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#91278f', endColorstr='#672d91', GradientType=0 );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-top: 17px;
+      font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
+      #nav_primary ul li:first-letter {
+        font-family: "Beautiful-es";
+        font-size: 60px; }
+      #nav_primary ul li a {
+        padding-bottom: 5px;
+        color: #606060;
+        text-decoration: none;
+        text-transform: uppercase; }
+        #nav_primary ul li a:hover {
+          color: #40ade5; }
+
+#site_title {
+  text-align: center; }
+  #site_title h1 a {
+    font-variant: small-caps;
+    background: -moz-linear-gradient(top, #b492bf 0%, #9d64a5 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #b492bf), color-stop(100%, #9d64a5));
+    background: -webkit-linear-gradient(top, #b492bf 0%, #9d64a5 100%);
+    background: -o-linear-gradient(top, #b492bf 0%, #9d64a5 100%);
+    background: -ms-linear-gradient(top, #b492bf 0%, #9d64a5 100%);
+    background: linear-gradient(to bottom, #b492bf 0%, #9d64a5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b492bf', endColorstr='#9d64a5', GradientType=0 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  #site_title a {
+    font-weight: bold;
+    text-decoration: none;
+    background: #b492bf; }
+    #site_title a:hover {
+      color: #007cbe; }
+
+#description {
+  text-align: center; }
+
+a.read_more {
+  display: block;
+  text-align: center;
+  width: 100px;
+  margin: 0 auto;
+  color: #444444;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  line-height: 35px;
+  clear: both; }
+  a.read_more:hover {
+    color: #007cbe; }
+
+/******************************************************************
+SIDEBAR
+******************************************************************/
+#sidebar ul, footer ul {
+  list-style: none; }

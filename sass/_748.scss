@@ -1,0 +1,68 @@
+/******************************************************************
+748px - 12 Columns
+
+div.col1 { width: 44px; }
+div.col2 { width: 108px; }
+div.col3 { width: 172px; }
+div.col4 { width: 236px; }
+div.col5 { width: 300px; }
+div.col6 { width: 364px; }
+div.col7 { width: 428px; }
+div.col8 { width: 492px; }
+div.col9 { width: 556px; }
+div.col10 { width: 620px; }
+div.col11 { width: 684px; }
+div.col12 { width: 748px; }
+******************************************************************/
+
+$layoutwidth : 748;
+@import "978gs";
+@include layout;
+
+body{
+	font-size: 0.9em;
+	line-height: 21px;
+}
+
+
+/*
+
+
+#footer{@include grid(12, true);}
+
+
+#nav_primary{@include grid(12,true);
+	ul {
+		li{
+			@include grid(2,true);
+		}
+	}
+}
+
+.thumbnail{
+}
+img.wp-post-image,
+img.attachment-thumbnail,
+img.attachment-medium,
+img.attachment-large,
+img.attachment-full {
+}
+
+#sidebar ul li{
+	.medium_rectangle{}
+	.square_button{}
+	.square_button:nth-last-child(-n+2){}
+	.square_button:nth-child(2n){}
+}
+#sidebar .widget_archive, #sidebar .widget_categories, #sidebar .widget_recent_entries, #sidebar .widget_meta{
+}
+#footer{@include grid(12,true);
+	li:nth-child(odd){}
+	.widget{}
+}
+#copyatt{
+	@include grid(12, true);
+	p{
+		@include grid(4);}
+}
+*/

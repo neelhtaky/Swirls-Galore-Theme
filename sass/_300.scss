@@ -1,0 +1,55 @@
+/******************************************************************
+300px - 8 Columns
+
+div.col1 { width: 27px; }
+div.col2 { width: 66px; }
+div.col3 { width: 105px; }
+div.col4 { width: 144px; }
+div.col5 { width: 183px; }
+div.col6 { width: 222px; }
+div.col7 { width: 261px; }
+div.col8 { width: 300px; }
+******************************************************************/
+$layoutwidth:300;
+@import "978gs";
+@include layout;
+
+body{
+	font-size: 0.8em;
+	line-height: 21px;
+}
+
+#site_title h1 a{
+font: 50px 'Georgia', Arial, sans-serif;
+}
+#entries{
+	padding: 5px;
+}
+/*
+#container{@include grid(8);}
+body{
+	font-size: 0.9em;
+	line-height: 21px;}
+#nav_primary{
+	ul {margin: 0px;
+		li{
+			a{
+				@include grid(4, true);
+				text-align: center;
+			}
+		}
+	}
+}
+img.wp-post-image,
+img.attachment-thumbnail,
+img.attachment-medium,
+img.attachment-large,
+img.attachment-full {width:100%;
+height: auto;
+margin-top: 20px;
+}
+ol.commentlist{@include grid(8, true);}
+ol.commentlist li {margin-top: 5px !important;}
+#respond{@include grid(8,true);}
+#footer{@include grid(8, true);}
+*/

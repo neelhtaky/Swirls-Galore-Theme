@@ -1,0 +1,45 @@
+$alert-yellow:      #ebe16f;
+$alert-red:         #fbe3e4;
+$alert-green:       #e6efc2;
+$alert-blue:        #d5edf8;
+
+$black:             #000;
+$white:             #fff;
+$text-col: 			#444;
+$col-blue: 			#007cbe;
+$col-orange:		#ffa145;
+$col-tan: 			#f2e8d1;
+
+$menu-col:			#606060;
+$link-col:       	#1a87bf;
+$link-hover:      	lighten($link-col, 15%);
+
+%alert {
+	padding: 5px 10px;
+	border: 1px solid;
+}
+
+.alert-help {
+	@extend %alert;
+	border-color: darken($alert-yellow, 5%);
+	background: $alert-yellow;
+}
+.alert-info {
+	@extend %alert;
+	border-color: darken($alert-blue, 5%);
+	background: $alert-blue;
+}
+.alert-error {
+	@extend %alert;
+	border-color: darken($alert-red, 5%);
+	background: $alert-red;
+}
+.alert-success {
+	@extend %alert;
+	border-color: darken($alert-green, 5%);
+	background: $alert-green;
+}
+
+.alignright{text-align: right;}
+.alignleft{text-align: left;}
+.aligncenter{text-align: center;}
