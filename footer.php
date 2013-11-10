@@ -22,5 +22,5 @@
 
 </div>  <!-- close #container -->
 
-</body>
-</html>
+</body> <!-- close body tag -->
+</html> <!-- close html tag -->
