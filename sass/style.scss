@@ -217,15 +217,13 @@ color:#555;
 		line-height: 0.6;
 	}
 }
-.menu_header ul,
-    div.menu ul {
+.menu_header ul, div.menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.menu_header li,
-    div.menu li {
+.menu_header li, div.menu li {
     float: left;
     position: relative;
 }
@@ -319,8 +317,15 @@ color:#555;
 		}
 	}
 }
+.widget-title{
+	background-image: url('library/images/stripes.png');
+}
 h3.widget-title{
-	font-variant: small-caps;
+
+	text-transform: uppercase;
+	font-weight: normal;
+	color: lighten($text-col,20%);
+	@include font-size(16);
 }
 #footer{
 	ul{

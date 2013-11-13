@@ -1648,14 +1648,12 @@ a.comments-link {
     line-height: 9rem;
     line-height: 0.6; }
 
-.menu_header ul,
-div.menu ul {
+.menu_header ul, div.menu ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.menu_header li,
-div.menu li {
+.menu_header li, div.menu li {
   float: left;
   position: relative; }
 
@@ -1743,8 +1741,17 @@ div.menu li {
     #sidebar ul ul li {
       padding-left: 15px; }
 
+.widget-title {
+  background-image: url("library/images/stripes.png"); }
+
 h3.widget-title {
-  font-variant: small-caps; }
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #777777;
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem; }
 
 #footer ul {
   list-style: none;
