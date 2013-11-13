@@ -11,12 +11,6 @@
 <?php if ( is_singular() || is_single() ) {?>
 	<article <?php post_class("clear entry entry_content"); ?> id="post-<?php the_ID(); ?>" role="article">
 
-<?php if ( has_post_thumbnail() ) { ?>
-		        	<aside class="thumbnail">
-		        		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_post_thumbnail(); ?></a>
-		        	 </aside>
-		        <?php } else {}?>
-
 		    <section class="post_content">
 		        <?php if ( is_home() || is_front_page() ) { ?>
 					<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>

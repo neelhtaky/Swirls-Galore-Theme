@@ -122,7 +122,7 @@ p.tags:before{
 	vertical-align: top;
 }
 time{
-	@include font-size(10);
+/* 	@include font-size(10); */
 	font-weight: normal;
 	font-style: italic;
 	&:before{
@@ -134,7 +134,7 @@ time{
 	}
 }
 a.comments-link{
-	@include font-size(10);
+/* 	@include font-size(10); */
 	text-decoration: none;
 	color: $text-col;
 	&:before{
@@ -319,13 +319,12 @@ color:#555;
 }
 .widget-title{
 	background-image: url('library/images/stripes.png');
-}
-h3.widget-title{
-
 	text-transform: uppercase;
 	font-weight: normal;
 	color: lighten($text-col,20%);
 	@include font-size(16);
+}
+h3.widget-title{
 }
 #footer{
 	ul{

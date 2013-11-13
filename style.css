@@ -728,12 +728,22 @@ body:before {
     text-align: justify;
     text-justify: newspaper; }
 
+  .post_content h2 a {
+    font-size: 18px;
+    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem; }
+
   #sidebar {
     float: left;
     width: 300px;
     margin-left: 20px;
     margin-right: 0px;
     margin-left: 0px; }
+    #sidebar a {
+      color: #c46100;
+      text-decoration: none;
+      border-bottom: 1px dotted; }
 
   #footer {
     clear: both; }
@@ -1549,10 +1559,7 @@ p.tags:before {
   vertical-align: top; }
 
 time {
-  font-size: 10px;
-  line-height: 15px;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  /* 	@include font-size(10); */
   font-weight: normal;
   font-style: italic; }
   time:before {
@@ -1563,10 +1570,7 @@ time {
     vertical-align: bottom; }
 
 a.comments-link {
-  font-size: 10px;
-  line-height: 15px;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  /* 	@include font-size(10); */
   text-decoration: none;
   color: #444444; }
   a.comments-link:before {
@@ -1742,9 +1746,7 @@ a.comments-link {
       padding-left: 15px; }
 
 .widget-title {
-  background-image: url("library/images/stripes.png"); }
-
-h3.widget-title {
+  background-image: url("library/images/stripes.png");
   text-transform: uppercase;
   font-weight: normal;
   color: #777777;
