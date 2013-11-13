@@ -1,5 +1,8 @@
 /******************************************************************
 1218px - 16 Columns
+columns = 48px
+gutters = 30px
+1248px with 15px side margins
 
 div.col1 { width: 48px; }
 div.col2 { width: 126px; }
@@ -20,9 +23,42 @@ div.col16 { width: 1218px; }
 ******************************************************************/
 $layoutwidth : 1218;
 @import "978gs";
+@include layout;
 
-#entries{@include grid(11,true);}
-#sidebar{@include grid(5);}
+body{}
+#site_title h1 a{
+font-family: 'Georgia', Arial, sans-serif;
+@include font-size(60);
+}
+#entries, #sidebar, #footer{
+	@include font-size(14);
+}
+#entries{
+	@include grid(11,true);
+	background: yellow;
+	padding-left: 5px;
+	margin-right: 20px;
+}
+
+.entry_excerpt {
+	&:nth-child(odd){
+		@include grid(5,true);
+		background: teal;
+	}
+	&:nth-child(even){
+	@include grid(5);
+		background: aqua;
+
+	}
+	p{
+		text-align: justify;
+		text-justify:newspaper;
+	}
+}
+#sidebar{
+	@include grid(5);
+	background: pink;
+	margin: 0px;}
 #footer{clear: both;}
 
 

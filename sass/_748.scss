@@ -1,5 +1,8 @@
 /******************************************************************
 748px - 12 Columns
+columns = 44px
+gutters = 20px
+total 768 with 10px side margins
 
 div.col1 { width: 44px; }
 div.col2 { width: 108px; }
@@ -14,35 +17,38 @@ div.col10 { width: 620px; }
 div.col11 { width: 684px; }
 div.col12 { width: 748px; }
 ******************************************************************/
-
-$layoutwidth : 748;
+$layoutwidth:748;
 @import "978gs";
 @include layout;
 
 body{
-
-}
-
-#entries{
-	@include grid(6,true);
-	background: pink;
-	}
-#sidebar{@include grid(4);background: lime;}
-#footer{clear: both;}
-
-#site_title h1 a{
-font-family: 'Georgia', Arial, sans-serif;
-@include font-size(50);
-}
-
-#sidebar{
-	padding: 0px;
-}
-
-#entries, #sidebar, #footer{
-	padding: 5px;
 	@include font-size(14);
 }
+#site_title h1 a{
+font-family: 'Georgia', Arial, sans-serif;
+@include font-size(55);
+}
+#entries, #sidebar, #footer{
+	@include font-size(14);
+
+}
+#entries{
+	@include grid(7,true);
+	margin-left: 5px;
+	margin-right: 10px;
+	text-align: justify;
+	text-justify: newspaper;
+}
+#sidebar{
+	@include grid(5);
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#footer{
+	clear: both;
+}
+
+
 /*
 
 .thumbnail{

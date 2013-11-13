@@ -39,7 +39,7 @@
 jQuery(function() {
   jQuery('div#gs-overlay').gsoverlay({
     trigger: jQuery('a#gs-overlay-badge'),
-    grid: 1378,
+    grid: 748,
     color: '#aa1b4a',
     opacity: 0.24
   });
@@ -50,9 +50,9 @@ jQuery(function() {
 <body <?php body_class(''); ?>>
 
 <div id="container" class="layout-300 layout-748 layout-978 layout-1218 layout-1378">
-<!-- <div id="gs-overlay">&nbsp;</div> -->
-<!--<a href="http://978.gs" id="gs-overlay-badge" style="outline: 0;">
-<img src="http://978.gs/resources/img/978-badge.png" alt="This site is built with 978 grid system" width="59" height="25" style="border: 0;"></a> -->
+<div id="gs-overlay">&nbsp;</div>
+<a href="http://978.gs" id="gs-overlay-badge" style="outline: 0;">
+<img src="http://978.gs/resources/img/978-badge.png" alt="This site is built with 978 grid system" width="59" height="25" style="border: 0;"></a>
 
 	<header id="header" role="banner">
 

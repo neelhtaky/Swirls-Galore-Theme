@@ -534,6 +534,9 @@ body:before {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   /******************************************************************
   300px - 8 Columns
+  colums=27px
+  gutters=12px
+  total=320px with 10px side margins
   
   div.col1 { width: 27px; }
   div.col2 { width: 66px; }
@@ -638,6 +641,9 @@ body:before {
 @media only screen and (min-width: 768px) and (max-width: 1001px) {
   /******************************************************************
   748px - 12 Columns
+  columns = 44px
+  gutters = 20px
+  total 768 with 10px side margins
   
   div.col1 { width: 44px; }
   div.col2 { width: 108px; }
@@ -694,37 +700,43 @@ body:before {
 
   width: 748px;
   margin: 0px auto;
-  #entries {
-    float: left;
-    width: 364px;
-    margin-left: 0;
-    background: pink; }
-
-  #sidebar {
-    float: left;
-    width: 236px;
-    margin-left: 20px;
-    background: lime; }
-
-  #footer {
-    clear: both; }
-
-  #site_title h1 a {
-    font-family: 'Georgia', Arial, sans-serif;
-    font-size: 50px;
-    line-height: 75px;
-    font-size: 5rem;
-    line-height: 7.5rem; }
-
-  #sidebar {
-    padding: 0px; }
-
-  #entries, #sidebar, #footer {
-    padding: 5px;
+  body {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
     line-height: 2.1rem; }
+
+  #site_title h1 a {
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 55px;
+    line-height: 82.5px;
+    font-size: 5.5rem;
+    line-height: 8.25rem; }
+
+  #entries, #sidebar, #footer {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  #entries {
+    float: left;
+    width: 428px;
+    margin-left: 0;
+    margin-left: 5px;
+    margin-right: 10px;
+    text-align: justify;
+    text-justify: newspaper; }
+
+  #sidebar {
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-left: 0px; }
+
+  #footer {
+    clear: both; }
 
   /*
   
@@ -761,6 +773,9 @@ body:before {
 @media screen and (min-width: 1002px) and (max-width: 1247px) {
   /******************************************************************
   978px - 12 Columns
+  colums = 54px
+  gutters = 30px
+  1002px total with 12px side margins
   
   div.col1 { width: 54px; }
   div.col2 { width: 138px; }
@@ -815,40 +830,55 @@ body:before {
     height: 1px;
     overflow: hidden; }
 
-  body {
-    font-size: 1em;
-    line-height: 21px; }
+  width: 978px;
+  margin: 0px auto;
+  #site_title h1 a {
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 60px;
+    line-height: 90px;
+    font-size: 6rem;
+    line-height: 9rem; }
+
+  #entries, #sidebar, #footer {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
 
   #entries {
     float: left;
     width: 642px;
-    margin-left: 0; }
+    margin-left: 0;
+    background: yellow;
+    padding-left: 5px;
+    margin-right: 20px; }
+
+  .entry_excerpt:nth-child(odd) {
+    float: left;
+    width: 306px;
+    margin-left: 0;
+    background: teal; }
+  .entry_excerpt:nth-child(even) {
+    float: left;
+    width: 306px;
+    margin-left: 30px;
+    background: aqua; }
+  .entry_excerpt p {
+    text-align: justify;
+    text-justify: newspaper; }
 
   #sidebar {
     float: left;
     width: 306px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    background: pink;
+    margin: 0px; }
 
   #footer {
     clear: both; }
 
-  /*  */
-  /* # */
-  /* #footer{@include grid(12,true);} */
   /*
   
-  
-  
-  
-  
-  
-  #nav_top{@include grid(12,true);
-  	ul{margin-left: -30px;
-  		li{
-  			@include grid(2);
-  			text-align: center;}
-  	}
-  }
   #search{
   	@include grid(12);
   	padding-top:10px;
@@ -882,26 +912,7 @@ body:before {
   		}
   	}
   }
-  #splash{
-  	img{
-  		height: auto;
-  		width: 978px;
-  	}
   
-  	#splash_text{
-  		@include grid(4);
-  		background: $white;
-  		margin-top: 15px;
-  		margin-left: 60.2%;
-  		padding: 5px 30px 0px 20px;
-  
-  		h3{
-  			padding-top: 5px;
-  			margin-top: 5px;
-  			padding-bottom: 10px;
-  		}
-  	}
-  }
   .thumbnail{@include grid(3,true); padding-right: 10px;max-height: 150px; overflow: hidden;}
   img.wp-post-image,
   img.attachment-thumbnail,
@@ -955,6 +966,9 @@ body:before {
 @media screen and (min-width: 1248px) and (max-width: 1407px) {
   /******************************************************************
   1218px - 16 Columns
+  columns = 48px
+  gutters = 30px
+  1248px with 15px side margins
   
   div.col1 { width: 48px; }
   div.col2 { width: 126px; }
@@ -1013,15 +1027,49 @@ body:before {
     height: 1px;
     overflow: hidden; }
 
+  width: 1218px;
+  margin: 0px auto;
+  #site_title h1 a {
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 60px;
+    line-height: 90px;
+    font-size: 6rem;
+    line-height: 9rem; }
+
+  #entries, #sidebar, #footer {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
   #entries {
     float: left;
     width: 828px;
-    margin-left: 0; }
+    margin-left: 0;
+    background: yellow;
+    padding-left: 5px;
+    margin-right: 20px; }
+
+  .entry_excerpt:nth-child(odd) {
+    float: left;
+    width: 360px;
+    margin-left: 0;
+    background: teal; }
+  .entry_excerpt:nth-child(even) {
+    float: left;
+    width: 360px;
+    margin-left: 30px;
+    background: aqua; }
+  .entry_excerpt p {
+    text-align: justify;
+    text-justify: newspaper; }
 
   #sidebar {
     float: left;
     width: 360px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    background: pink;
+    margin: 0px; }
 
   #footer {
     clear: both; }
@@ -1155,6 +1203,9 @@ body:before {
 @media screen and (min-width: 1408px) {
   /******************************************************************
   1378PX - 16 Columns
+  colums = 58px
+  gutters = 30px
+  total 1408px with 15px side margins
   
   For reference:
   div.col1 { width: 58px; }
@@ -1219,15 +1270,46 @@ body:before {
     font-size: 1.1em;
     line-height: 21px; }
 
+  #site_title h1 a {
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 60px;
+    line-height: 90px;
+    font-size: 6rem;
+    line-height: 9rem; }
+
+  #entries, #sidebar, #footer {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
   #entries {
     float: left;
-    width: 938px;
-    margin-left: 0; }
+    width: 1026px;
+    margin-left: 0;
+    background: yellow;
+    padding-left: 5px; }
+
+  .entry_excerpt:nth-child(odd) {
+    float: left;
+    width: 322px;
+    margin-left: 0;
+    background: teal; }
+  .entry_excerpt:nth-child(even) {
+    float: left;
+    width: 322px;
+    margin-left: 30px;
+    background: aqua; }
+  .entry_excerpt p {
+    text-align: justify;
+    text-justify: newspaper; }
 
   #sidebar {
     float: left;
-    width: 410px;
-    margin-left: 30px; }
+    width: 322px;
+    margin-left: 30px;
+    background: pink;
+    margin: 0px; }
 
   #footer {
     clear: both; }
@@ -1370,6 +1452,37 @@ body:before {
           content: "1378 ~ 1408 and Above";
           background-color: hsla(360,60%,40%,0.7);}
   */ }
+@media screen and (min-width: 1680px) {
+  /******************************************************************
+  1378PX - 16 Columns
+  colums = 58px
+  gutters = 40px
+  total  with 20px side margins
+  
+  For reference:
+  div.col1 { width: 58px; }
+  div.col2 { width: 146px; }
+  div.col3 { width: 234px; }
+  div.col4 { width: 322px; }
+  div.col5 { width: 410px; }
+  div.col6 { width: 498px; }
+  div.col7 { width: 586px; }
+  div.col8 { width: 674px; }
+  div.col9 { width: 762px; }
+  div.col10 { width: 850px; }
+  div.col11 { width: 938px; }
+  div.col12 { width: 1026px; }
+  div.col13 { width: 1114px; }
+  div.col14 { width: 1202px; }
+  div.col15 { width: 1290px; }
+  div.col16 { width: 1378px; }
+  
+  ******************************************************************/
+  	/*
+  body:before {
+          content: "1378 ~ 1408 and Above";
+          background-color: hsla(360,60%,40%,0.7);}
+  */ }
 /******************************************************************
 SITE WIDE STYLES
 ******************************************************************/
@@ -1383,6 +1496,20 @@ body {
 
 #container {
   box-shadow: 0px 0px 200px #f2e8d1; }
+
+h1,
+h2 {
+  font-size: 26px;
+  line-height: 39px;
+  font-size: 2.6rem;
+  line-height: 3.9rem; }
+
+h3,
+h4 {
+  font-size: 18px;
+  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem; }
 
 a[href]:after {
   content: '\f442';
@@ -1433,7 +1560,7 @@ time {
     display: inline-block;
     -webkit-font-smoothing: antialiased;
     font: normal 16px/1 'Genericons';
-    vertical-align: text-bottom; }
+    vertical-align: bottom; }
 
 a.comments-link {
   font-size: 10px;
@@ -1595,9 +1722,13 @@ div.menu li {
     box-shadow: 1px 1px 3px #f2e8d1;
     -webkit-transition: all .5s ease-in; }
 
+.post {
+  margin-top: 30px; }
+
 .post_content h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 24px; }
+  line-height: 24px;
+  margin: 0px; }
   .post_content h2 a {
     color: #ffa145;
     text-decoration: none;

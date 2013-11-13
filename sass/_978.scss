@@ -1,5 +1,8 @@
 /******************************************************************
 978px - 12 Columns
+colums = 54px
+gutters = 30px
+1002px total with 12px side margins
 
 div.col1 { width: 54px; }
 div.col2 { width: 138px; }
@@ -16,31 +19,46 @@ div.col12 { width: 978px; }
 ******************************************************************/
 $layoutwidth : 978;
 @import "978gs";
+@include layout;
 
-body{
-	font-size: 1em;
-	line-height: 21px;}
-#entries{@include grid(8,true);}
-#sidebar{@include grid(4);}
-#footer{clear: both;}
+body{}
+#site_title h1 a{
+font-family: 'Georgia', Arial, sans-serif;
+@include font-size(60);
+}
+#entries, #sidebar, #footer{
+	@include font-size(14);
+}
+#entries{
+	@include grid(8,true);
+	background: yellow;
+	padding-left: 5px;
+	margin-right: 20px;
+}
 
-/*  */
-/* # */
-/* #footer{@include grid(12,true);} */
-/*
+.entry_excerpt {
+	&:nth-child(odd){
+		@include grid(4,true);
+		background: teal;
+	}
+	&:nth-child(even){
+	@include grid(4);
+		background: aqua;
 
-
-
-
-
-
-#nav_top{@include grid(12,true);
-	ul{margin-left: -30px;
-		li{
-			@include grid(2);
-			text-align: center;}
+	}
+	p{
+		text-align: justify;
+		text-justify:newspaper;
 	}
 }
+#sidebar{
+	@include grid(4);
+	background: pink;
+	margin: 0px;}
+#footer{clear: both;}
+
+/*
+
 #search{
 	@include grid(12);
 	padding-top:10px;
@@ -74,26 +92,7 @@ body{
 		}
 	}
 }
-#splash{
-	img{
-		height: auto;
-		width: 978px;
-	}
 
-	#splash_text{
-		@include grid(4);
-		background: $white;
-		margin-top: 15px;
-		margin-left: 60.2%;
-		padding: 5px 30px 0px 20px;
-
-		h3{
-			padding-top: 5px;
-			margin-top: 5px;
-			padding-bottom: 10px;
-		}
-	}
-}
 .thumbnail{@include grid(3,true); padding-right: 10px;max-height: 150px; overflow: hidden;}
 img.wp-post-image,
 img.attachment-thumbnail,

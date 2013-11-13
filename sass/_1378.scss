@@ -1,5 +1,8 @@
 /******************************************************************
 1378PX - 16 Columns
+colums = 58px
+gutters = 30px
+total 1408px with 15px side margins
 
 For reference:
 div.col1 { width: 58px; }
@@ -28,10 +31,40 @@ body{
 	font-size: 1.1em;
 	line-height: 21px;
 }
-#entries{@include grid(11,true);}
-#sidebar{@include grid(5);}
-#footer{clear: both;}
+body{}
+#site_title h1 a{
+font-family: 'Georgia', Arial, sans-serif;
+@include font-size(60);
+}
+#entries, #sidebar, #footer{
+	@include font-size(14);
+}
+#entries{
+	@include grid(12,true);
+	background: yellow;
+	padding-left: 5px;
+}
 
+.entry_excerpt {
+	&:nth-child(odd){
+		@include grid(4,true);
+		background: teal;
+	}
+	&:nth-child(even){
+	@include grid(4);
+		background: aqua;
+
+	}
+	p{
+		text-align: justify;
+		text-justify:newspaper;
+	}
+}
+#sidebar{
+	@include grid(4);
+	background: pink;
+	margin: 0px;}
+#footer{clear: both;}
 /*
 
 h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a{
