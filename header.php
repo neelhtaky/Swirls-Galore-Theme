@@ -8,7 +8,6 @@
 	<!-- This is the traditional favicon. Size: 16x16 or 32x32. vTransparency is OK. See wikipedia for info on browser support: http://mky.be/favicon/ -->
 	<link rel="shortcut icon" type="image/x-ico" href="<?php get_template_directory_uri(); ?>/images/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
-	<script type="text/javascript" src="/library/js/javascript.js"></script>
 
 	<title>
 		<?php if (function_exists('is_tag') && is_tag()) {

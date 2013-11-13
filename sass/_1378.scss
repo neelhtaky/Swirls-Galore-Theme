@@ -28,17 +28,9 @@ body{
 	font-size: 1.1em;
 	line-height: 21px;
 }
-#entries{width: 850px;
-	display: block;
-	float: left;
-}
-#sidebar{width: 410px;
-	display: block;
-	float: left;
-}
-#footer{
-clear: both;
-width: 1378px;}
+#entries{@include grid(11,true);}
+#sidebar{@include grid(5);}
+#footer{clear: both;}
 
 /*
 

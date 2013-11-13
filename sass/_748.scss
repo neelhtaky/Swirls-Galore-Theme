@@ -20,22 +20,30 @@ $layoutwidth : 748;
 @include layout;
 
 body{
-	font-size: 0.9em;
-	line-height: 21px;
+
 }
 
-#entries{@include grid(7,true);}
-#sidebar{@include grid(5);}
+#entries{
+	@include grid(6,true);
+	background: pink;
+	}
+#sidebar{@include grid(4);background: lime;}
 #footer{clear: both;}
 
-/*
-#nav_primary{@include grid(12,true);
-	ul {
-		li{
-			@include grid(2,true);
-		}
-	}
+#site_title h1 a{
+font-family: 'Georgia', Arial, sans-serif;
+@include font-size(50);
 }
+
+#sidebar{
+	padding: 0px;
+}
+
+#entries, #sidebar, #footer{
+	padding: 5px;
+	@include font-size(14);
+}
+/*
 
 .thumbnail{
 }

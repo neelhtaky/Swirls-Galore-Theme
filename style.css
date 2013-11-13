@@ -586,21 +586,27 @@ body:before {
 
   width: 300px;
   margin: 0px auto;
-  body {
-    font-size: 0.8em;
-    line-height: 21px; }
-
   #site_title h1 a {
-    font: 50px 'Georgia', Arial, sans-serif; }
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 50px;
+    line-height: 75px;
+    font-size: 5rem;
+    line-height: 7.5rem; }
 
-  #entries {
-    padding: 5px; }
+  #entries, #sidebar, #footer {
+    padding: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem; }
+
+  .post_content h2 a {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
 
   /*
-  #container{@include grid(8);}
-  body{
-  	font-size: 0.9em;
-  	line-height: 21px;}
   #nav_primary{
   	ul {margin: 0px;
   		li{
@@ -688,31 +694,39 @@ body:before {
 
   width: 748px;
   margin: 0px auto;
-  body {
-    font-size: 0.9em;
-    line-height: 21px; }
-
   #entries {
     float: left;
-    width: 428px;
-    margin-left: 0; }
+    width: 364px;
+    margin-left: 0;
+    background: pink; }
 
   #sidebar {
     float: left;
-    width: 300px;
-    margin-left: 20px; }
+    width: 236px;
+    margin-left: 20px;
+    background: lime; }
 
   #footer {
     clear: both; }
 
+  #site_title h1 a {
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 50px;
+    line-height: 75px;
+    font-size: 5rem;
+    line-height: 7.5rem; }
+
+  #sidebar {
+    padding: 0px; }
+
+  #entries, #sidebar, #footer {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
   /*
-  #nav_primary{@include grid(12,true);
-  	ul {
-  		li{
-  			@include grid(2,true);
-  		}
-  	}
-  }
   
   .thumbnail{
   }
@@ -999,6 +1013,19 @@ body:before {
     height: 1px;
     overflow: hidden; }
 
+  #entries {
+    float: left;
+    width: 828px;
+    margin-left: 0; }
+
+  #sidebar {
+    float: left;
+    width: 360px;
+    margin-left: 30px; }
+
+  #footer {
+    clear: both; }
+
   /*
   body{
   	font-size: 1em;
@@ -1193,18 +1220,17 @@ body:before {
     line-height: 21px; }
 
   #entries {
-    width: 850px;
-    display: block;
-    float: left; }
+    float: left;
+    width: 938px;
+    margin-left: 0; }
 
   #sidebar {
+    float: left;
     width: 410px;
-    display: block;
-    float: left; }
+    margin-left: 30px; }
 
   #footer {
-    clear: both;
-    width: 1378px; }
+    clear: both; }
 
   /*
   
@@ -1347,10 +1373,13 @@ body:before {
 /******************************************************************
 SITE WIDE STYLES
 ******************************************************************/
+html {
+  font-size: 62.5%; }
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444444;
-  font-size: 100%; }
+  /* 	@include font-size(12); */ }
 
 #container {
   box-shadow: 0px 0px 200px #f2e8d1; }
@@ -1393,7 +1422,10 @@ p.tags:before {
   vertical-align: top; }
 
 time {
-  font-size: 0.9em;
+  font-size: 10px;
+  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: normal;
   font-style: italic; }
   time:before {
@@ -1404,7 +1436,10 @@ time {
     vertical-align: text-bottom; }
 
 a.comments-link {
-  font-size: 0.9em;
+  font-size: 10px;
+  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-decoration: none;
   color: #444444; }
   a.comments-link:before {
@@ -1443,11 +1478,14 @@ a.comments-link {
     font-weight: bold;
     text-decoration: none; }
 
-#description {
+#description p {
   text-align: center;
   font-style: italic;
-  font-size: 0.9em;
-  margin-top: -15px; }
+  margin-top: 0px;
+  font-size: 14px;
+  line-height: 21px;
+  font-size: 1.4rem;
+  line-height: 2.1rem; }
 
 .menu_header {
   display: block;
@@ -1459,22 +1497,29 @@ a.comments-link {
   background-repeat: repeat;
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-variant: small-caps;
-  font-size: 1.1em;
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   border: 1px dashed #ecdebd;
   box-shadow: 0px 0px 15px #f2e8d1; }
 
 .menu_header a {
   display: block;
-  line-height: 40px;
   padding: 10px 10px 0px 10px;
   text-decoration: none;
   font-weight: normal;
   overflow-y: hidden;
   font-variant: small-caps;
-  color: #92278f; }
+  color: #92278f;
+  line-height: 40px; }
   .menu_header a:first-letter {
     font-family: "Beautiful-es";
-    font-size: 60px; }
+    font-size: 60px;
+    line-height: 90px;
+    font-size: 6rem;
+    line-height: 9rem;
+    line-height: 0.6; }
 
 .menu_header ul,
 div.menu ul {
@@ -1503,7 +1548,11 @@ div.menu li {
     height: auto; }
     .menu_header ul ul a:first-letter {
       font-family: "Beautiful-es";
-      font-size: 60px; }
+      font-size: 60px;
+      line-height: 90px;
+      font-size: 6rem;
+      line-height: 9rem;
+      line-height: 0.6; }
 
 .menu_header ul li:hover > ul {
   display: block; }
@@ -1548,13 +1597,12 @@ div.menu li {
 
 .post_content h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.3em; }
+  line-height: 24px; }
   .post_content h2 a {
     color: #ffa145;
     text-decoration: none;
-    font-weight: normal;
-    font-variant: small-caps;
-    text-transform: capitalize; }
+    font-weight: lighter;
+    text-transform: uppercase; }
 
 #sidebar {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif; }

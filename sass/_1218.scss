@@ -21,6 +21,11 @@ div.col16 { width: 1218px; }
 $layoutwidth : 1218;
 @import "978gs";
 
+#entries{@include grid(11,true);}
+#sidebar{@include grid(5);}
+#footer{clear: both;}
+
+
 /*
 body{
 	font-size: 1em;

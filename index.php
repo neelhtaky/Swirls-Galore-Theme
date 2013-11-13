@@ -40,7 +40,12 @@
 			<?php }?>
 			</p>
 		</footer>
-		        <p><?php echo the_excerpt(); ?></p>
+			<?php if ( is_singular() || is_single() ) {?>
+				 <p><?php echo the_content(); ?></p>
+			<?php } else {?>
+				<p><?php echo the_excerpt(); ?></p>
+			<?php }?>
+
 		    </section>
 
 
