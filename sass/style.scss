@@ -326,6 +326,15 @@ color:#555;
 }
 h3.widget-title{
 }
+#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+	-moz-column-count: 2;
+       -moz-column-gap: 10px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 10px;
+}
+.sponsors .textwidget{
+	padding-left: 15px;
+}
 #footer{
 	ul{
 		list-style: none;
