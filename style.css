@@ -1612,7 +1612,7 @@ a.comments-link {
 #description p {
   text-align: center;
   font-style: italic;
-  margin-top: 0px;
+  margin-top: -20px;
   font-size: 14px;
   line-height: 21px;
   font-size: 1.4rem;
