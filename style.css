@@ -10,6 +10,7 @@ License URI: http://creativecommons.org/licenses/
 Tags: white, two-columns, responsive, custom-header
 */
 /* IMPORT STYLES */
+/* $menu-col:			#606060; */
 .alert-help, .alert-info, .alert-error, .alert-success {
   padding: 5px 10px;
   border: 1px solid; }
@@ -1597,13 +1598,13 @@ a.comments-link {
   text-align: center; }
   #site_title h1 a {
     font-variant: small-caps;
-    background: -moz-linear-gradient(top, #b492bf 0%, #9d64a5 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #b492bf), color-stop(100%, #9d64a5));
-    background: -webkit-linear-gradient(top, #b492bf 0%, #9d64a5 100%);
-    background: -o-linear-gradient(top, #b492bf 0%, #9d64a5 100%);
-    background: -ms-linear-gradient(top, #b492bf 0%, #9d64a5 100%);
-    background: linear-gradient(to bottom, #b492bf 0%, #9d64a5 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b492bf', endColorstr='#9d64a5', GradientType=0 );
+    background-color: #1a82f7;
+    background-image: url(images/fallback-gradient.png);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b492bf), to(#9e64a5));
+    background-image: -webkit-linear-gradient(top, #b492bf, #9e64a5);
+    background-image: -moz-linear-gradient(top, #b492bf, #9e64a5);
+    background-image: -ms-linear-gradient(top, #b492bf, #9e64a5);
+    background-image: -o-linear-gradient(top, #b492bf, #9e64a5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -1634,23 +1635,22 @@ a.comments-link {
   line-height: 2.4rem;
   border: 1px dashed #ecdebd;
   box-shadow: 0px 0px 15px #f2e8d1; }
-
-.menu_header a {
-  display: block;
-  padding: 10px 10px 0px 10px;
-  text-decoration: none;
-  font-weight: normal;
-  overflow-y: hidden;
-  font-variant: small-caps;
-  color: #92278f;
-  line-height: 40px; }
-  .menu_header a:first-letter {
-    font-family: "Beautiful-es";
-    font-size: 60px;
-    line-height: 90px;
-    font-size: 6rem;
-    line-height: 9rem;
-    line-height: 0.6; }
+  .menu_header a {
+    display: block;
+    padding: 10px 10px 0px 10px;
+    text-decoration: none;
+    font-weight: normal;
+    overflow-y: hidden;
+    font-variant: small-caps;
+    color: #92278f;
+    line-height: 40px; }
+    .menu_header a:first-letter {
+      font-family: "Beautiful-es";
+      font-size: 60px;
+      line-height: 90px;
+      font-size: 6rem;
+      line-height: 9rem;
+      line-height: 0.6; }
 
 .menu_header ul, div.menu ul {
   list-style: none;
@@ -1747,6 +1747,9 @@ a.comments-link {
 
 .widget-title {
   background-image: url("library/images/stripes.png");
+  /* 	background-repeat: repeat; */ }
+
+h3.widget-title {
   text-transform: uppercase;
   font-weight: normal;
   color: #777777;

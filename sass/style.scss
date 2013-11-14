@@ -24,7 +24,7 @@ body:before{
  	bottom: 60px;
  	width: 100%;
  	text-align: center;
- 	color: $white;
+ 	color: white;
 }
 @media only screen and (min-width:0px) and (max-width: 767px){
 	@import "300";
@@ -166,13 +166,13 @@ color:#555;
 	text-align: center;
 	h1 a{
 		font-variant: small-caps;
-		background: -moz-linear-gradient(top, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(180,146,191,1)), color-stop(100%, rgba(157,100,165,1)));
-		background: -webkit-linear-gradient(top, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
-		background: -o-linear-gradient(top, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
-		background: -ms-linear-gradient(top, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
-		background: linear-gradient(to bottom, rgba(180,146,191,1) 0%, rgba(157,100,165,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b492bf', endColorstr='#9d64a5', GradientType=0 );
+		background-color: #1a82f7;
+		background-image: url(images/fallback-gradient.png);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($col-purple-light), to($col-purple-dark));
+		background-image: -webkit-linear-gradient(top, $col-purple-light, $col-purple-dark);
+		background-image:    -moz-linear-gradient(top, $col-purple-light, $col-purple-dark);
+		background-image:     -ms-linear-gradient(top, $col-purple-light, $col-purple-dark);
+		background-image:      -o-linear-gradient(top, $col-purple-light, $col-purple-dark);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		font-weight: bold;
@@ -200,10 +200,9 @@ color:#555;
 	@include font-size(16);
 	border: 1px dashed darken($col-tan, 5%);
 	box-shadow: 0px 0px 15px $col-tan;
-}
-.menu_header a{
-    display: block;
 
+	a{
+    display: block;
     padding: 10px 10px 0px 10px;
     text-decoration: none;
     font-weight: normal;
@@ -216,6 +215,7 @@ color:#555;
 		@include font-size(60);
 		line-height: 0.6;
 	}
+}
 }
 .menu_header ul, div.menu ul {
     list-style: none;
@@ -319,13 +319,17 @@ color:#555;
 }
 .widget-title{
 	background-image: url('library/images/stripes.png');
-	text-transform: uppercase;
+/* 	background-repeat: repeat; */
+
+
+}
+h3.widget-title{
+text-transform: uppercase;
 	font-weight: normal;
 	color: lighten($text-col,20%);
 	@include font-size(16);
-}
-h3.widget-title{
-}
+
+	}
 #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 2;
        -moz-column-gap: 10px;
