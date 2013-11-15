@@ -590,7 +590,7 @@ body:before {
 
   width: 300px;
   margin: 0px auto;
-  #site_title h1 a {
+  #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
     font-size: 50px;
     line-height: 75px;
@@ -783,6 +783,151 @@ body:before {
     background-color: rgba(41, 163, 163, 0.7); } }
 @media screen and (min-width: 1002px) and (max-width: 1247px) {
   /******************************************************************
+  748px - 12 Columns
+  columns = 44px
+  gutters = 20px
+  total 768 with 10px side margins
+  
+  div.col1 { width: 44px; }
+  div.col2 { width: 108px; }
+  div.col3 { width: 172px; }
+  div.col4 { width: 236px; }
+  div.col5 { width: 300px; }
+  div.col6 { width: 364px; }
+  div.col7 { width: 428px; }
+  div.col8 { width: 492px; }
+  div.col9 { width: 556px; }
+  div.col10 { width: 620px; }
+  div.col11 { width: 684px; }
+  div.col12 { width: 748px; }
+  ******************************************************************/
+  /*
+  
+  978 Grid System CSS Framework
+  http://978.gs
+  
+  Copyright (c) 2011 Brothers Roloff
+  http://www.brothersroloff.com
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  */
+  .layout-748 {
+    width: 748px;
+    margin: 0px auto; }
+
+  .row {
+    height: 1%; }
+
+  .row-end {
+    clear: both;
+    font: 1px/1px sans-serif;
+    height: 1px;
+    overflow: hidden; }
+
+  width: 748px;
+  margin: 0px auto;
+  body {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  #site_title h1 a {
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 55px;
+    line-height: 82.5px;
+    font-size: 5.5rem;
+    line-height: 8.25rem; }
+
+  #entries, #sidebar, #footer {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  #entries {
+    float: left;
+    width: 428px;
+    margin-left: 0;
+    margin-left: 5px;
+    margin-right: 10px;
+    text-align: justify;
+    text-justify: newspaper; }
+
+  .post_content h2 a {
+    font-size: 18px;
+    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem; }
+
+  #sidebar {
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-left: 0px; }
+    #sidebar a {
+      color: #c46100;
+      text-decoration: none;
+      border-bottom: 1px dotted; }
+
+  #footer {
+    clear: both; }
+
+  /*
+  
+  .thumbnail{
+  }
+  img.wp-post-image,
+  img.attachment-thumbnail,
+  img.attachment-medium,
+  img.attachment-large,
+  img.attachment-full {
+  }
+  
+  #sidebar ul li{
+  	.medium_rectangle{}
+  	.square_button{}
+  	.square_button:nth-last-child(-n+2){}
+  	.square_button:nth-child(2n){}
+  }
+  #sidebar .widget_archive, #sidebar .widget_categories, #sidebar .widget_recent_entries, #sidebar .widget_meta{
+  }
+  #footer{@include grid(12,true);
+  	li:nth-child(odd){}
+  	.widget{}
+  }
+  #copyatt{
+  	@include grid(12, true);
+  	p{
+  		@include grid(4);}
+  }
+  */
+  /* 	@import "978"; */
+  	/*
+  body:before {
+          content: "978 ~ 1002 to 1247px";
+          background-color: hsla(270,60%,40%,0.7);}
+  */ }
+@media screen and (min-width: 1248px) and (max-width: 1407px) {
+  /******************************************************************
   978px - 12 Columns
   colums = 54px
   gutters = 30px
@@ -882,7 +1027,6 @@ body:before {
     float: left;
     width: 306px;
     margin-left: 30px;
-    background: pink;
     margin: 0px; }
 
   #footer {
@@ -969,12 +1113,14 @@ body:before {
   		margin-right: 13px;}
   }
   */
+  /* 	@import "1218"; */
   	/*
   body:before {
-          content: "978 ~ 1002 to 1247px";
-          background-color: hsla(270,60%,40%,0.7);}
+          content: "1218 ~ 1248 to 1407px";
+          background-color: hsla(360,60%,40%,0.7);}
   */ }
-@media screen and (min-width: 1248px) and (max-width: 1407px) {
+@media screen and (min-width: 1408px) {
+  /* 	@import "1378"; */
   /******************************************************************
   1218px - 16 Columns
   columns = 48px
@@ -1079,7 +1225,6 @@ body:before {
     float: left;
     width: 360px;
     margin-left: 30px;
-    background: pink;
     margin: 0px; }
 
   #footer {
@@ -1208,258 +1353,6 @@ body:before {
   */
   	/*
   body:before {
-          content: "1218 ~ 1248 to 1407px";
-          background-color: hsla(360,60%,40%,0.7);}
-  */ }
-@media screen and (min-width: 1408px) {
-  /******************************************************************
-  1378PX - 16 Columns
-  colums = 58px
-  gutters = 30px
-  total 1408px with 15px side margins
-  
-  For reference:
-  div.col1 { width: 58px; }
-  div.col2 { width: 146px; }
-  div.col3 { width: 234px; }
-  div.col4 { width: 322px; }
-  div.col5 { width: 410px; }
-  div.col6 { width: 498px; }
-  div.col7 { width: 586px; }
-  div.col8 { width: 674px; }
-  div.col9 { width: 762px; }
-  div.col10 { width: 850px; }
-  div.col11 { width: 938px; }
-  div.col12 { width: 1026px; }
-  div.col13 { width: 1114px; }
-  div.col14 { width: 1202px; }
-  div.col15 { width: 1290px; }
-  div.col16 { width: 1378px; }
-  
-  ******************************************************************/
-  /*
-  
-  978 Grid System CSS Framework
-  http://978.gs
-  
-  Copyright (c) 2011 Brothers Roloff
-  http://www.brothersroloff.com
-  
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-  
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-  
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-  THE SOFTWARE.
-  
-  */
-  .layout-1378 {
-    width: 1378px;
-    margin: 0px auto; }
-
-  .row {
-    height: 1%; }
-
-  .row-end {
-    clear: both;
-    font: 1px/1px sans-serif;
-    height: 1px;
-    overflow: hidden; }
-
-  body {
-    font-size: 1.1em;
-    line-height: 21px; }
-
-  #site_title h1 a {
-    font-family: 'Georgia', Arial, sans-serif;
-    font-size: 60px;
-    line-height: 90px;
-    font-size: 6rem;
-    line-height: 9rem; }
-
-  #entries, #sidebar, #footer {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  #entries {
-    float: left;
-    width: 1026px;
-    margin-left: 0;
-    background: yellow;
-    padding-left: 5px; }
-
-  .entry_excerpt:nth-child(odd) {
-    float: left;
-    width: 322px;
-    margin-left: 0;
-    background: teal; }
-  .entry_excerpt:nth-child(even) {
-    float: left;
-    width: 322px;
-    margin-left: 30px;
-    background: aqua; }
-  .entry_excerpt p {
-    text-align: justify;
-    text-justify: newspaper; }
-
-  #sidebar {
-    float: left;
-    width: 322px;
-    margin-left: 30px;
-    background: pink;
-    margin: 0px; }
-
-  #footer {
-    clear: both; }
-
-  /*
-  
-  h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a{
-  	line-height: 1.2em !important;
-  }
-  
-  
-  #sidebar{@include grid(5);}
-  #footer{@include grid(16, true);}
-  #nav_top{@include grid(13,true);
-  	ul{margin-left: -30px;
-  		li{
-  			@include grid(3);}
-  	}
-  }
-  #search{
-  	@include grid(3);
-  	padding-top:10px;
-  	margin-bottom: -5px;
-  	input[type=search] {
-  		margin-bottom: 20px;
-  		width: 200px;
-  		height: 20px;
-  	}
-  }
-  #under_search{
-  	@include grid(16, true);
-  		&:after{top: -0.37em;}}
-  
-  ::-webkit-input-placeholder {color: transparent;}
-  :-moz-placeholder { color: transparent;}
-  ::-moz-placeholder {color: transparent;}
-  :-ms-input-placeholder {color: transparent;}
-  #header{
-  	@include grid(16, true);
-  }
-  #site_title {text-align: center;}
-  #description{margin-top: -1.3em; margin-bottom: -10px;}
-  
-  #nav_primary{@include grid(16,true);
-  	ul { margin-top: 5px; margin-bottom: 5px;margin-left: 126px;
-  		li{
-  			@include grid(3,true);
-  			text-align: center;
-  			margin-bottom: 5px;
-  		}
-  	}
-  }
-  #splash{
-  
-  
-  	background-size: 1378 auto;
-  	background-repeat: no-repeat;
-  
-  	img{
-  	width: auto;
-  	height: auto;
-  	}
-  
-  	#splash_text{
-  		@include grid(5);
-  		background: $white;
-  		margin-top: 15px;
-  		margin-left: 64%;
-  		padding: 5px 30px 0px 20px;
-  
-  		h3{
-  			padding-top: 5px;
-  			margin-top: 5px;
-  			padding-bottom: 10px;
-  		}
-  	}
-  }
-  
-  .thumbnail{@include grid(4,true);
-  	padding-right: 15px;
-  	max-height: 300px;
-  	overflow: hidden;}
-  img.wp-post-image,
-  img.attachment-thumbnail,
-  img.attachment-medium,
-  img.attachment-large,
-  img.attachment-full {width:100%;
-  height: auto;
-  
-  }
-  
-  a.read_more{width: 120px !important;}
-  
-  #respond input[type=text], textarea {
-  	width: 98% !important;}
-  #sidebar hr{
-  	@include grid(5,true);
-  	margin-top: 20px;
-  	margin-bottom: 20px;
-  	&:after{top: -0.37em;}}
-  #sidebar ul li{
-  	.medium_rectangle{padding-bottom:0px; padding-top:10px;margin-left: 30px;}
-  	.square_button{padding-top: 30px;margin-left: 31px;}
-  	.square_button:nth-last-child(-n+2){padding-bottom: 0px;}
-  	.square_button:nth-child(2n){padding-right: 13px;}
-  }
-  #sidebar .widget:not(.widget_text){
-  	@include grid(2,true);
-  	margin-left: 20px;
-  	&:nth-child(3n+1){
-  		margin-left: 30px;}
-  }
-  #footer{
-  	@include grid(16,true);
-  	li{
-  		margin-top: 0px;
-  		@include grid(4);
-  		&:first-child{@include grid(4,true);}
-  		ul li{
-  			margin-bottom: 15px;
-  			margin-left: 0px;
-  		}
-  	}
-  }
-  #footer hr{
-  	@include grid(16,true);
-  	&:after{top: -0.37em;}
-  }
-  #copyatt{
-  	@include grid(16, true);
-  	p{
-  		margin-top: 0px;
-  		margin-left: 0px !important;
-  		@include grid(5);
-  		margin-right: 45px;}
-  }
-  */
-  	/*
-  body:before {
           content: "1378 ~ 1408 and Above";
           background-color: hsla(360,60%,40%,0.7);}
   */ }
@@ -1503,10 +1396,16 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444444;
+  background-image: url("library/images/navbar.jpg");
+  background-repeat: repeat;
+  background-image: url("library/images/bg_left.png"), url("library/images/bg_right.png");
+  background-position: left top, right top;
+  background-repeat: no-repeat;
   /* 	@include font-size(12); */ }
 
 #container {
-  box-shadow: 0px 0px 200px #f2e8d1; }
+  box-shadow: 0px 0px 200px #f2e8d1;
+  background: white; }
 
 h1,
 h2 {
@@ -1596,7 +1495,7 @@ a.comments-link {
 
 #site_title {
   text-align: center; }
-  #site_title h1 a {
+  #site_title h1 a, #site_title h4 a {
     font-variant: small-caps;
     background-color: #1a82f7;
     background-image: url(images/fallback-gradient.png);

@@ -20,10 +20,11 @@ $layoutwidth:300;
 body{
 
 }
-
-#site_title h1 a{
-font-family: 'Georgia', Arial, sans-serif;
-@include font-size(50);
+#site_title{
+	h1 a, h4 a{
+		font-family: 'Georgia', Arial, sans-serif;
+		@include font-size(50);
+	}
 }
 
 #entries, #sidebar, #footer{

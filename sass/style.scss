@@ -39,21 +39,24 @@ body:before{
         content: "748 ~ 768 to 1001px";
         background-color: hsla(180,60%,40%,0.7);}}
 @media screen and (min-width:1002px) and (max-width:1247px){
-	@import "978";
+	@import "748";
+/* 	@import "978"; */
 	/*
 body:before {
         content: "978 ~ 1002 to 1247px";
         background-color: hsla(270,60%,40%,0.7);}
 */}
 @media screen and (min-width:1248px) and (max-width:1407px){
-	@import "1218";
+	@import "978";
+/* 	@import "1218"; */
 	/*
 body:before {
         content: "1218 ~ 1248 to 1407px";
         background-color: hsla(360,60%,40%,0.7);}
 */}
 @media screen and (min-width:1408px){
-	@import "1378";
+/* 	@import "1378"; */
+	@import "1218";
 	/*
 body:before {
         content: "1378 ~ 1408 and Above";
@@ -73,11 +76,23 @@ SITE WIDE STYLES
 html { font-size: 62.5%; }
 
 body{
+
 	font-family: $sans-serif;
 	color: $text-col;
+	background-image: url('library/images/navbar.jpg');
+	background-repeat: repeat;
+	background-image: url('library/images/bg_left.png'), url('library/images/bg_right.png');
+	background-position: left top, right top;
+	background-repeat: no-repeat;
+
 /* 	@include font-size(12); */
 }
-#container{box-shadow: 0px 0px 200px #f2e8d1;}
+#container{
+	box-shadow: 0px 0px 200px #f2e8d1;
+	background: white;
+
+
+}
 
 h1,
 h2 {
@@ -164,7 +179,7 @@ color:#555;
 
 #site_title {
 	text-align: center;
-	h1 a{
+	h1 a, h4 a{
 		font-variant: small-caps;
 		background-color: #1a82f7;
 		background-image: url(images/fallback-gradient.png);

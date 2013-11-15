@@ -49,10 +49,8 @@ jQuery(function() {
 
 <body <?php body_class(''); ?>>
 
-<div id="container" class="layout-300 layout-748 layout-978 layout-1218 layout-1378">
-<div id="gs-overlay">&nbsp;</div>
-<a href="http://978.gs" id="gs-overlay-badge" style="outline: 0;">
-<img src="http://978.gs/resources/img/978-badge.png" alt="This site is built with 978 grid system" width="59" height="25" style="border: 0;"></a>
+
+
 
 	<header id="header" role="banner">
 
@@ -70,6 +68,11 @@ jQuery(function() {
 		</div><!-- .description END -->
 
 	</header>
-
+<div id="container" class="layout-300 layout-748 layout-978 layout-1218 layout-1378">
+<!--
+<div id="gs-overlay">&nbsp;</div>
+<a href="http://978.gs" id="gs-overlay-badge" style="outline: 0;">
+<img src="http://978.gs/resources/img/978-badge.png" alt="This site is built with 978 grid system" width="59" height="25" style="border: 0;"></a>
+-->
 	<?php wp_nav_menu(array('theme_location' => 'nav_primary', 'container_id' => 'nav_primary', 'container_class' => 'menu_header')); ?>
 
