@@ -1,6 +1,6 @@
 <aside id="sidebar">
 	<ul>
-		<?php if ( is_active_sidebar( 'primary' ) ) :{ ?>
+		<?php if ( is_active_sidebar( 'primary' ) ) : ?>
 			<?php if ( is_404() || is_single() || is_category() || is_day() || is_month() || is_year() || is_search() || is_paged() ) { ?>
 			<section>
 			    <?if (is_404()) { ?>
