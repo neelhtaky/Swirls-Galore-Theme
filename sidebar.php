@@ -15,7 +15,7 @@
 			    	<aside class="byline meta">
 						<p>
 							This post was written by <address class="author vcard"><?php the_author_posts_link(); ?></address>
-							on	<time pubdate class="published" title="<?php the_time('l, F jS, Y, g:i a'); ?>"><?php the_time('F j, Y'); ?></time>.
+							on	<time pubdate class="published" title="<?php get_option('date_format'); ?></time>.
 							</p>
 							<p>
 							It was posted under <?php the_category(', ') ?>.
@@ -32,19 +32,19 @@
 			    <?php } elseif (is_category()) { ?>
 			    <p>You are currently browsing the archives for the <?php single_cat_title(''); ?> category.</p>
 			    <?php } elseif (is_day()) { ?>
-			    <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> blog archives
-			    for the day <?php the_time('l, F jS, Y'); ?>.</p>
+			    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives
+			    for the day <?php get_option('date_format'); ?>.</p>
 			    <?php } elseif (is_month()) { ?>
-			    <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> blog archives
+			    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives
 			    for <?php the_time('F, Y'); ?>.</p>
 			    <?php } elseif (is_year()) { ?>
-			    <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> blog archives
+			    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives
 			    for the year <?php the_time('Y'); ?>.</p>
 			    <?php } elseif (is_search()) { ?>
-			    <p>You have searched the <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> blog archives
+			    <p>You have searched the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives
 			    for <strong>'<?php the_search_query(); ?>'</strong>. If you are unable to find anything in these search results, you can try one of these links.</p>
 			    <?php /* If this set is paginated */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-			    <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> blog archives.</p>
+			    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives.</p>
 		    <?php } ?>
 		</section>
 	<?php }?>
