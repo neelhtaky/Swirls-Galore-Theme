@@ -7,7 +7,7 @@ Description: A theme made by yours truely, Kat Skinner, and the wonderful Hisham
 Version: 0.3
 License: Attribution-NonCommercial-NoDerivs. CC BY-NC-ND.
 License URI: http://creativecommons.org/licenses/
-Tags: white, two-columns, responsive, custom-header
+Tags: white, two-columns, custom-header
 */
 
 /* IMPORT STYLES */
@@ -28,11 +28,9 @@ body:before{
 }
 @media only screen and (min-width:0px) and (max-width: 767px){
 	@import "300";
-/*
 	 body:before {
 	 	content: "300 ~ 0 to 479px";
-        background-color: hsla(90,60%,40%,0.7);}
-*/}
+        background-color: hsla(90,60%,40%,0.7);}}
 @media only screen and (min-width: 768px) and (max-width:1001px) {
 	@import "748";
     body:before {
@@ -41,27 +39,21 @@ body:before{
 @media screen and (min-width:1002px) and (max-width:1247px){
 	@import "748";
 /* 	@import "978"; */
-	/*
-body:before {
-        content: "978 ~ 1002 to 1247px";
-        background-color: hsla(270,60%,40%,0.7);}
-*/}
+	body:before {
+        content: "748 ~ 1002 to 1247px";
+        background-color: hsla(270,60%,40%,0.7);}}
 @media screen and (min-width:1248px) and (max-width:1407px){
 	@import "978";
 /* 	@import "1218"; */
-	/*
-body:before {
-        content: "1218 ~ 1248 to 1407px";
-        background-color: hsla(360,60%,40%,0.7);}
-*/}
+	body:before {
+        content: "978 ~ 1248 to 1407px";
+        background-color: hsla(360,60%,40%,0.7);}}
 @media screen and (min-width:1408px){
 /* 	@import "1378"; */
 	@import "1218";
-	/*
-body:before {
-        content: "1378 ~ 1408 and Above";
-        background-color: hsla(360,60%,40%,0.7);}
-*/}
+	body:before {
+        content: "1218 ~ 1408 and Above";
+        background-color: hsla(360,60%,40%,0.7);}}
 @media screen and (min-width:1680px){
 	@import "1680";
 	/*
@@ -90,8 +82,6 @@ body{
 #container{
 	box-shadow: 0px 0px 200px #f2e8d1;
 	background: white;
-
-
 }
 
 h1,
@@ -175,6 +165,36 @@ color:#555;
 background:$alert-blue;
 color:#555;
 }
+
+.sticky{
+	background: lighten($col-tan,9%);
+	border: 2px solid lighten($col-purple-light,25%);
+	padding: 10px;
+}
+.wp-caption {
+	border: 1px solid lighten($col-purple-light,25%);
+	background: lighten($col-tan,9%);
+	text-align: center;
+	padding-top: 10px;
+	margin: 10px;
+	-moz-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	img{
+		margin: 0;
+		padding: 0;
+		border: 0 none;
+	}
+}
+
+.wp-caption p.wp-caption-text, .gallery-caption p.gallery-caption-text {
+	@include font-size(12);
+	font-style: italic;
+	padding: 0px 8px;
+	margin: 0;
+}
+.bypostauthor{}
 
 
 #site_title {

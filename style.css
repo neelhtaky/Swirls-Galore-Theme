@@ -7,7 +7,7 @@ Description: A theme made by yours truely, Kat Skinner, and the wonderful Hisham
 Version: 0.3
 License: Attribution-NonCommercial-NoDerivs. CC BY-NC-ND.
 License URI: http://creativecommons.org/licenses/
-Tags: white, two-columns, responsive, custom-header
+Tags: white, two-columns, custom-header
 */
 /* IMPORT STYLES */
 /* $menu-col:			#606060; */
@@ -634,11 +634,9 @@ body:before {
   #respond{@include grid(8,true);}
   #footer{@include grid(8, true);}
   */
-  /*
-  	 body:before {
-  	 	content: "300 ~ 0 to 479px";
-          background-color: hsla(90,60%,40%,0.7);}
-  */ }
+  body:before {
+    content: "300 ~ 0 to 479px";
+    background-color: rgba(102, 163, 41, 0.7); } }
 @media only screen and (min-width: 768px) and (max-width: 1001px) {
   /******************************************************************
   748px - 12 Columns
@@ -921,11 +919,9 @@ body:before {
   }
   */
   /* 	@import "978"; */
-  	/*
   body:before {
-          content: "978 ~ 1002 to 1247px";
-          background-color: hsla(270,60%,40%,0.7);}
-  */ }
+    content: "748 ~ 1002 to 1247px";
+    background-color: rgba(102, 41, 163, 0.7); } }
 @media screen and (min-width: 1248px) and (max-width: 1407px) {
   /******************************************************************
   978px - 12 Columns
@@ -1114,11 +1110,9 @@ body:before {
   }
   */
   /* 	@import "1218"; */
-  	/*
   body:before {
-          content: "1218 ~ 1248 to 1407px";
-          background-color: hsla(360,60%,40%,0.7);}
-  */ }
+    content: "978 ~ 1248 to 1407px";
+    background-color: rgba(163, 41, 41, 0.7); } }
 @media screen and (min-width: 1408px) {
   /* 	@import "1378"; */
   /******************************************************************
@@ -1351,11 +1345,9 @@ body:before {
   		margin-right: 45px;}
   }
   */
-  	/*
   body:before {
-          content: "1378 ~ 1408 and Above";
-          background-color: hsla(360,60%,40%,0.7);}
-  */ }
+    content: "1218 ~ 1408 and Above";
+    background-color: rgba(163, 41, 41, 0.7); } }
 @media screen and (min-width: 1680px) {
   /******************************************************************
   1378PX - 16 Columns
@@ -1492,6 +1484,35 @@ a.comments-link {
 ::-webkit-selection {
   background: #d5edf8;
   color: #555; }
+
+.sticky {
+  background: #fcfaf5;
+  border: 2px solid #ebe2ee;
+  padding: 10px; }
+
+.wp-caption {
+  border: 1px solid #ebe2ee;
+  background: #fcfaf5;
+  text-align: center;
+  padding-top: 10px;
+  margin: 10px;
+  -moz-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
+  .wp-caption img {
+    margin: 0;
+    padding: 0;
+    border: 0 none; }
+
+.wp-caption p.wp-caption-text, .gallery-caption p.gallery-caption-text {
+  font-size: 12px;
+  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-style: italic;
+  padding: 0px 8px;
+  margin: 0; }
 
 #site_title {
   text-align: center; }
