@@ -75,7 +75,7 @@ body{
 	background-repeat: repeat;
 	background-image: url('library/images/bg_left.png'), url('library/images/bg_right.png');
 	background-position: left top, right top;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 
 /* 	@include font-size(12); */
 }
@@ -83,15 +83,13 @@ body{
 	box-shadow: 0px 0px 200px #f2e8d1;
 	background: white;
 }
-
-h1,
-h2 {
-    @include font-size(26);
-}
-
-h3,
-h4 {
-    @include font-size(18);
+a{
+	color: darken($col-coral,15%);
+	text-decoration: none;
+	&:hover{
+		color: orangered;
+		border-bottom: 1px dotted;
+	}
 }
 a[href]:after {
 	content: '\f442';
@@ -295,7 +293,7 @@ color:#555;
 .menu_header ul li.current-menu-ancestor > a,
 .menu_header ul li.current-menu-item > a,
 .menu_header ul li.current-menu-parent > a {
-    color: $col-tan;
+
 }
 
 .thumbnail{
@@ -330,17 +328,34 @@ color:#555;
 }
 .post{margin-top: 30px;}
 .post_content {
+	h1{
+		 @include font-size(32);
+		 line-height: 32px;
+		 text-align: left;
+	}
 	h2{
+		color: $col-purple-dark;
+		text-align: left;
+		@include font-size(32);
 		font-family: $sans-serif;
-		line-height: 24px;
+		line-height: 30px;
 		margin: 0px;
 		a{
-			color: $col-orange;
+			color: darken($col-coral,15%);
 			text-decoration: none;
 			font-weight: lighter;
 			text-transform: uppercase;
 		}
 	}
+
+	h3 {
+		 @include font-size(24);
+		 line-height: 25px;
+		 margin-bottom: 0px;
+	}
+	h4 { @include font-size(18);}
+	h5 {  @include font-size(16);font-weight: bold;}
+	h6 { @include font-size(8); font-style: italic;}
 }
 #sidebar{
 	font-family: $serif;
@@ -351,9 +366,10 @@ color:#555;
 			padding-left: 15px;
 		}
 	}
+	a{border-bottom: 1px dotted;}
 }
 .widget-title{
-	background-image: url('library/images/stripes.png');
+	background-image: url('library/images/stripe.png');
 /* 	background-repeat: repeat; */
 
 

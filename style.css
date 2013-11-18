@@ -590,12 +590,18 @@ body:before {
 
   width: 300px;
   margin: 0px auto;
+  body {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
   #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
-    font-size: 50px;
-    line-height: 75px;
-    font-size: 5rem;
-    line-height: 7.5rem; }
+    font-size: 55px;
+    line-height: 82.5px;
+    font-size: 5.5rem;
+    line-height: 8.25rem; }
 
   #entries, #sidebar, #footer {
     padding: 5px;
@@ -603,6 +609,9 @@ body:before {
     line-height: 18px;
     font-size: 1.2rem;
     line-height: 1.8rem; }
+
+  #entries {
+    padding-top: 130px; }
 
   .post_content h2 a {
     font-size: 16px;
@@ -705,7 +714,7 @@ body:before {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  #site_title h1 a {
+  #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
     font-size: 55px;
     line-height: 82.5px;
@@ -724,6 +733,7 @@ body:before {
     margin-left: 0;
     margin-left: 5px;
     margin-right: 10px;
+    margin-top: -15px;
     text-align: justify;
     text-justify: newspaper; }
 
@@ -739,10 +749,6 @@ body:before {
     margin-left: 20px;
     margin-right: 0px;
     margin-left: 0px; }
-    #sidebar a {
-      color: #c46100;
-      text-decoration: none;
-      border-bottom: 1px dotted; }
 
   #footer {
     clear: both; }
@@ -847,7 +853,7 @@ body:before {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  #site_title h1 a {
+  #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
     font-size: 55px;
     line-height: 82.5px;
@@ -866,6 +872,7 @@ body:before {
     margin-left: 0;
     margin-left: 5px;
     margin-right: 10px;
+    margin-top: -15px;
     text-align: justify;
     text-justify: newspaper; }
 
@@ -881,10 +888,6 @@ body:before {
     margin-left: 20px;
     margin-right: 0px;
     margin-left: 0px; }
-    #sidebar a {
-      color: #c46100;
-      text-decoration: none;
-      border-bottom: 1px dotted; }
 
   #footer {
     clear: both; }
@@ -984,12 +987,18 @@ body:before {
 
   width: 978px;
   margin: 0px auto;
-  #site_title h1 a {
+  body {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
-    font-size: 60px;
-    line-height: 90px;
-    font-size: 6rem;
-    line-height: 9rem; }
+    font-size: 55px;
+    line-height: 82.5px;
+    font-size: 5.5rem;
+    line-height: 8.25rem; }
 
   #entries, #sidebar, #footer {
     font-size: 14px;
@@ -1002,22 +1011,25 @@ body:before {
     width: 642px;
     margin-left: 0;
     background: yellow;
-    padding-left: 5px;
-    margin-right: 20px; }
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -15px; }
 
-  .entry_excerpt:nth-child(odd) {
-    float: left;
-    width: 306px;
-    margin-left: 0;
-    background: teal; }
-  .entry_excerpt:nth-child(even) {
-    float: left;
-    width: 306px;
-    margin-left: 30px;
-    background: aqua; }
-  .entry_excerpt p {
-    text-align: justify;
-    text-justify: newspaper; }
+  .entry_excerpt {
+    	/*
+    &:nth-child(odd){
+    		@include grid(4,true);
+    		background: teal;
+    	}
+    	&:nth-child(even){
+    	@include grid(4);
+    		background: aqua;
+    
+    	}
+    */ }
+    .entry_excerpt p {
+      text-align: justify;
+      text-justify: newspaper; }
 
   #sidebar {
     float: left;
@@ -1392,26 +1404,19 @@ body {
   background-repeat: repeat;
   background-image: url("library/images/bg_left.png"), url("library/images/bg_right.png");
   background-position: left top, right top;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   /* 	@include font-size(12); */ }
 
 #container {
   box-shadow: 0px 0px 200px #f2e8d1;
   background: white; }
 
-h1,
-h2 {
-  font-size: 26px;
-  line-height: 39px;
-  font-size: 2.6rem;
-  line-height: 3.9rem; }
-
-h3,
-h4 {
-  font-size: 18px;
-  line-height: 27px;
-  font-size: 1.8rem;
-  line-height: 2.7rem; }
+a {
+  color: #f77a00;
+  text-decoration: none; }
+  a:hover {
+    color: orangered;
+    border-bottom: 1px dotted; }
 
 a[href]:after {
   content: '\f442';
@@ -1610,12 +1615,6 @@ a.comments-link {
 .menu_header ul ul :hover > a {
   background: #f2e8d1; }
 
-.menu_header ul li.current_page_item > a,
-.menu_header ul li.current-menu-ancestor > a,
-.menu_header ul li.current-menu-item > a,
-.menu_header ul li.current-menu-parent > a {
-  color: #f2e8d1; }
-
 .thumbnail {
   width: 293px;
   height: 166px;
@@ -1647,15 +1646,52 @@ a.comments-link {
 .post {
   margin-top: 30px; }
 
+.post_content h1 {
+  font-size: 32px;
+  line-height: 48px;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  line-height: 32px;
+  text-align: left; }
 .post_content h2 {
+  color: #9e64a5;
+  text-align: left;
+  font-size: 32px;
+  line-height: 48px;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 24px;
+  line-height: 30px;
   margin: 0px; }
   .post_content h2 a {
-    color: #ffa145;
+    color: #f77a00;
     text-decoration: none;
     font-weight: lighter;
     text-transform: uppercase; }
+.post_content h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  line-height: 25px;
+  margin-bottom: 0px; }
+.post_content h4 {
+  font-size: 18px;
+  line-height: 27px;
+  font-size: 1.8rem;
+  line-height: 2.7rem; }
+.post_content h5 {
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: bold; }
+.post_content h6 {
+  font-size: 8px;
+  line-height: 12px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  font-style: italic; }
 
 #sidebar {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
@@ -1664,9 +1700,11 @@ a.comments-link {
     padding: 0px; }
     #sidebar ul ul li {
       padding-left: 15px; }
+  #sidebar a {
+    border-bottom: 1px dotted; }
 
 .widget-title {
-  background-image: url("library/images/stripes.png");
+  background-image: url("library/images/stripe.png");
   /* 	background-repeat: repeat; */ }
 
 h3.widget-title {
