@@ -68,20 +68,30 @@ SITE WIDE STYLES
 html { font-size: 62.5%; }
 
 body{
-
+/* 	background-image: url('library/images/bg.jpg'); */
 	font-family: $sans-serif;
 	color: $text-col;
-	background-image: url('library/images/navbar.jpg');
-	background-repeat: repeat;
-	background-image: url('library/images/bg_left.png'), url('library/images/bg_right.png');
+background-image: url('library/images/bg_left.png'), 	url('library/images/bg_right.png');
 	background-position: left top, right top;
 	background-repeat: repeat-y;
+
 
 /* 	@include font-size(12); */
 }
 #container{
 	box-shadow: 0px 0px 200px #f2e8d1;
 	background: white;
+	/*
+
+*/
+
+
+	/*
+	border-left-width: 445px;
+border-left-image: url('library/images/bg_left.png');
+    border-right-width: 393px;
+    border-right-image: url('library/images/bg_right.png');
+*/
 }
 a{
 	color: darken($col-coral,15%);
@@ -103,7 +113,7 @@ a[href*="quickneed"]:after, a[href^="/"]:after, a[href^="#"]:after, a[href^="mai
 a[rel="author"]:before{
 	color: $text-col;
 	content: '\f304';
-	display: inline-block;
+/* 	display: inline-block; */
 	-webkit-font-smoothing: antialiased;
 	font: normal 16px/1 'Genericons';
 	vertical-align: top;
@@ -130,7 +140,7 @@ time{
 	font-style: italic;
 	&:before{
 		content: '\f303';
-		display: inline-block;
+/* 		display: inline-block; */
 		-webkit-font-smoothing: antialiased;
 		font: normal 16px/1 'Genericons';
 		vertical-align:bottom;
