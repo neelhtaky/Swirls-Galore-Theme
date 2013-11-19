@@ -57,6 +57,7 @@
 			<p><?php echo the_excerpt(); ?></p>
 <?php }?>
 	</article>
+	<hr>
 	<?php endwhile; else: ?>
 		  <p>
 		    Sorry, no posts matched your criteria.

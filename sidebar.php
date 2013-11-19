@@ -7,7 +7,7 @@
 		        <?php the_post_thumbnail(); ?>
 		    </aside>
 		    <aside class="byline meta">
-				<p>
+				<p class="post_details">
 					This post was written by <address class="author vcard"><?php the_author_posts_link(); ?></address>
 				on	<time pubdate class="published" title="<?php the_time('l, F jS, Y, g:i a'); ?>"><?php the_time('F j, Y'); ?></time>.
 				It was posted under <?php the_category(', ') ?>.

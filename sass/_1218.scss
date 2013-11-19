@@ -25,10 +25,12 @@ $layoutwidth : 1218;
 @import "978gs";
 @include layout;
 
-body{}
-#site_title h1 a{
+body{
+	@include font-size(14);
+}
+#site_title h1 a, #site_title h4 a{
 font-family: 'Georgia', Arial, sans-serif;
-@include font-size(60);
+@include font-size(65);
 }
 #entries, #sidebar, #footer{
 	@include font-size(14);
