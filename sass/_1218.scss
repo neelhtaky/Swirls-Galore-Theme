@@ -28,6 +28,22 @@ $layoutwidth : 1218;
 body{
 	@include font-size(14);
 }
+
+#entries {
+ -moz-column-width: 270px;
+ -webkit-column-width: 270px;
+ -moz-column-gap: 14px;
+ -webkit-column-gap: 14px;
+
+}
+
+.entry_excerpt {
+ display: inline-block;
+ margin:  0.25rem;
+ padding:  1rem;
+ width:  100%;
+}
+
 #site_title h1 a, #site_title h4 a{
 font-family: 'Georgia', Arial, sans-serif;
 @include font-size(65);
@@ -37,26 +53,23 @@ font-family: 'Georgia', Arial, sans-serif;
 }
 #entries{
 	@include grid(11,true);
-	background: yellow;
 	padding-left: 5px;
-	margin-right: 20px;
-}
-
-.entry_excerpt {
-	&:nth-child(odd){
-		@include grid(5,true);
-		background: teal;
-	}
-	&:nth-child(even){
-	@include grid(5);
-		background: aqua;
-
-	}
-	p{
-		text-align: justify;
-		text-justify:newspaper;
+	padding-right: 20px;
+	.thumbnail{
+		background: CadetBlue;
+		margin: 0 auto;
 	}
 }
+
+.post_content {
+	h2{text-align: center;
+		a{
+			@include font-size(24);
+
+		}
+	}
+}
+
 #sidebar{
 	@include grid(5);
 

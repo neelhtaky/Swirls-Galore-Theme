@@ -25,35 +25,28 @@ body{
 	@include font-size(14);
 }
 #site_title h1 a, #site_title h4 a{
-font-family: 'Georgia', Arial, sans-serif;
-@include font-size(55);
+	font-family: 'Georgia', Arial, sans-serif;
+	@include font-size(55);
 }
 #entries, #sidebar, #footer{
 	@include font-size(14);
 }
 #entries{
 	@include grid(8,true);
-	background: yellow;
+	margin-top: -15px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-top: -15px;
+	.thumbnail{
+		background: CadetBlue;
+		margin: 0 auto;
+	}
 }
+.post_content {
+	h2{text-align: left;
+		a{
+			@include font-size(22);
 
-.entry_excerpt {
-	/*
-&:nth-child(odd){
-		@include grid(4,true);
-		background: teal;
-	}
-	&:nth-child(even){
-	@include grid(4);
-		background: aqua;
-
-	}
-*/
-	p{
-		text-align: justify;
-		text-justify:newspaper;
+		}
 	}
 }
 #sidebar{

@@ -731,8 +731,8 @@ body:before {
     float: left;
     width: 428px;
     margin-left: 0;
-    margin-left: 5px;
-    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-top: -15px;
     text-align: justify;
     text-justify: newspaper; }
@@ -740,11 +740,13 @@ body:before {
       background: CadetBlue;
       margin: 0 auto; }
 
-  .post_content h2 a {
-    font-size: 18px;
-    line-height: 27px;
-    font-size: 1.8rem;
-    line-height: 2.7rem; }
+  .post_content h2 {
+    text-align: left; }
+    .post_content h2 a {
+      font-size: 18px;
+      line-height: 27px;
+      font-size: 1.8rem;
+      line-height: 2.7rem; }
 
   #sidebar {
     float: left;
@@ -873,8 +875,8 @@ body:before {
     float: left;
     width: 428px;
     margin-left: 0;
-    margin-left: 5px;
-    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-top: -15px;
     text-align: justify;
     text-justify: newspaper; }
@@ -882,11 +884,13 @@ body:before {
       background: CadetBlue;
       margin: 0 auto; }
 
-  .post_content h2 a {
-    font-size: 18px;
-    line-height: 27px;
-    font-size: 1.8rem;
-    line-height: 2.7rem; }
+  .post_content h2 {
+    text-align: left; }
+    .post_content h2 a {
+      font-size: 18px;
+      line-height: 27px;
+      font-size: 1.8rem;
+      line-height: 2.7rem; }
 
   #sidebar {
     float: left;
@@ -1016,26 +1020,20 @@ body:before {
     float: left;
     width: 642px;
     margin-left: 0;
-    background: yellow;
+    margin-top: -15px;
     padding-left: 15px;
-    padding-right: 15px;
-    margin-top: -15px; }
+    padding-right: 15px; }
+    #entries .thumbnail {
+      background: CadetBlue;
+      margin: 0 auto; }
 
-  .entry_excerpt {
-    	/*
-    &:nth-child(odd){
-    		@include grid(4,true);
-    		background: teal;
-    	}
-    	&:nth-child(even){
-    	@include grid(4);
-    		background: aqua;
-    
-    	}
-    */ }
-    .entry_excerpt p {
-      text-align: justify;
-      text-justify: newspaper; }
+  .post_content h2 {
+    text-align: left; }
+    .post_content h2 a {
+      font-size: 22px;
+      line-height: 33px;
+      font-size: 2.2rem;
+      line-height: 3.3rem; }
 
   #sidebar {
     float: left;
@@ -1204,6 +1202,18 @@ body:before {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
+  #entries {
+    -moz-column-width: 270px;
+    -webkit-column-width: 270px;
+    -moz-column-gap: 14px;
+    -webkit-column-gap: 14px; }
+
+  .entry_excerpt {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 1rem;
+    width: 100%; }
+
   #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
     font-size: 65px;
@@ -1221,23 +1231,19 @@ body:before {
     float: left;
     width: 828px;
     margin-left: 0;
-    background: yellow;
     padding-left: 5px;
-    margin-right: 20px; }
+    padding-right: 20px; }
+    #entries .thumbnail {
+      background: CadetBlue;
+      margin: 0 auto; }
 
-  .entry_excerpt:nth-child(odd) {
-    float: left;
-    width: 360px;
-    margin-left: 0;
-    background: teal; }
-  .entry_excerpt:nth-child(even) {
-    float: left;
-    width: 360px;
-    margin-left: 30px;
-    background: aqua; }
-  .entry_excerpt p {
-    text-align: justify;
-    text-justify: newspaper; }
+  .post_content h2 {
+    text-align: center; }
+    .post_content h2 a {
+      font-size: 24px;
+      line-height: 36px;
+      font-size: 2.4rem;
+      line-height: 3.6rem; }
 
   #sidebar {
     float: left;
@@ -1408,6 +1414,9 @@ SITE WIDE STYLES
 ******************************************************************/
 html {
   font-size: 62.5%; }
+
+*, *:before, *:after {
+  box-sizing: border-box !important; }
 
 body {
   /* 	background-image: url('library/images/bg.jpg'); */
@@ -1695,6 +1704,10 @@ a.comments-link {
     box-shadow: 1px 1px 3px #f2e8d1;
     -webkit-transition: all .5s ease-in; }
 
+.entry_excerpt p {
+  text-align: justify;
+  text-justify: newspaper; }
+
 .post {
   margin-top: 30px; }
 
@@ -1707,7 +1720,6 @@ a.comments-link {
   text-align: left; }
 .post_content h2 {
   color: #9e64a5;
-  text-align: left;
   font-size: 32px;
   line-height: 48px;
   font-size: 3.2rem;
@@ -1748,7 +1760,7 @@ a.comments-link {
 a.read_more {
   display: block;
   text-align: center;
-  width: 100px;
+  width: 120px;
   margin: 0 auto;
   color: #444444;
   padding: 0px 10px;
