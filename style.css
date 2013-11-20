@@ -1287,8 +1287,8 @@ body:before {
   div.col14 { width: 1360px; }
   div.col15 { width: 1460px; }
   div.col16 { width: 1560px; }
-  div.col17 {  width: 1760px;}
-  div.col17 ( width: 1860px;)
+  div.col17 { width: 1760px;}
+  div.col18 ( width: 1860px;)
   
   ******************************************************************/
   /*
@@ -1363,8 +1363,8 @@ body:before {
       margin: 0 auto; }
 
   #entriescol {
-    -moz-column-width: 340px;
-    -webkit-column-width: 340px;
+    -moz-column-width: 300px;
+    -webkit-column-width: 300px;
     -moz-column-gap: 14px;
     -webkit-column-gap: 14px;
     -webkit-column-fill: auto;
