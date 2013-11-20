@@ -1318,8 +1318,8 @@ body:before {
   THE SOFTWARE.
   
   */
-  .layout-1830 {
-    width: 1830px;
+  .layout-1820 {
+    width: 1820px;
     margin: 0px auto; }
 
   .row {
@@ -1331,31 +1331,13 @@ body:before {
     height: 1px;
     overflow: hidden; }
 
-  width: 1830px;
+  width: 1820px;
   margin: 0px auto;
   body {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
     line-height: 2.1rem; }
-
-  #entriescol {
-    -moz-column-width: 345px;
-    -webkit-column-width: 345px;
-    -moz-column-gap: 14px;
-    -webkit-column-gap: 14px;
-    -webkit-column-fill: auto;
-    -webkit-column-break-inside: avoid;
-    -moz-column-break-inside: avoid;
-    -o-column-break-inside: avoid;
-    -ms-column-break-inside: avoid;
-    column-break-inside: avoid; }
-
-  .entry_excerpt {
-    display: inline-block;
-    margin: 0.25rem;
-    padding: 1rem;
-    width: 100%; }
 
   #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
@@ -1372,13 +1354,31 @@ body:before {
 
   #entries {
     float: left;
-    width: 894px;
+    width: 1060px;
     margin-left: 0;
     padding-left: 5px;
     padding-right: 20px;
     margin-top: -15px; }
     #entries .thumbnail {
       margin: 0 auto; }
+
+  #entriescol {
+    -moz-column-width: 340px;
+    -webkit-column-width: 340px;
+    -moz-column-gap: 14px;
+    -webkit-column-gap: 14px;
+    -webkit-column-fill: auto;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -o-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    column-break-inside: avoid; }
+
+  .entry_excerpt {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 1rem;
+    width: 100%; }
 
   #entries .post_content h2 {
     text-align: center; }
@@ -1390,8 +1390,8 @@ body:before {
 
   #sidebar {
     float: left;
-    width: 558px;
-    margin-left: 30px;
+    width: 660px;
+    margin-left: 40px;
     margin: 0px; }
 
   #footer {

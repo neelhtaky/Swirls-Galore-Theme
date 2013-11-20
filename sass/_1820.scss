@@ -25,32 +25,12 @@ div.col17 {  width: 1760px;}
 div.col17 ( width: 1860px;)
 
 ******************************************************************/
-$layoutwidth : 1830;
+$layoutwidth : 1820;
 @import "978gs";
 @include layout;
 
 body{
 	@include font-size(14);
-}
-
-#entriescol {
-	-moz-column-width: 345px;
-	-webkit-column-width: 345px;
-	-moz-column-gap: 14px;
-	-webkit-column-gap: 14px;
-	-webkit-column-fill: auto;
-	-webkit-column-break-inside:avoid;
-	-moz-column-break-inside:avoid;
-	-o-column-break-inside:avoid;
-	-ms-column-break-inside:avoid;
-	column-break-inside:avoid;
-}
-
-.entry_excerpt {
- display: inline-block;
- margin:  0.25rem;
- padding:  1rem;
- width:  100%;
 }
 
 #site_title h1 a, #site_title h4 a{
@@ -68,6 +48,24 @@ font-family: 'Georgia', Arial, sans-serif;
 	.thumbnail{
 		margin: 0 auto;
 	}
+}
+#entriescol {
+	-moz-column-width: 340px;
+	-webkit-column-width: 340px;
+	-moz-column-gap: 14px;
+	-webkit-column-gap: 14px;
+	-webkit-column-fill: auto;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	-ms-column-break-inside:avoid;
+	column-break-inside:avoid;
+}
+.entry_excerpt {
+ display: inline-block;
+ margin:  0.25rem;
+ padding:  1rem;
+ width:  100%;
 }
 #entries .post_content {
 	h2{text-align: center;
