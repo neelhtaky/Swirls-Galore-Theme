@@ -33,9 +33,7 @@ $gridwidth    : 54    !default;
 $gutter       : 30    !default;
 $printlayout  : false !default;
 
-@if $layoutwidth == 2560 { $columns: 20; $gridwidth: 90; $gutter: 40;}
-@else if $layoutwidth == 1920 { $columns: 18; $gridwidth: 67; $gutter: 42;}
-@else if $layoutwidth == 1820 { $columns: 18; $gridwidth: 60; $gutter: 40;}
+@if $layoutwidth == 1820 { $columns: 18; $gridwidth: 60; $gutter: 40;}
 @else if $layoutwidth == 1378  { $columns : 16; $gridwidth : 58; $gutter: 30; }
 @else if  $layoutwidth == 1218  { $columns : 16; $gridwidth : 48; $gutter: 30; }
 @else if  $layoutwidth == 748   { $columns : 12; $gridwidth : 44; $gutter: 20; }
