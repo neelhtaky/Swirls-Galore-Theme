@@ -54,13 +54,11 @@ body:before{
 	body:before {
         content: "1218 ~ 1408 and Above";
         background-color: hsla(360,60%,40%,0.7);}}
-@media screen and (min-width:1680px){
-	@import "1680";
-	/*
-body:before {
-        content: "1378 ~ 1408 and Above";
-        background-color: hsla(360,60%,40%,0.7);}
-*/}
+@media screen and (min-width:1820px){
+	@import "1820";
+	body:before {
+        content: "1820 and Above";
+        background-color: hsla(60,60%,40%,0.7);}}
 
 /******************************************************************
 SITE WIDE STYLES

@@ -1260,135 +1260,14 @@ body:before {
   #footer {
     clear: both; }
 
-  /*
-  body{
-  	font-size: 1em;
-  	line-height: 21px;}
-  
-  #entries{@include grid(11, true);}
-  #sidebar{@include grid(5);}
-  #footer{@include grid(16, true);}
-  
-  #nav_top{@include grid(13,true);
-  	ul{margin-left: -30px;
-  		li{
-  			@include grid(3);}
-  	}
-  }
-  #search{
-  	@include grid(3);
-  	padding-top:10px;
-  	margin-bottom: -5px;
-  	input[type=search] {
-  		margin-bottom: 20px;
-  		width: 200px;
-  		height: 20px;
-  	}
-  }
-  #under_search{
-  	@include grid(16, true);
-  		&:after{top: -0.37em;}}
-  
-  ::-webkit-input-placeholder {color: transparent;}
-  :-moz-placeholder { color: transparent;}
-  ::-moz-placeholder {color: transparent;}
-  :-ms-input-placeholder {color: transparent;}
-  
-  #header{
-  	@include grid(16, true);
-  }
-  #site_title {text-align: center;
-  }
-  #description{margin-top: -1.3em; margin-bottom: -10px;}
-  
-  #nav_primary{@include grid(16,true);
-  	ul { margin-top: 5px; margin-bottom: 5px;margin-left: 156px;
-  		li{
-  			@include grid(3,true);
-  			text-align: center;
-  			margin-bottom: 5px;
-  		}
-  	}
-  }
-  #splash{
-  
-  	img{
-  		height: auto;
-  		width: 1218px;
-  	}
-  
-  	#splash_text{
-  		@include grid(5);
-  		background: $white;
-  		margin-top: 15px;
-  		margin-left: 64%;
-  		padding: 5px 30px 0px 20px;
-  
-  		h3{
-  			padding-top: 5px;
-  			margin-top: 5px;
-  			padding-bottom: 10px;
-  		}
-  	}
-  }
-  .thumbnail{@include grid(4,true);
-  	padding-right: 15px;
-  	max-height: 300px;
-  	overflow: hidden;}
-  img.wp-post-image,
-  img.attachment-thumbnail,
-  img.attachment-medium,
-  img.attachment-large,
-  img.attachment-full {width:100%;
-  height: auto;
-  
-  }
-  #respond input[type=text], textarea {
-  	width: 98% !important;}
-  #sidebar hr{
-  	@include grid(5,true);
-  	margin-top: 20px;
-  	margin-bottom: 20px;
-  	&:after{top: -0.37em;}}
-  #sidebar ul li{
-  	.medium_rectangle{padding-bottom:0px; padding-top:10px;margin-left: 30px;}
-  	.square_button{padding-top: 30px;margin-left: 31px;}
-  	.square_button:nth-last-child(-n+2){padding-bottom: 0px;}
-  	.square_button:nth-child(2n){padding-right: 13px;}
-  }
-  #sidebar .widget:not(.widget_text){
-  	@include grid(2,true);
-  	&:nth-child(3n+1){
-  	margin-right: 30px;}
-  }
-  #footer{
-  	@include grid(16,true);
-  	li{
-  		@include grid(4);
-  		&:first-child{@include grid(4,true);}
-  	}
-  }
-  #footer hr{
-  	@include grid(16,true);
-  	margin-top: 25px;
-  	&:after{top: -0.37em;}
-  }
-  #copyatt{
-  	@include grid(16, true);
-  	p{
-  		margin-left: 0px !important;
-  		@include grid(5);
-  		margin-right: 45px;}
-  }
-  */
   body:before {
     content: "1218 ~ 1408 and Above";
     background-color: rgba(163, 41, 41, 0.7); } }
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1820px) {
   /******************************************************************
-  1378PX - 16 Columns
-  colums = 58px
-  gutters = 40px
+  1680px - 16 Columns
+  colums = 60px
+  gutters = 48px
   total  with 20px side margins
   
   For reference:
@@ -1410,11 +1289,115 @@ body:before {
   div.col16 { width: 1378px; }
   
   ******************************************************************/
-  	/*
+  /*
+  
+  978 Grid System CSS Framework
+  http://978.gs
+  
+  Copyright (c) 2011 Brothers Roloff
+  http://www.brothersroloff.com
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  */
+  .layout-1830 {
+    width: 1830px;
+    margin: 0px auto; }
+
+  .row {
+    height: 1%; }
+
+  .row-end {
+    clear: both;
+    font: 1px/1px sans-serif;
+    height: 1px;
+    overflow: hidden; }
+
+  width: 1830px;
+  margin: 0px auto;
+  body {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  #entriescol {
+    -moz-column-width: 270px;
+    -webkit-column-width: 270px;
+    -moz-column-gap: 14px;
+    -webkit-column-gap: 14px;
+    -webkit-column-fill: auto;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -o-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    column-break-inside: avoid; }
+
+  .entry_excerpt {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 1rem;
+    width: 100%; }
+
+  #site_title h1 a, #site_title h4 a {
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 65px;
+    line-height: 97.5px;
+    font-size: 6.5rem;
+    line-height: 9.75rem; }
+
+  #entries, #sidebar, #footer {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  #entries {
+    float: left;
+    width: 894px;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 20px;
+    margin-top: -15px; }
+    #entries .thumbnail {
+      margin: 0 auto; }
+
+  #entries .post_content h2 {
+    text-align: center; }
+    #entries .post_content h2 a {
+      font-size: 24px;
+      line-height: 36px;
+      font-size: 2.4rem;
+      line-height: 3.6rem; }
+
+  #sidebar {
+    float: left;
+    width: 390px;
+    margin-left: 30px;
+    margin: 0px; }
+
+  #footer {
+    clear: both; }
+
   body:before {
-          content: "1378 ~ 1408 and Above";
-          background-color: hsla(360,60%,40%,0.7);}
-  */ }
+    content: "1820 and Above";
+    background-color: rgba(163, 163, 41, 0.7); } }
 /******************************************************************
 SITE WIDE STYLES
 ******************************************************************/

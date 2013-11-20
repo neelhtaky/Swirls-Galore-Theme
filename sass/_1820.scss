@@ -1,27 +1,29 @@
 /******************************************************************
-1218px - 16 Columns
-columns = 48px
-gutters = 30px
-1248px with 15px side margins
+1680px - 16 Columns
+colums = 60px
+gutters = 48px
+total  with 20px side margins
 
-div.col1 { width: 48px; }
-div.col2 { width: 126px; }
-div.col3 { width: 204px; }
-div.col4 { width: 282px; }
-div.col5 { width: 360px; }
-div.col6 { width: 438px; }
-div.col7 { width: 516px; }
-div.col8 { width: 594px; }
-div.col9 { width: 672px; }
-div.col10 { width: 750px; }
-div.col11 { width: 828px; }
-div.col12 { width: 906px; }
-div.col13 { width: 984px; }
-div.col14 { width: 1062px; }
-div.col15 { width: 1140px; }
-div.col16 { width: 1218px; }
+For reference:
+div.col1 { width: 58px; }
+div.col2 { width: 146px; }
+div.col3 { width: 234px; }
+div.col4 { width: 322px; }
+div.col5 { width: 410px; }
+div.col6 { width: 498px; }
+div.col7 { width: 586px; }
+div.col8 { width: 674px; }
+div.col9 { width: 762px; }
+div.col10 { width: 850px; }
+div.col11 { width: 938px; }
+div.col12 { width: 1026px; }
+div.col13 { width: 1114px; }
+div.col14 { width: 1202px; }
+div.col15 { width: 1290px; }
+div.col16 { width: 1378px; }
+
 ******************************************************************/
-$layoutwidth : 1218;
+$layoutwidth : 1830;
 @import "978gs";
 @include layout;
 
