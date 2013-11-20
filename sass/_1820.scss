@@ -1,26 +1,28 @@
 /******************************************************************
 1680px - 16 Columns
 colums = 60px
-gutters = 48px
+gutters = 40px
 total  with 20px side margins
 
 For reference:
-div.col1 { width: 58px; }
-div.col2 { width: 146px; }
-div.col3 { width: 234px; }
-div.col4 { width: 322px; }
-div.col5 { width: 410px; }
-div.col6 { width: 498px; }
-div.col7 { width: 586px; }
-div.col8 { width: 674px; }
-div.col9 { width: 762px; }
-div.col10 { width: 850px; }
-div.col11 { width: 938px; }
-div.col12 { width: 1026px; }
-div.col13 { width: 1114px; }
-div.col14 { width: 1202px; }
-div.col15 { width: 1290px; }
-div.col16 { width: 1378px; }
+div.col1 { width: 60px; }
+div.col2 { width: 160px; }
+div.col3 { width: 260px; }
+div.col4 { width: 360px; }
+div.col5 { width: 460px; }
+div.col6 { width: 560px; }
+div.col7 { width: 660px; }
+div.col8 { width: 760px; }
+div.col9 { width: 860px; }
+div.col10 { width: 960px; }
+div.col11 { width: 1060px; }
+div.col12 { width: 1160px; }
+div.col13 { width: 1260px; }
+div.col14 { width: 1360px; }
+div.col15 { width: 1460px; }
+div.col16 { width: 1560px; }
+div.col17 {  width: 1760px;}
+div.col17 ( width: 1860px;)
 
 ******************************************************************/
 $layoutwidth : 1830;
@@ -32,8 +34,8 @@ body{
 }
 
 #entriescol {
-	-moz-column-width: 270px;
-	-webkit-column-width: 270px;
+	-moz-column-width: 345px;
+	-webkit-column-width: 345px;
 	-moz-column-gap: 14px;
 	-webkit-column-gap: 14px;
 	-webkit-column-fill: auto;
@@ -77,7 +79,7 @@ font-family: 'Georgia', Arial, sans-serif;
 }
 
 #sidebar{
-	@include grid(5);
+	@include grid(7);
 
 	margin: 0px;}
 #footer{clear: both;}
