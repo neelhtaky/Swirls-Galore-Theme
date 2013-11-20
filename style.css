@@ -1202,11 +1202,17 @@ body:before {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  #entries {
+  #entriescol {
     -moz-column-width: 270px;
     -webkit-column-width: 270px;
     -moz-column-gap: 14px;
-    -webkit-column-gap: 14px; }
+    -webkit-column-gap: 14px;
+    -webkit-column-fill: auto;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    -o-column-break-inside: avoid;
+    -ms-column-break-inside: avoid;
+    column-break-inside: avoid; }
 
   .entry_excerpt {
     display: inline-block;
@@ -1232,14 +1238,14 @@ body:before {
     width: 828px;
     margin-left: 0;
     padding-left: 5px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    margin-top: -15px; }
     #entries .thumbnail {
-      background: CadetBlue;
       margin: 0 auto; }
 
-  .post_content h2 {
+  #entries .post_content h2 {
     text-align: center; }
-    .post_content h2 a {
+    #entries .post_content h2 a {
       font-size: 24px;
       line-height: 36px;
       font-size: 2.4rem;

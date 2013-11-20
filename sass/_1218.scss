@@ -29,12 +29,17 @@ body{
 	@include font-size(14);
 }
 
-#entries {
- -moz-column-width: 270px;
- -webkit-column-width: 270px;
- -moz-column-gap: 14px;
- -webkit-column-gap: 14px;
-
+#entriescol {
+	-moz-column-width: 270px;
+	-webkit-column-width: 270px;
+	-moz-column-gap: 14px;
+	-webkit-column-gap: 14px;
+	-webkit-column-fill: auto;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	-o-column-break-inside:avoid;
+	-ms-column-break-inside:avoid;
+	column-break-inside:avoid;
 }
 
 .entry_excerpt {
@@ -55,13 +60,12 @@ font-family: 'Georgia', Arial, sans-serif;
 	@include grid(11,true);
 	padding-left: 5px;
 	padding-right: 20px;
+	margin-top: -15px;
 	.thumbnail{
-		background: CadetBlue;
 		margin: 0 auto;
 	}
 }
-
-.post_content {
+#entries .post_content {
 	h2{text-align: center;
 		a{
 			@include font-size(24);

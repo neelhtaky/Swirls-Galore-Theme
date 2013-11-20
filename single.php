@@ -2,7 +2,6 @@
  <?php // any code included here occurs before the wordpress loop and is always displayed, it is processed only once ?>
 
 <section id="entries">
-<section id="entriescol">
   <?php if (have_posts()) : ?>
 	<!-- Display any code output from this region above the entire set of posts, generated via the h2 element only if there are posts. Any code is processed only once. -->
 
@@ -67,9 +66,8 @@
 		    Sorry, no posts matched your criteria.
 		  </p>
 	<?php endif; ?>
-</section><!-- #entriescol -->
-	<?php posts_nav_link(); ?>
 
+	<?php posts_nav_link(); ?>
 </section><!-- #entries -->
 
 <?php get_sidebar(); ?>
