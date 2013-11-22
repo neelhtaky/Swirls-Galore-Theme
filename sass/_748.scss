@@ -20,6 +20,9 @@ div.col12 { width: 748px; }
 $layoutwidth:748;
 @import "978gs";
 @include layout;
+@media only screen and (min-width: 768px) and (max-width:1247px) {
+.post_title_wide{display: none;}
+}
 
 body{
 	@include font-size(14);
@@ -45,6 +48,7 @@ body{
 		margin: 0 auto;
 	}
 }
+.post_title_long{display: none;}
 .post_content {
 	h2{text-align: left;
 		a{

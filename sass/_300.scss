@@ -16,7 +16,9 @@ div.col8 { width: 300px; }
 $layoutwidth:300;
 @import "978gs";
 @include layout;
-
+@media only screen and (min-width:0px) and (max-width: 767px){
+	.post_title_wide{display: none;}
+}
 body{
 	@include font-size(14);
 }
@@ -31,36 +33,10 @@ font-family: 'Georgia', Arial, sans-serif;
 }
 #entries{
 	padding-top: 130px;
-}
-.post_content {
 	h2{
 		a{
 			@include font-size(16);
 		}
 	}
 }
-
-/*
-#nav_primary{
-	ul {margin: 0px;
-		li{
-			a{
-				@include grid(4, true);
-				text-align: center;
-			}
-		}
-	}
-}
-img.wp-post-image,
-img.attachment-thumbnail,
-img.attachment-medium,
-img.attachment-large,
-img.attachment-full {width:100%;
-height: auto;
-margin-top: 20px;
-}
-ol.commentlist{@include grid(8, true);}
-ol.commentlist li {margin-top: 5px !important;}
-#respond{@include grid(8,true);}
-#footer{@include grid(8, true);}
-*/
+.post_title_short{display: none;}

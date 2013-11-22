@@ -9,7 +9,6 @@ License: Attribution-NonCommercial-NoDerivs. CC BY-NC-ND.
 License URI: http://creativecommons.org/licenses/
 Tags: white, two-columns, custom-header
 */
-
 /* IMPORT STYLES */
 @import "mixins";
 @import "normalize"; /* reset style sheet */
@@ -28,38 +27,39 @@ body:before{
 }
 @media only screen and (min-width:0px) and (max-width: 767px){
 	@import "300";
-	 body:before {
+	 /*
+body:before {
 	 	content: "300 ~ 0 to 479px";
-        background-color: hsla(90,60%,40%,0.7);}}
-@media only screen and (min-width: 768px) and (max-width:1001px) {
+        background-color: hsla(90,60%,40%,0.7);}
+*/}
+@media only screen and (min-width: 768px) and (max-width:1247px) {
 	@import "748";
-    body:before {
+    /*
+body:before {
         content: "748 ~ 768 to 1001px";
-        background-color: hsla(180,60%,40%,0.7);}}
-@media screen and (min-width:1002px) and (max-width:1247px){
-	@import "748";
-/* 	@import "978"; */
-	body:before {
-        content: "748 ~ 1002 to 1247px";
-        background-color: hsla(270,60%,40%,0.7);}}
+        background-color: hsla(180,60%,40%,0.7);}
+*/}
 @media screen and (min-width:1248px) and (max-width:1407px){
 	@import "978";
-/* 	@import "1218"; */
-	body:before {
+	/*
+body:before {
         content: "978 ~ 1248 to 1407px";
-        background-color: hsla(360,60%,40%,0.7);}}
+        background-color: hsla(360,60%,40%,0.7);}
+*/}
 @media screen and (min-width:1408px){
-/* 	@import "1378"; */
 	@import "1218";
-	body:before {
+	/*
+body:before {
         content: "1218 ~ 1408 and Above";
-        background-color: hsla(360,60%,40%,0.7);}}
+        background-color: hsla(360,60%,40%,0.7);}
+*/}
 @media screen and (min-width:1820px){
 	@import "1820";
-	body:before {
+	/*
+body:before {
         content: "1820 and Above";
-        background-color: hsla(60,60%,40%,0.7);}}
-
+        background-color: hsla(60,60%,40%,0.7);}
+*/}
 /******************************************************************
 SITE WIDE STYLES
 ******************************************************************/

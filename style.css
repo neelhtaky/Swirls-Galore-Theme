@@ -612,41 +612,24 @@ body:before {
 
   #entries {
     padding-top: 130px; }
+    #entries h2 a {
+      font-size: 16px;
+      line-height: 24px;
+      font-size: 1.6rem;
+      line-height: 2.4rem; }
 
-  .post_content h2 a {
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
+  .post_title_short {
+    display: none; }
 
-  /*
-  #nav_primary{
-  	ul {margin: 0px;
-  		li{
-  			a{
-  				@include grid(4, true);
-  				text-align: center;
-  			}
-  		}
-  	}
-  }
-  img.wp-post-image,
-  img.attachment-thumbnail,
-  img.attachment-medium,
-  img.attachment-large,
-  img.attachment-full {width:100%;
-  height: auto;
-  margin-top: 20px;
-  }
-  ol.commentlist{@include grid(8, true);}
-  ol.commentlist li {margin-top: 5px !important;}
-  #respond{@include grid(8,true);}
-  #footer{@include grid(8, true);}
-  */
+  	 /*
   body:before {
-    content: "300 ~ 0 to 479px";
-    background-color: rgba(102, 163, 41, 0.7); } }
-@media only screen and (min-width: 768px) and (max-width: 1001px) {
+  	 	content: "300 ~ 0 to 479px";
+          background-color: hsla(90,60%,40%,0.7);}
+  */ }
+@media only screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
+  .post_title_wide {
+    display: none; } }
+@media only screen and (min-width: 768px) and (max-width: 1247px) {
   /******************************************************************
   748px - 12 Columns
   columns = 44px
@@ -740,149 +723,8 @@ body:before {
       background: CadetBlue;
       margin: 0 auto; }
 
-  .post_content h2 {
-    text-align: left; }
-    .post_content h2 a {
-      font-size: 18px;
-      line-height: 27px;
-      font-size: 1.8rem;
-      line-height: 2.7rem; }
-
-  #sidebar {
-    float: left;
-    width: 300px;
-    margin-left: 20px;
-    margin-right: 0px;
-    margin-left: 0px; }
-
-  #footer {
-    clear: both; }
-
-  /*
-  
-  .thumbnail{
-  }
-  img.wp-post-image,
-  img.attachment-thumbnail,
-  img.attachment-medium,
-  img.attachment-large,
-  img.attachment-full {
-  }
-  
-  #sidebar ul li{
-  	.medium_rectangle{}
-  	.square_button{}
-  	.square_button:nth-last-child(-n+2){}
-  	.square_button:nth-child(2n){}
-  }
-  #sidebar .widget_archive, #sidebar .widget_categories, #sidebar .widget_recent_entries, #sidebar .widget_meta{
-  }
-  #footer{@include grid(12,true);
-  	li:nth-child(odd){}
-  	.widget{}
-  }
-  #copyatt{
-  	@include grid(12, true);
-  	p{
-  		@include grid(4);}
-  }
-  */
-  body:before {
-    content: "748 ~ 768 to 1001px";
-    background-color: rgba(41, 163, 163, 0.7); } }
-@media screen and (min-width: 1002px) and (max-width: 1247px) {
-  /******************************************************************
-  748px - 12 Columns
-  columns = 44px
-  gutters = 20px
-  total 768 with 10px side margins
-  
-  div.col1 { width: 44px; }
-  div.col2 { width: 108px; }
-  div.col3 { width: 172px; }
-  div.col4 { width: 236px; }
-  div.col5 { width: 300px; }
-  div.col6 { width: 364px; }
-  div.col7 { width: 428px; }
-  div.col8 { width: 492px; }
-  div.col9 { width: 556px; }
-  div.col10 { width: 620px; }
-  div.col11 { width: 684px; }
-  div.col12 { width: 748px; }
-  ******************************************************************/
-  /*
-  
-  978 Grid System CSS Framework
-  http://978.gs
-  
-  Copyright (c) 2011 Brothers Roloff
-  http://www.brothersroloff.com
-  
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
-  
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
-  
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-  THE SOFTWARE.
-  
-  */
-  .layout-748 {
-    width: 748px;
-    margin: 0px auto; }
-
-  .row {
-    height: 1%; }
-
-  .row-end {
-    clear: both;
-    font: 1px/1px sans-serif;
-    height: 1px;
-    overflow: hidden; }
-
-  width: 748px;
-  margin: 0px auto;
-  body {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  #site_title h1 a, #site_title h4 a {
-    font-family: 'Georgia', Arial, sans-serif;
-    font-size: 55px;
-    line-height: 82.5px;
-    font-size: 5.5rem;
-    line-height: 8.25rem; }
-
-  #entries, #sidebar, #footer {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  #entries {
-    float: left;
-    width: 428px;
-    margin-left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: -15px;
-    text-align: justify;
-    text-justify: newspaper; }
-    #entries .thumbnail {
-      background: CadetBlue;
-      margin: 0 auto; }
+  .post_title_long {
+    display: none; }
 
   .post_content h2 {
     text-align: left; }
@@ -931,10 +773,14 @@ body:before {
   		@include grid(4);}
   }
   */
-  /* 	@import "978"; */
-  body:before {
-    content: "748 ~ 1002 to 1247px";
-    background-color: rgba(102, 41, 163, 0.7); } }
+    /*
+body:before {
+        content: "748 ~ 768 to 1001px";
+        background-color: hsla(180,60%,40%,0.7);}
+*/ }
+@media only screen and (min-width: 768px) and (max-width: 1247px) and (min-width: 768px) and (max-width: 1247px) {
+  .post_title_wide {
+    display: none; } }
 @media screen and (min-width: 1248px) and (max-width: 1407px) {
   /******************************************************************
   978px - 12 Columns
@@ -1125,12 +971,15 @@ body:before {
   		margin-right: 13px;}
   }
   */
-  /* 	@import "1218"; */
+  	/*
   body:before {
-    content: "978 ~ 1248 to 1407px";
-    background-color: rgba(163, 41, 41, 0.7); } }
+          content: "978 ~ 1248 to 1407px";
+          background-color: hsla(360,60%,40%,0.7);}
+  */ }
+@media screen and (min-width: 1248px) and (max-width: 1407px) and (min-width: 1248px) and (max-width: 1407px) {
+  .post_title_wide {
+    display: none; } }
 @media screen and (min-width: 1408px) {
-  /* 	@import "1378"; */
   /******************************************************************
   1218px - 16 Columns
   columns = 48px
@@ -1230,24 +1079,19 @@ body:before {
     margin-top: -15px; }
     #entries .thumbnail {
       margin: 0 auto; }
-
-  .entriescol1 {
-    float: left;
-    width: 360px;
-    margin-left: 0; }
-
-  .entriescol2 {
-    float: left;
-    width: 438px;
-    margin-left: 30px; }
-
-  #entries .post_content h2 {
-    text-align: center; }
-    #entries .post_content h2 a {
+    #entries h2 a {
       font-size: 24px;
       line-height: 36px;
       font-size: 2.4rem;
       line-height: 3.6rem; }
+    #entries .entriescol1 {
+      float: left;
+      width: 360px;
+      margin-left: 0; }
+    #entries #entries .post_content {
+      float: left;
+      width: 360px;
+      margin-left: 30px; }
 
   #sidebar {
     float: left;
@@ -1258,9 +1102,14 @@ body:before {
   #footer {
     clear: both; }
 
+  	/*
   body:before {
-    content: "1218 ~ 1408 and Above";
-    background-color: rgba(163, 41, 41, 0.7); } }
+          content: "1218 ~ 1408 and Above";
+          background-color: hsla(360,60%,40%,0.7);}
+  */ }
+@media screen and (min-width: 1408px) and (min-width: 1408px) {
+  .post_title {
+    display: none; } }
 @media screen and (min-width: 1820px) {
   /******************************************************************
   1680px - 16 Columns
@@ -1395,9 +1244,11 @@ body:before {
   #footer {
     clear: both; }
 
+  	/*
   body:before {
-    content: "1820 and Above";
-    background-color: rgba(163, 163, 41, 0.7); } }
+          content: "1820 and Above";
+          background-color: hsla(60,60%,40%,0.7);}
+  */ }
 /******************************************************************
 SITE WIDE STYLES
 ******************************************************************/

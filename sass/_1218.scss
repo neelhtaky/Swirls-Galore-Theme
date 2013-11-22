@@ -25,6 +25,10 @@ $layoutwidth : 1218;
 @import "978gs";
 @include layout;
 
+@media screen and (min-width:1408px){
+	.post_title{display: none;}
+}
+
 body{
 	@include font-size(14);
 }
@@ -36,8 +40,8 @@ body{
 }
 
 #site_title h1 a, #site_title h4 a{
-font-family: 'Georgia', Arial, sans-serif;
-@include font-size(65);
+	font-family: 'Georgia', Arial, sans-serif;
+	@include font-size(65);
 }
 #entries, #sidebar, #footer{
 	@include font-size(14);
@@ -47,22 +51,18 @@ font-family: 'Georgia', Arial, sans-serif;
 	padding-left: 5px;
 	padding-right: 20px;
 	margin-top: -15px;
-	.thumbnail{
-		margin: 0 auto;
-	}
+	.thumbnail{margin: 0 auto;}
+	h2{
+		a{@include font-size(24);}
 }
+
 .entriescol1{
 	@include grid(5,true);
 }
-.entriescol2{
-	@include grid(6);
-}
-#entries .post_content {
-	h2{text-align: center;
-		a{
-			@include font-size(24);
 
-		}
+#entries .post_content {
+@include grid(5);
+
 	}
 }
 
