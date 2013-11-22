@@ -3,10 +3,12 @@
 	<?php if ( is_active_sidebar( 'primary' ) ) : ?>
 
 		<?php if (is_single())  { ?>
-			<aside class="sidebar_thumbnail">
-		        <?php the_post_thumbnail(); ?>
-		    </aside>
-		    <aside class="byline meta">
+			<?php if ( has_post_thumbnail() ) { ?>
+		        <aside class="thumbnail">
+		        	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_post_thumbnail(); ?></a>
+		        </aside>
+		        <?php } else {}?>
+		        <aside class="byline meta">
 				<p class="post_details">
 					This post was written by <address class="author vcard"><?php the_author_posts_link(); ?></address>
 				on	<time pubdate class="published" title="<?php the_time('l, F jS, Y, g:i a'); ?>"><?php the_time('F j, Y'); ?></time>.
