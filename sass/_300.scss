@@ -40,3 +40,19 @@ font-family: 'Georgia', Arial, sans-serif;
 	}
 }
 .post_title_short{display: none;}
+
+ol.commentlist li.comment div.vcard {
+	@include font-size(14);
+}
+ol.commentlist li.comment div.comment-meta {
+	@include font-size(12);
+}
+ol.commentlist li.comment p {
+	@include font-size(12);
+}
+ol.commentlist li.comment ul {
+	@include font-size(14);
+}
+ol.commentlist li.comment div.reply {
+	@include font-size(12);
+}

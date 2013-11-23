@@ -410,6 +410,104 @@ a.read_more {
     background: $col-coral;
     color: black; }
 
+#comment_count{padding-top: 1em;}
+
+ol.commentlist {
+
+	width: 100%;
+	list-style: none;
+	li{
+		ul{
+			list-style: none;
+		}
+	}
+}
+ol.commentlist {
+	list-style:none;
+	margin:0 0 1em;
+	padding:0;
+	text-indent:0; }
+ol.commentlist li { }
+ol.commentlist li.alt { }
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment {
+	border-bottom:1px dotted darken($col-tan,15%);
+	padding:1em; }
+ol.commentlist li.comment div.comment-author {}
+ol.commentlist li.comment div.vcard {
+	font-family: $serif;
+	 }
+ol.commentlist li.comment div.vcard cite.fn {
+	font-style:normal; }
+ol.commentlist li.comment div.vcard cite.fn a.url {}
+ol.commentlist li.comment div.vcard img.avatar {
+	float:right;
+	width: 55px;
+	height:55px;
+	border: 3px double $col-tan;
+	overflow: hidden;
+	background: white;
+	margin-left: -3px;
+    position: relative;
+    }
+ol.commentlist li.comment div.vcard img.avatar-32 {}
+ol.commentlist li.comment div.vcard img.photo {}
+ol.commentlist li.comment div.vcard span.says {}
+ol.commentlist li.comment div.commentmetadata {}
+ol.commentlist li.comment div.comment-meta {
+
+	 }
+ol.commentlist li.comment div.comment-meta a {
+	color:$text-col; }
+ol.commentlist li.comment p {
+
+	margin:0 0 1em; }
+ol.commentlist li.comment ul {
+
+	list-style:square;
+	margin:0 0 1em 2em; }
+ol.commentlist li.comment div.reply {
+
+	padding: 1em;
+	text-align: right;}
+ol.commentlist li.comment div.reply a { }
+ol.commentlist li.comment ul.children {
+	list-style:none;
+	text-indent:0; }
+ol.commentlist li.comment ul.children li {}
+ol.commentlist li.comment ul.children li.alt {}
+ol.commentlist li.comment ul.children li.bypostauthor {}
+ol.commentlist li.comment ul.children li.byuser {}
+ol.commentlist li.comment ul.children li.comment {}
+ol.commentlist li.comment ul.children li.comment-author-admin {}
+ol.commentlist li.comment ul.children li.depth-2 {
+	border-left:5px solid lighten($col-purple-dark,20%);
+	margin:0 0 0 -3.5em;
+	}
+ol.commentlist li.comment ul.children li.depth-3 {
+	border-left:5px solid lighten($col-purple-dark,35%);
+	margin:0 0 0 -3.5em;
+	}
+ol.commentlist li.comment ul.children li.depth-4 {
+	border-left:5px solid lighten($col-purple-dark,60%);
+	margin:0 0 0 -3.5em;
+	}
+ol.commentlist li.comment ul.children li.depth-5 {}
+ol.commentlist li.comment ul.children li.odd {}
+ol.commentlist li.even { background:white; }
+ol.commentlist li.odd { background:#f6f6f6; }
+ol.commentlist li.parent {  border-left:5px solid $col-purple-dark}
+ol.commentlist li.thread-alt { }
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}
+
+
+
+
+
+
 #sidebar{
 	font-family: $serif;
 	ul{
@@ -423,8 +521,6 @@ a.read_more {
 }
 .widget-title{
 	background-image: url('library/images/stripe.png');
-/* 	background-repeat: repeat; */
-
 
 }
 h3.widget-title{

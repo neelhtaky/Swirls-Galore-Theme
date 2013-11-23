@@ -621,6 +621,36 @@ body:before {
   .post_title_short {
     display: none; }
 
+  ol.commentlist li.comment div.vcard {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment div.comment-meta {
+    font-size: 12px;
+    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem; }
+
+  ol.commentlist li.comment p {
+    font-size: 12px;
+    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem; }
+
+  ol.commentlist li.comment ul {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment div.reply {
+    font-size: 12px;
+    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem; }
+
   	 /*
   body:before {
   	 	content: "300 ~ 0 to 479px";
@@ -734,6 +764,36 @@ body:before {
       font-size: 1.8rem;
       line-height: 2.7rem; }
 
+  ol.commentlist li.comment div.vcard {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  ol.commentlist li.comment div.comment-meta {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment p {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment ul {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment div.reply {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
   #sidebar {
     float: left;
     width: 300px;
@@ -744,35 +804,6 @@ body:before {
   #footer {
     clear: both; }
 
-  /*
-  
-  .thumbnail{
-  }
-  img.wp-post-image,
-  img.attachment-thumbnail,
-  img.attachment-medium,
-  img.attachment-large,
-  img.attachment-full {
-  }
-  
-  #sidebar ul li{
-  	.medium_rectangle{}
-  	.square_button{}
-  	.square_button:nth-last-child(-n+2){}
-  	.square_button:nth-child(2n){}
-  }
-  #sidebar .widget_archive, #sidebar .widget_categories, #sidebar .widget_recent_entries, #sidebar .widget_meta{
-  }
-  #footer{@include grid(12,true);
-  	li:nth-child(odd){}
-  	.widget{}
-  }
-  #copyatt{
-  	@include grid(12, true);
-  	p{
-  		@include grid(4);}
-  }
-  */
     /*
 body:before {
         content: "748 ~ 768 to 1001px";
@@ -1102,6 +1133,36 @@ body:before {
   #footer {
     clear: both; }
 
+  ol.commentlist li.comment div.vcard {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  ol.commentlist li.comment div.comment-meta {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment p {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment ul {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment div.reply {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
   	/*
   body:before {
           content: "1218 ~ 1408 and Above";
@@ -1181,10 +1242,10 @@ body:before {
   width: 1820px;
   margin: 0px auto;
   body {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
 
   #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
@@ -1234,6 +1295,36 @@ body:before {
       line-height: 36px;
       font-size: 2.4rem;
       line-height: 3.6rem; }
+
+  ol.commentlist li.comment div.vcard {
+    font-size: 18px;
+    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem; }
+
+  ol.commentlist li.comment div.comment-meta {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  ol.commentlist li.comment p {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  ol.commentlist li.comment ul {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  ol.commentlist li.comment div.reply {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
 
   #sidebar {
     float: left;
@@ -1608,6 +1699,80 @@ a.read_more:hover {
   background: #ffa145;
   color: black; }
 
+#comment_count {
+  padding-top: 1em; }
+
+ol.commentlist {
+  width: 100%;
+  list-style: none; }
+  ol.commentlist li ul {
+    list-style: none; }
+
+ol.commentlist {
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+  text-indent: 0; }
+
+ol.commentlist li.comment {
+  border-bottom: 1px dotted #e1ca95;
+  padding: 1em; }
+
+ol.commentlist li.comment div.vcard {
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
+
+ol.commentlist li.comment div.vcard cite.fn {
+  font-style: normal; }
+
+ol.commentlist li.comment div.vcard img.avatar {
+  float: right;
+  width: 55px;
+  height: 55px;
+  border: 3px double #f2e8d1;
+  overflow: hidden;
+  background: white;
+  margin-left: -3px;
+  position: relative; }
+
+ol.commentlist li.comment div.comment-meta a {
+  color: #444444; }
+
+ol.commentlist li.comment p {
+  margin: 0 0 1em; }
+
+ol.commentlist li.comment ul {
+  list-style: square;
+  margin: 0 0 1em 2em; }
+
+ol.commentlist li.comment div.reply {
+  padding: 1em;
+  text-align: right; }
+
+ol.commentlist li.comment ul.children {
+  list-style: none;
+  text-indent: 0; }
+
+ol.commentlist li.comment ul.children li.depth-2 {
+  border-left: 5px solid #c6a5ca;
+  margin: 0 0 0 -3.5em; }
+
+ol.commentlist li.comment ul.children li.depth-3 {
+  border-left: 5px solid #e5d5e7;
+  margin: 0 0 0 -3.5em; }
+
+ol.commentlist li.comment ul.children li.depth-4 {
+  border-left: 5px solid white;
+  margin: 0 0 0 -3.5em; }
+
+ol.commentlist li.even {
+  background: white; }
+
+ol.commentlist li.odd {
+  background: #f6f6f6; }
+
+ol.commentlist li.parent {
+  border-left: 5px solid #9e64a5; }
+
 #sidebar {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
   #sidebar ul {
@@ -1619,8 +1784,7 @@ a.read_more:hover {
     border-bottom: 1px dotted; }
 
 .widget-title {
-  background-image: url("library/images/stripe.png");
-  /* 	background-repeat: repeat; */ }
+  background-image: url("library/images/stripe.png"); }
 
 h3.widget-title {
   text-transform: uppercase;

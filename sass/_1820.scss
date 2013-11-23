@@ -30,7 +30,7 @@ $layoutwidth : 1820;
 @include layout;
 
 body{
-	@include font-size(14);
+	@include font-size(16);
 }
 
 #site_title h1 a, #site_title h4 a{
@@ -75,7 +75,21 @@ font-family: 'Georgia', Arial, sans-serif;
 		}
 	}
 }
-
+ol.commentlist li.comment div.vcard {
+	@include font-size(18);
+}
+ol.commentlist li.comment div.comment-meta {
+	@include font-size(16);
+}
+ol.commentlist li.comment p {
+	@include font-size(16);
+}
+ol.commentlist li.comment ul {
+	@include font-size(16);
+}
+ol.commentlist li.comment div.reply {
+	@include font-size(16);
+}
 #sidebar{
 	@include grid(7);
 

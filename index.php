@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <?php // any code included here occurs before the wordpress loop and is always displayed, it is processed only once ?>
 
+<!-- DISPLAY STICKY POSTS ABOVE ALL OTHER POSTS -->
 <section id="entries">
 	<?php query_posts(array('post__in'=>get_option('sticky_posts'))); ?>
 		<article <?php post_class("clear entry entry_excerpt"); ?> id="post-<?php the_ID(); ?>" role="article">
@@ -32,17 +33,14 @@
 
 
 
-
+<!-- DISPLAY MAIN LOOP -->
 	<?php query_posts(array("post__not_in"=>get_option("sticky_posts"), 'paged'=>get_query_var('paged'))); ?>
 
 	<?php if (have_posts()) : ?>
 		<!-- Display any code output from this region above the entire set of posts, generated via the h2 element only if there are posts. Any code is processed only once. -->
 		<?php while (have_posts()) : the_post(); ?>
 		<!-- Loop through posts and process each according to the code specified here  Process any code included in this region before the content of each post. -->
-
 			<article <?php post_class("clear entry entry_excerpt"); ?> id="post-<?php the_ID(); ?>" role="article">
-
-
 					<?php if ( has_post_thumbnail() ) { ?>
 					<section class="post_content">
 						<div class="entriescol1">
@@ -71,7 +69,7 @@
 								<p><?php echo the_excerpt(); ?></p>
 
 						</div><!-- entriescol2 -->
-						</section>
+						</section><!-- #post_content -->
 
 
 					<?php } else { ?>
@@ -91,15 +89,9 @@
 						</p>
 					</footer>
 				<p><?php echo the_excerpt(); ?></p>
-				</section>
-
-
-
+				</section><!-- Post_content -->
 					 <?php }?>
-
-
 			</article>
-
 	<hr>
 	<?php endwhile; else: ?>
 		  <p>

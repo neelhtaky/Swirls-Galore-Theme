@@ -25,6 +25,9 @@
 
 		</article>
 		<hr>
+		<?php if( is_single() || is_page() ){ ?>
+			<?php comments_template(); ?>
+		<?php } ?>
 </section>
 	<?php endwhile; else: ?>
 		  <p>

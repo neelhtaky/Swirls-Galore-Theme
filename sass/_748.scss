@@ -57,6 +57,23 @@ body{
 		}
 	}
 }
+
+ol.commentlist li.comment div.vcard {
+	@include font-size(16);
+}
+ol.commentlist li.comment div.comment-meta {
+	@include font-size(14);
+}
+ol.commentlist li.comment p {
+	@include font-size(14);
+}
+ol.commentlist li.comment ul {
+	@include font-size(14);
+}
+ol.commentlist li.comment div.reply {
+	@include font-size(14);
+}
+
 #sidebar{
 	@include grid(5);
 	margin-right: 0px;
@@ -66,34 +83,3 @@ body{
 #footer{
 	clear: both;
 }
-
-
-/*
-
-.thumbnail{
-}
-img.wp-post-image,
-img.attachment-thumbnail,
-img.attachment-medium,
-img.attachment-large,
-img.attachment-full {
-}
-
-#sidebar ul li{
-	.medium_rectangle{}
-	.square_button{}
-	.square_button:nth-last-child(-n+2){}
-	.square_button:nth-child(2n){}
-}
-#sidebar .widget_archive, #sidebar .widget_categories, #sidebar .widget_recent_entries, #sidebar .widget_meta{
-}
-#footer{@include grid(12,true);
-	li:nth-child(odd){}
-	.widget{}
-}
-#copyatt{
-	@include grid(12, true);
-	p{
-		@include grid(4);}
-}
-*/

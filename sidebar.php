@@ -1,7 +1,6 @@
 <aside id="sidebar" role="complementary">
 <ul>
 	<?php if ( is_active_sidebar( 'primary' ) ) : ?>
-
 		<?php if (is_single())  { ?>
 			<?php if ( has_post_thumbnail() ) { ?>
 		        <aside class="thumbnail">
@@ -11,8 +10,8 @@
 		        <aside class="byline meta">
 				<p class="post_details">
 					This post was written by <address class="author vcard"><?php the_author_posts_link(); ?></address>
-				on	<time pubdate class="published" title="<?php the_time('l, F jS, Y, g:i a'); ?>"><?php the_time('F j, Y'); ?></time>.
-				It was posted under <?php the_category(', ') ?>.
+					on	<time pubdate class="published" title="<?php the_time(get_option('date_format')); ?>"><?php the_time(get_option('date_format')); ?></time>.
+					It was posted under <?php the_category(', ') ?>.
 				It is tagged with <?php the_tags( '<p class="tags">', ', ', '.</p>' ); ?>
 				<?php if ( comments_open() ) :
 					echo '<p>';
@@ -28,9 +27,9 @@
 		<?php } elseif (is_day()) { ?>
 		    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for the day <?php get_option('date_format'); ?>.</p>
 	    <?php } elseif (is_month()) { ?>
-		    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for <?php the_time('F, Y'); ?>.</p>
+		    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for <?php echo get_month_link();?>.</p>
 	     <?php } elseif (is_year()) { ?>
-		    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for the year <?php the_time('Y'); ?>.</p>
+		    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for the year <?php get_year_link(); ?>.</p>
 	     <?php } elseif (is_search()) { ?>
 		    <p>You have searched the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for <strong>'<?php the_search_query(); ?>'</strong>. If you are unable to find anything in these search results, you can try one of these links.</p>
 		 <?php } ?>

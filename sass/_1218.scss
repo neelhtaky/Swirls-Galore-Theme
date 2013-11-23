@@ -71,3 +71,18 @@ body{
 
 	margin: 0px;}
 #footer{clear: both;}
+ol.commentlist li.comment div.vcard {
+	@include font-size(16);
+}
+ol.commentlist li.comment div.comment-meta {
+	@include font-size(14);
+}
+ol.commentlist li.comment p {
+	@include font-size(14);
+}
+ol.commentlist li.comment ul {
+	@include font-size(14);
+}
+ol.commentlist li.comment div.reply {
+	@include font-size(14);
+}
