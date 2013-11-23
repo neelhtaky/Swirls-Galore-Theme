@@ -31,14 +31,24 @@ Tags: white, two-columns, custom-header
   border-color: #deeaae;
   background: #e6efc2; }
 
-.alignright {
-  text-align: right; }
+.alignleft, img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
 
-.alignleft {
-  text-align: left; }
+.alignright, img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
 
-.aligncenter {
-  text-align: center; }
+.aligncenter, img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+p {
+  clear: both; }
 
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -621,31 +631,13 @@ body:before {
   .post_title_short {
     display: none; }
 
-  ol.commentlist li.comment div.vcard {
+  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  ol.commentlist li.comment div.comment-meta {
-    font-size: 12px;
-    line-height: 18px;
-    font-size: 1.2rem;
-    line-height: 1.8rem; }
-
-  ol.commentlist li.comment p {
-    font-size: 12px;
-    line-height: 18px;
-    font-size: 1.2rem;
-    line-height: 1.8rem; }
-
-  ol.commentlist li.comment ul {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  ol.commentlist li.comment div.reply {
+  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
     font-size: 12px;
     line-height: 18px;
     font-size: 1.2rem;
@@ -764,31 +756,13 @@ body:before {
       font-size: 1.8rem;
       line-height: 2.7rem; }
 
-  ol.commentlist li.comment div.vcard {
+  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
     line-height: 2.4rem; }
 
-  ol.commentlist li.comment div.comment-meta {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  ol.commentlist li.comment p {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  ol.commentlist li.comment ul {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  ol.commentlist li.comment div.reply {
+  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
@@ -803,6 +777,12 @@ body:before {
 
   #footer {
     clear: both; }
+
+  .site-info {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
 
     /*
 body:before {
@@ -921,87 +901,18 @@ body:before {
   #footer {
     clear: both; }
 
-  /*
-  
-  #search{
-  	@include grid(12);
-  	padding-top:10px;
-  	input[type=search] {
-  		margin-left: 40%;
-  		margin-bottom: 20px;
-  		width: 132px;
-  		height: 20px;
-  	}
-  }
-  #under_search{
-  	@include grid(12, true);
-  		&:after{top: -0.37em;}}
-  
-  ::-webkit-input-placeholder {color: transparent;}
-  :-moz-placeholder { color: transparent;}
-  ::-moz-placeholder {color: transparent;}
-  :-ms-input-placeholder {color: transparent;}
-  
-  #site_title {text-align: center;@include grid(12, true);}
-  #description{margin-top: -1.3em; margin-bottom: -10px;}
-  
-  #nav_primary{@include grid(12,true);
-  	ul { margin-top: 5px; margin-bottom: 5px;
-  		li{
-  			@include grid(3,true);
-  			margin-right: 20px;
-  			text-align: center;
-  			&:nth-child(4n+4){margin-right: 0px;}
-  			&:nth-child(-n+4){padding-bottom: 10px;}
-  		}
-  	}
-  }
-  
-  .thumbnail{@include grid(3,true); padding-right: 10px;max-height: 150px; overflow: hidden;}
-  img.wp-post-image,
-  img.attachment-thumbnail,
-  img.attachment-medium,
-  img.attachment-large,
-  img.attachment-full {width:100%;
-  height: auto;
-  
-  }
-  #respond input[type=text], textarea {
-  	width: 98% !important;}
-  #sidebar hr{
-  	@include grid(4,true);
-  	margin-top: 20px;
-  	margin-bottom: 20px;}
-  #sidebar ul li{
-  	.medium_rectangle{padding-bottom:0px; padding-top:10px;}
-  	.square_button{padding-top: 30px;}
-  	.square_button:nth-last-child(-n+2){padding-bottom: 0px;}
-  	.square_button:nth-child(2n){padding-right: 46px;}
-  }
-  #sidebar .widget:not(.widget_text){
-  	@include grid(2,true);
-  	&:nth-child(3n+1){
-  	margin-right: 30px;}
-  }
-  #footer{
-  	@include grid(12,true);
-  	li{
-  		@include grid(3);
-  		&:first-child{@include grid(3,true);}
-  	}
-  }
-  #footer hr{
-  	@include grid(12,true);
-  	margin-top: 25px;
-  }
-  #copyatt{
-  	@include grid(12, true);
-  	p{
-  		margin-left: 0px !important;
-  		@include grid(4);
-  		margin-right: 13px;}
-  }
-  */
+  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
   	/*
   body:before {
           content: "978 ~ 1248 to 1407px";
@@ -1133,31 +1044,13 @@ body:before {
   #footer {
     clear: both; }
 
-  ol.commentlist li.comment div.vcard {
+  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
     line-height: 2.4rem; }
 
-  ol.commentlist li.comment div.comment-meta {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  ol.commentlist li.comment p {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  ol.commentlist li.comment ul {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  ol.commentlist li.comment div.reply {
+  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
@@ -1296,31 +1189,13 @@ body:before {
       font-size: 2.4rem;
       line-height: 3.6rem; }
 
-  ol.commentlist li.comment div.vcard {
+  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 18px;
     line-height: 27px;
     font-size: 1.8rem;
     line-height: 2.7rem; }
 
-  ol.commentlist li.comment div.comment-meta {
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
-
-  ol.commentlist li.comment p {
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
-
-  ol.commentlist li.comment ul {
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
-
-  ol.commentlist li.comment div.reply {
+  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
@@ -1419,20 +1294,19 @@ hr {
   border: 0px;
   border-bottom: 2px solid #f2e8d1;
   text-align: center; }
-
-hr:after {
-  font-family: "Ornaments";
-  font-size: 40px;
-  line-height: 60px;
-  font-size: 4rem;
-  line-height: 6rem;
-  content: "#";
-  color: #f2e8d1;
-  display: inline-block;
-  position: relative;
-  background: white;
-  padding: 0 0.05em;
-  top: -0.9em; }
+  hr:after {
+    font-family: "Ornaments";
+    font-size: 40px;
+    line-height: 60px;
+    font-size: 4rem;
+    line-height: 6rem;
+    content: "#";
+    color: #f2e8d1;
+    display: inline-block;
+    position: relative;
+    background: white;
+    padding: 0 0.05em;
+    top: -0.9em; }
 
 .post_details {
   display: inline; }
@@ -1699,7 +1573,10 @@ a.read_more:hover {
   background: #ffa145;
   color: black; }
 
-#comment_count {
+.navigation {
+  margin-top: 2em; }
+
+#comment_count, .nocomments {
   padding-top: 1em; }
 
 ol.commentlist {
@@ -1714,43 +1591,58 @@ ol.commentlist {
   padding: 0;
   text-indent: 0; }
 
+ol.commentlist li.bypostauthor {
+  border: 1px solid #DFDFDF;
+  background-color: #f2e8d1 !important;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px; }
+
 ol.commentlist li.comment {
   border-bottom: 1px dotted #e1ca95;
   padding: 1em; }
 
-ol.commentlist li.comment div.vcard {
+ol.commentlist li.comment div.vcard cite.fn {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
 
-ol.commentlist li.comment div.vcard cite.fn {
-  font-style: normal; }
-
 ol.commentlist li.comment div.vcard img.avatar {
+  margin-top: -0.8em;
   float: right;
-  width: 55px;
-  height: 55px;
+  width: 65px;
+  height: 65px;
   border: 3px double #f2e8d1;
   overflow: hidden;
   background: white;
   margin-left: -3px;
   position: relative; }
 
+ol.commentlist li.comment div.vcard, ol.commentlist li.comment div.comment-meta a {
+  margin-top: .4em; }
+
 ol.commentlist li.comment div.comment-meta a {
   color: #444444; }
 
 ol.commentlist li.comment p {
-  margin: 0 0 1em; }
+  margin: 1em 0; }
 
 ol.commentlist li.comment ul {
   list-style: square;
   margin: 0 0 1em 2em; }
 
 ol.commentlist li.comment div.reply {
-  padding: 1em;
+  padding-bottom: 1em;
   text-align: right; }
 
 ol.commentlist li.comment ul.children {
   list-style: none;
   text-indent: 0; }
+
+ol.commentlist li.comment ul.children li.bypostauthor {
+  border: 1px solid #DFDFDF;
+  background-color: #f2e8d1 !important;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px; }
 
 ol.commentlist li.comment ul.children li.depth-2 {
   border-left: 5px solid #c6a5ca;
@@ -1773,6 +1665,9 @@ ol.commentlist li.odd {
 ol.commentlist li.parent {
   border-left: 5px solid #9e64a5; }
 
+#respond {
+  margin-top: 6em; }
+
 #sidebar {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
   #sidebar ul {
@@ -1782,6 +1677,47 @@ ol.commentlist li.parent {
       padding-left: 15px; }
   #sidebar a {
     border-bottom: 1px dotted; }
+
+/* calendar widget */
+#wp-calendar {
+  width: 100%;
+  border: 1px solid #fff; }
+
+#wp-calendar caption {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+#wp-calendar thead {
+  text-align: center; }
+
+#wp-calendar tbody {
+  color: #919191; }
+
+#wp-calendar tbody td {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 8px; }
+  #wp-calendar tbody td:hover {
+    color: #444444;
+    background: #fff; }
+
+#wp-calendar tbody .pad {
+  background: none; }
+
+#wp-calendar tfoot #next {
+  text-transform: uppercase;
+  text-align: right; }
+
+#wp-calendar tfoot #prev {
+  text-transform: uppercase;
+  padding-top: 10px; }
+
+#wp-calendar tfoot #prev {
+  border-right: 1px solid white; }
+
+#wp-calendar tfoot #next {
+  border-left: 1px solid white; }
 
 .widget-title {
   background-image: url("library/images/stripe.png"); }
@@ -1795,6 +1731,12 @@ h3.widget-title {
   font-size: 1.6rem;
   line-height: 2.4rem; }
 
+.widget_search label {
+  display: none; }
+
+input#s {
+  width: 230px; }
+
 #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
   -moz-column-count: 2;
   -moz-column-gap: 10px;
@@ -1807,3 +1749,6 @@ h3.widget-title {
 #footer ul {
   list-style: none;
   padding: 0px; }
+
+.site-info {
+  text-align: center; }

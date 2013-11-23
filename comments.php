@@ -22,7 +22,7 @@ if ( post_password_required() ) { ?>
 		<?php if (!empty($comments_by_type['comment'])) { ?>
 	    	<h3 id="comments">Comments</h3>
 			<ol class="commentlist">
-	        	<?php wp_list_comments('type=comment&avatar_size=55'); ?>
+	        	<?php wp_list_comments('type=comment&avatar_size=65'); ?>
 			</ol>
 		<?php } if (!empty($comments_by_type['pingback'])) { ?>
 			<h3 id="pingbacks">Pingbacks</h3>

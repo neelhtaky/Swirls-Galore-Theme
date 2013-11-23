@@ -75,19 +75,11 @@ font-family: 'Georgia', Arial, sans-serif;
 		}
 	}
 }
-ol.commentlist li.comment div.vcard {
+ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(18);
 }
-ol.commentlist li.comment div.comment-meta {
-	@include font-size(16);
-}
-ol.commentlist li.comment p {
-	@include font-size(16);
-}
-ol.commentlist li.comment ul {
-	@include font-size(16);
-}
-ol.commentlist li.comment div.reply {
+
+ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
 	@include font-size(16);
 }
 #sidebar{

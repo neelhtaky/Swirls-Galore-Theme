@@ -41,18 +41,10 @@ font-family: 'Georgia', Arial, sans-serif;
 }
 .post_title_short{display: none;}
 
-ol.commentlist li.comment div.vcard {
+ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(14);
 }
-ol.commentlist li.comment div.comment-meta {
-	@include font-size(12);
-}
-ol.commentlist li.comment p {
-	@include font-size(12);
-}
-ol.commentlist li.comment ul {
-	@include font-size(14);
-}
-ol.commentlist li.comment div.reply {
+
+ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
 	@include font-size(12);
 }

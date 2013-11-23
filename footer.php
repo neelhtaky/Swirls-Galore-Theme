@@ -9,18 +9,14 @@
 		</div>
 		<?php endif; ?>
 	</ul>
-<section id="copyatt">
-	<p id="copyright">Copyright &copy; <?php echo date("Y") ?> <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>. All Rights Reserved.</p>
-
-	<p id="attribution">Theme <?php bloginfo('name'); ?> Designed By <a href="http://www.katskinner.com" rel="designer"> Kat Skinner</a></p>
-
-	<p id="site-generator">Proudly powered by <a href="http://wordpress.org/" rel="generator" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></p>
-
-</section>
+	</div>  <!-- close #container -->
+	<section class="site-info">
+		<p id="copyright">Copyright &copy; <?php echo date("Y") ?> <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>. All Rights Reserved.</p>
+		<p id="attribution">Theme for <?php bloginfo('name'); ?> Designed By
+			<a href="<?php echo esc_url( __( 'http://katskinner.com/') ); ?>" title="<?php esc_attr_e( 'Kat Skinner' ); ?>">Kat Skinner</a></p>
+		<p id="site-generator">Proudly powered by <a href="<?php echo esc_url( __( 'http://wordpress.org/') ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform' ); ?>"><?php printf( __( '%s'), 'WordPress' ); ?></a></p>
+	</section><!-- .site-info -->
 </footer>
 <?php wp_footer(); ?>
-
-</div>  <!-- close #container -->
-
 </body> <!-- close body tag -->
 </html> <!-- close html tag -->

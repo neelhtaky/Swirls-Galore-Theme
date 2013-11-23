@@ -59,84 +59,10 @@ body{
 }
 #footer{clear: both;}
 
-/*
-
-#search{
-	@include grid(12);
-	padding-top:10px;
-	input[type=search] {
-		margin-left: 40%;
-		margin-bottom: 20px;
-		width: 132px;
-		height: 20px;
-	}
-}
-#under_search{
-	@include grid(12, true);
-		&:after{top: -0.37em;}}
-
-::-webkit-input-placeholder {color: transparent;}
-:-moz-placeholder { color: transparent;}
-::-moz-placeholder {color: transparent;}
-:-ms-input-placeholder {color: transparent;}
-
-#site_title {text-align: center;@include grid(12, true);}
-#description{margin-top: -1.3em; margin-bottom: -10px;}
-
-#nav_primary{@include grid(12,true);
-	ul { margin-top: 5px; margin-bottom: 5px;
-		li{
-			@include grid(3,true);
-			margin-right: 20px;
-			text-align: center;
-			&:nth-child(4n+4){margin-right: 0px;}
-			&:nth-child(-n+4){padding-bottom: 10px;}
-		}
-	}
+ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+	@include font-size(16);
 }
 
-.thumbnail{@include grid(3,true); padding-right: 10px;max-height: 150px; overflow: hidden;}
-img.wp-post-image,
-img.attachment-thumbnail,
-img.attachment-medium,
-img.attachment-large,
-img.attachment-full {width:100%;
-height: auto;
-
+ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+	@include font-size(14);
 }
-#respond input[type=text], textarea {
-	width: 98% !important;}
-#sidebar hr{
-	@include grid(4,true);
-	margin-top: 20px;
-	margin-bottom: 20px;}
-#sidebar ul li{
-	.medium_rectangle{padding-bottom:0px; padding-top:10px;}
-	.square_button{padding-top: 30px;}
-	.square_button:nth-last-child(-n+2){padding-bottom: 0px;}
-	.square_button:nth-child(2n){padding-right: 46px;}
-}
-#sidebar .widget:not(.widget_text){
-	@include grid(2,true);
-	&:nth-child(3n+1){
-	margin-right: 30px;}
-}
-#footer{
-	@include grid(12,true);
-	li{
-		@include grid(3);
-		&:first-child{@include grid(3,true);}
-	}
-}
-#footer hr{
-	@include grid(12,true);
-	margin-top: 25px;
-}
-#copyatt{
-	@include grid(12, true);
-	p{
-		margin-left: 0px !important;
-		@include grid(4);
-		margin-right: 13px;}
-}
-*/
