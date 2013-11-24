@@ -57,7 +57,14 @@ body{
 		}
 	}
 }
-
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 24px;
+	max-width: 398px;
+	height: 224px;
+}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(16);
 }

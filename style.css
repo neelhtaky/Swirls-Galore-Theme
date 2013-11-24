@@ -643,6 +643,14 @@ body:before {
     font-size: 1.2rem;
     line-height: 1.8rem; }
 
+  embed,
+  iframe,
+  object,
+  video {
+    margin-bottom: 24px;
+    max-width: 290px;
+    height: 163px; }
+
   	 /*
   body:before {
   	 	content: "300 ~ 0 to 479px";
@@ -755,6 +763,14 @@ body:before {
       line-height: 27px;
       font-size: 1.8rem;
       line-height: 2.7rem; }
+
+  embed,
+  iframe,
+  object,
+  video {
+    margin-bottom: 24px;
+    max-width: 398px;
+    height: 224px; }
 
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 16px;
@@ -891,6 +907,14 @@ body:before {
       line-height: 33px;
       font-size: 2.2rem;
       line-height: 3.3rem; }
+
+  embed,
+  iframe,
+  object,
+  video {
+    margin-bottom: 24px;
+    max-width: 612px;
+    height: 344px; }
 
   #sidebar {
     float: left;
@@ -1034,6 +1058,14 @@ body:before {
       float: left;
       width: 360px;
       margin-left: 30px; }
+
+  embed,
+  iframe,
+  object,
+  video {
+    margin-bottom: 24px;
+    max-width: 803px;
+    height: 452px; }
 
   #sidebar {
     float: left;
@@ -1189,6 +1221,14 @@ body:before {
       font-size: 2.4rem;
       line-height: 3.6rem; }
 
+  embed,
+  iframe,
+  object,
+  video {
+    margin-bottom: 24px;
+    max-width: 1035px;
+    height: 582px; }
+
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 18px;
     line-height: 27px;
@@ -1233,6 +1273,84 @@ body {
   box-shadow: inset 0px 0px 65px 99px white;
   -webkit-box-shadow: inset 0px 0px 65px 99px white;
   -moz-box-shadow: inset 0px 0px 65px 99px white; }
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+#site-header img,
+.widget img,
+.wp-caption {
+  max-width: 100%; }
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+.comment-content img[height],
+.entry-content img,
+.entry-summary img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+  height: auto; }
+
+img.size-full,
+img.size-large,
+.wp-post-image,
+.post-thumbnail img {
+  height: auto;
+  max-width: 100%; }
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+#site-header img,
+.widget img,
+.wp-caption {
+  max-width: 100%; }
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+.comment-content img[height],
+.entry-content img,
+.entry-summary img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+  height: auto; }
+
+/*
+img.size-full,
+img.size-large,
+.wp-post-image,
+.post-thumbnail img {
+	height: auto;
+	max-width: 100%;
+}
+*/
+/* Make sure embeds and iframes fit their containers */
+p > embed,
+p > iframe,
+p > object,
+span > embed,
+span > iframe,
+span > object {
+  margin-bottom: 0;
+  overflow: auto; }
 
 #page {
   background-image: url("library/images/bg_left.png"), url("library/images/bg_right.png");

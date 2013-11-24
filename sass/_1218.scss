@@ -65,7 +65,14 @@ body{
 
 	}
 }
-
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 24px;
+	max-width: 803px;
+	height: 452px;
+}
 #sidebar{
 	@include grid(5);
 

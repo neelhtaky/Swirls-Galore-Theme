@@ -31,37 +31,9 @@
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 	<?php wp_head(); ?>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<script type="text/javascript" src="http://978.gs/resources/js/jquery.gs-overlay.min.js"></script>
-<script type="text/javascript">
-jQuery(function() {
-  jQuery('div#gs-overlay').gsoverlay({
-    trigger: jQuery('a#gs-overlay-badge'),
-    grid: 748,
-    color: '#aa1b4a',
-    opacity: 0.24
-  });
-});
 
-function videoautoheight(){
-	$("object, embed, .format-video iframe").each(function() {
-		var orig = $(this);
-		var ratio = orig.attr("height") / orig.attr("width");
-		var parWidth = orig.parents().find("p:last").width();
-		if(orig.attr(“width”)> parWidth) {
-			orig
-				.attr("width", parWidth)
-				.attr("height", (parWidth * ratio));
-		}
-	});
-}
-
-videoautoheight();
-
-window.addEventListener('resize', videoautoheight, false);
- 
-</script>
 </head>
 
 <body <?php body_class(''); ?>>
@@ -82,11 +54,7 @@ window.addEventListener('resize', videoautoheight, false);
 		</header>
 
 		<div id="container" class="layout-300 layout-748 layout-978 layout-1218 layout-1378">
-			<!--
-			<div id="gs-overlay">&nbsp;</div>
-			<a href="http://978.gs" id="gs-overlay-badge" style="outline: 0;">
-			<img src="http://978.gs/resources/img/978-badge.png" alt="This site is built with 978 grid system" width="59" height="25" style="border: 0;"></a>
-			-->
+
 			<?php wp_nav_menu(array('theme_location' => 'nav_primary', 'container_id' => 'nav_primary', 'container_class' => 'menu_header')); ?>
 
 			<div id="main" class="site-main">

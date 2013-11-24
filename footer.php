@@ -21,8 +21,9 @@
 			</section><!-- .site-info -->
 
 		</footer>
-	</div><!-- #page -->
+
+</div><!-- #page -->
 
 	<?php wp_footer(); ?>
-</body> <!-- close body tag -->
+	</body> <!-- close body tag -->
 </html> <!-- close html tag -->

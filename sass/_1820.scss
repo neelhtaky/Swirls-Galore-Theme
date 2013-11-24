@@ -75,6 +75,14 @@ font-family: 'Georgia', Arial, sans-serif;
 		}
 	}
 }
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 24px;
+	max-width: 1035px;
+	height: 582px;
+}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(18);
 }
