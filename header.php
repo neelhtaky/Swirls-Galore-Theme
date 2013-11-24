@@ -34,7 +34,6 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 
 <script type="text/javascript" src="http://978.gs/resources/js/jquery.gs-overlay.min.js"></script>
-
 <script type="text/javascript">
 jQuery(function() {
   jQuery('div#gs-overlay').gsoverlay({
@@ -48,31 +47,28 @@ jQuery(function() {
 </head>
 
 <body <?php body_class(''); ?>>
+	<div id="page" class="hfeed site">
+		<header id="header" role="banner">
+	        <div id="site_title">
+<!-- if front page make title highest SEO, else make post titles more important -->
+				<?php if(is_home()){ ?>
+					<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+			    <?php } else { ?>
+			        <h4><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h4>
+			    <?php } ?>
+			</div><!-- #site_title END -->
 
+			<div id="description">
+				<p><?php bloginfo('description'); ?></p>
+			</div><!-- .description END -->
+		</header>
 
+		<div id="container" class="layout-300 layout-748 layout-978 layout-1218 layout-1378">
+			<!--
+			<div id="gs-overlay">&nbsp;</div>
+			<a href="http://978.gs" id="gs-overlay-badge" style="outline: 0;">
+			<img src="http://978.gs/resources/img/978-badge.png" alt="This site is built with 978 grid system" width="59" height="25" style="border: 0;"></a>
+			-->
+			<?php wp_nav_menu(array('theme_location' => 'nav_primary', 'container_id' => 'nav_primary', 'container_class' => 'menu_header')); ?>
 
-
-	<header id="header" role="banner">
-
-        <div id="site_title">
-			<!-- if front page make title highest SEO, else make post titles more important -->
-			<?php if(is_home()){ ?>
-				<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-		    <?php } else { ?>
-		        <h4><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h4>
-		    <?php } ?>
-		</div><!-- #site_title END -->
-
-		<div id="description">
-			<p><?php bloginfo('description'); ?></p>
-		</div><!-- .description END -->
-
-	</header>
-<div id="container" class="layout-300 layout-748 layout-978 layout-1218 layout-1378">
-<!--
-<div id="gs-overlay">&nbsp;</div>
-<a href="http://978.gs" id="gs-overlay-badge" style="outline: 0;">
-<img src="http://978.gs/resources/img/978-badge.png" alt="This site is built with 978 grid system" width="59" height="25" style="border: 0;"></a>
--->
-	<?php wp_nav_menu(array('theme_location' => 'nav_primary', 'container_id' => 'nav_primary', 'container_class' => 'menu_header')); ?>
-
+			<div id="main" class="site-main">

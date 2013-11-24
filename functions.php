@@ -2,7 +2,7 @@
 /******************************************************************
 ADD THEME SUPPORT
 ******************************************************************/
-if ( ! isset( $content_width ) ) $content_width = 900;
+if ( ! isset( $content_width ) ) $content_width = 1060;
 
 if(function_exists('add_theme_support')) {
     add_theme_support( 'post-thumbnails' );

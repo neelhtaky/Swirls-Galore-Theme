@@ -27,11 +27,13 @@
 		<?php } elseif (is_day()) { ?>
 		    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for the day <?php get_option('date_format'); ?>.</p>
 	    <?php } elseif (is_month()) { ?>
-		    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for <?php echo get_month_link();?>.</p>
+		    <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> blog archives
+			for <?php the_time('F, Y'); ?>.</p>
 	     <?php } elseif (is_year()) { ?>
-		    <p>You are currently browsing the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for the year <?php get_year_link(); ?>.</p>
+		    <p>You are currently browsing the <a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a> blog archives
+			for the year <?php the_time('Y'); ?>.</p>
 	     <?php } elseif (is_search()) { ?>
-		    <p>You have searched the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for <strong>'<?php the_search_query(); ?>'</strong>. If you are unable to find anything in these search results, you can try one of these links.</p>
+		    <p>You have searched the <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a> blog archives for <strong>'<?php the_search_query(); ?>'</strong>.</p>
 		 <?php } ?>
 		 <?php dynamic_sidebar( 'primary' ); ?>
 	<?php else : ?>
