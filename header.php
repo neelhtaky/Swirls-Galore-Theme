@@ -43,6 +43,24 @@ jQuery(function() {
     opacity: 0.24
   });
 });
+
+function videoautoheight(){
+	$("object, embed, .format-video iframe").each(function() {
+		var orig = $(this);
+		var ratio = orig.attr("height") / orig.attr("width");
+		var parWidth = orig.parents().find("p:last").width();
+		if(orig.attr(“width”)> parWidth) {
+			orig
+				.attr("width", parWidth)
+				.attr("height", (parWidth * ratio));
+		}
+	});
+}
+
+videoautoheight();
+
+window.addEventListener('resize', videoautoheight, false);
+ 
 </script>
 </head>
 
