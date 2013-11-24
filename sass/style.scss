@@ -506,8 +506,32 @@ a.read_more {
 .navigation{
 	margin-top: 2em;
 }
+/* Wrapper for entire chat transcript. */
+.chat-transcript { }
 
-#comment_count, .nocomments{padding-top: 1em;}
+/* Individual section of the chat. */
+.chat-row { }
+
+/* Individual speaker in the chat. */
+.chat-speaker-xxx { }
+.chat-speaker-1{border-left: 5px solid $col-purple-light;
+	.chat-text{background: lighten($col-purple-light,30%);}
+}
+.chat-speaker-2{border-left: 5px solid $col-tan;
+	.chat-text{background: lighten($col-tan,7%);}
+}
+.chat-speaker-3{border-left: 5px solid $col-blue;
+	.chat-text{background: lighten($col-blue,55%);}
+}
+/* Chat author. */
+.chat-author {
+	margin-top: 13px;
+	background: white;
+	border-left: 5px solid white; }
+.chat-author cite {font-weight: bold;}
+
+/* Chat text. */
+.chat-text {padding: 1px 5px 1px 13px;}
 
 ol.commentlist {
 	width: 100%;

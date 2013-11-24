@@ -1700,8 +1700,36 @@ a.read_more:hover {
 .navigation {
   margin-top: 2em; }
 
-#comment_count, .nocomments {
-  padding-top: 1em; }
+/* Wrapper for entire chat transcript. */
+/* Individual section of the chat. */
+/* Individual speaker in the chat. */
+.chat-speaker-1 {
+  border-left: 5px solid #b492bf; }
+  .chat-speaker-1 .chat-text {
+    background: #f6f2f8; }
+
+.chat-speaker-2 {
+  border-left: 5px solid #f2e8d1; }
+  .chat-speaker-2 .chat-text {
+    background: #faf6ed; }
+
+.chat-speaker-3 {
+  border-left: 5px solid #007cbe; }
+  .chat-speaker-3 .chat-text {
+    background: #d8f1ff; }
+
+/* Chat author. */
+.chat-author {
+  margin-top: 13px;
+  background: white;
+  border-left: 5px solid white; }
+
+.chat-author cite {
+  font-weight: bold; }
+
+/* Chat text. */
+.chat-text {
+  padding: 1px 5px 1px 13px; }
 
 ol.commentlist {
   width: 100%;
