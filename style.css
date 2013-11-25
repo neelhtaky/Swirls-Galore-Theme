@@ -9,7 +9,38 @@ License: Attribution-NonCommercial-NoDerivs. CC BY-NC-ND.
 License URI: http://creativecommons.org/licenses/
 Tags: white, two-columns, custom-header
 */
-/* IMPORT STYLES */
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Import Styles and Resources
+ * 2.0 - Media Queries
+ * 3.0 - Site Wide Styles
+ * 4.0 - Header
+ * 5.0 - Navigation
+ * 6.0 - Content
+ *   6.1 - Post Thumbnail
+ *   6.2 - Entry Header
+ *   6.3 - Entry Meta
+ *   6.4 - Entry Content
+ *   6.5 - Galleries
+ *   6.6 - Post Formats
+ *   6.7 - Post/Paging Navigation
+ *   6.8 - Attachments
+ *   6.9 - Archives
+ *   6.10 - Contributor Page
+ *   6.11 - 404 Page
+ *   6.12 - Full-width
+ *   6.13 - Singular
+ * 7.0 - Comments
+ * 8.0 - Sidebar
+ *   7.1 - Widgets
+ * 9.0 - Footer
+ * 10.0 - Featured Content
+ * 11.0 - Print
+ */
+/*********************************************************
+1.0 Import Styles and Resources
+*********************************************************/
 /* $menu-col:			#606060; */
 .alert-help, .alert-info, .alert-error, .alert-success {
   padding: 5px 10px;
@@ -532,16 +563,9 @@ a img.aligncenter {
   max-width: 100%;
   height: auto; }
 
-/* IMPORT GRID SYSTEM and testing banner sizes */
-body:before {
-  font-size: 300%;
-  font-weight: bold;
-  position: fixed;
-  bottom: 60px;
-  width: 100%;
-  text-align: center;
-  color: white; }
-
+/*********************************************************
+2.0 Media queries
+*********************************************************/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   /******************************************************************
   300px - 8 Columns
@@ -649,13 +673,7 @@ body:before {
   video {
     margin-bottom: 24px;
     max-width: 290px;
-    height: 163px; }
-
-  	 /*
-  body:before {
-  	 	content: "300 ~ 0 to 479px";
-          background-color: hsla(90,60%,40%,0.7);}
-  */ }
+    height: 163px; } }
 @media only screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
   .post_title_wide {
     display: none; } }
@@ -798,13 +816,7 @@ body:before {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-    /*
-body:before {
-        content: "748 ~ 768 to 1001px";
-        background-color: hsla(180,60%,40%,0.7);}
-*/ }
+    line-height: 2.1rem; } }
 @media only screen and (min-width: 768px) and (max-width: 1247px) and (min-width: 768px) and (max-width: 1247px) {
   .post_title_wide {
     display: none; } }
@@ -935,13 +947,7 @@ body:before {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  	/*
-  body:before {
-          content: "978 ~ 1248 to 1407px";
-          background-color: hsla(360,60%,40%,0.7);}
-  */ }
+    line-height: 2.1rem; } }
 @media screen and (min-width: 1248px) and (max-width: 1407px) and (min-width: 1248px) and (max-width: 1407px) {
   .post_title_wide {
     display: none; } }
@@ -1086,13 +1092,7 @@ body:before {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  	/*
-  body:before {
-          content: "1218 ~ 1408 and Above";
-          background-color: hsla(360,60%,40%,0.7);}
-  */ }
+    line-height: 2.1rem; } }
 @media screen and (min-width: 1408px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -1248,16 +1248,10 @@ body:before {
     margin: 0px; }
 
   #footer {
-    clear: both; }
-
-  	/*
-  body:before {
-          content: "1820 and Above";
-          background-color: hsla(60,60%,40%,0.7);}
-  */ }
-/******************************************************************
-SITE WIDE STYLES
-******************************************************************/
+    clear: both; } }
+/*********************************************************
+3.0 Site Wide Styles
+*********************************************************/
 html {
   font-size: 62.5%; }
 
@@ -1273,98 +1267,6 @@ body {
   box-shadow: inset 0px 0px 65px 99px white;
   -webkit-box-shadow: inset 0px 0px 65px 99px white;
   -moz-box-shadow: inset 0px 0px 65px 99px white; }
-
-/* Responsive images. Fluid images for posts, comments, and widgets */
-.comment-content img,
-.entry-content img,
-.entry-summary img,
-#site-header img,
-.widget img,
-.wp-caption {
-  max-width: 100%; }
-
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
-.comment-content img[height],
-.entry-content img,
-.entry-summary img,
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"],
-#site-header img {
-  height: auto; }
-
-img.size-full,
-img.size-large,
-.wp-post-image,
-.post-thumbnail img {
-  height: auto;
-  max-width: 100%; }
-
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-  max-width: 100%;
-  height: auto; }
-
-/* Responsive images. Fluid images for posts, comments, and widgets */
-.comment-content img,
-.entry-content img,
-.entry-summary img,
-#site-header img,
-.widget img,
-.wp-caption {
-  max-width: 100%; }
-
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
-.comment-content img[height],
-.entry-content img,
-.entry-summary img,
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"],
-#site-header img {
-  height: auto; }
-
-/*
-img.size-full,
-img.size-large,
-.wp-post-image,
-.post-thumbnail img {
-	height: auto;
-	max-width: 100%;
-}
-*/
-/* Make sure embeds and iframes fit their containers */
-p > embed,
-p > iframe,
-p > object,
-span > embed,
-span > iframe,
-span > object {
-  margin-bottom: 0;
-  overflow: auto; }
-
-#page {
-  background-image: url("library/images/bg_left.png"), url("library/images/bg_right.png");
-  background-position: left top, right top;
-  background-repeat: repeat-y; }
-
-#container {
-  background: white; }
-
-table th {
-  background: #f2e8d1; }
-
-table, th, tr, td {
-  border: 1px solid #b492bf; }
 
 a {
   color: #f77a00;
@@ -1389,7 +1291,6 @@ a[href*="quickneed"]:after, a[href^="/"]:after, a[href^="#"]:after, a[href^="mai
 a[rel="author"]:before {
   color: #444444;
   content: '\f304';
-  /* 	display: inline-block; */
   -webkit-font-smoothing: antialiased;
   font: normal 16px/1 'Genericons';
   vertical-align: top; }
@@ -1413,6 +1314,42 @@ p.tags:before {
 address {
   display: inline; }
 
+blockquote {
+  background: #faf6ed;
+  border-left: 5px solid #b492bf;
+  margin: 1.5em 10px;
+  padding: 1em 10px 2em 10px;
+  font-style: italic; }
+  blockquote:before {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    content: open-quote;
+    font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+    font-size: 4em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    line-height: 0.1em;
+    font-weight: bold;
+    color: #b492bf; }
+  blockquote p {
+    display: inline; }
+  blockquote cite {
+    float: right; }
+    blockquote cite:after {
+      clear: both; }
+
+time {
+  font-weight: normal;
+  font-style: italic; }
+  time:before {
+    content: '\f303';
+    -webkit-font-smoothing: antialiased;
+    font: normal 16px/1 'Genericons';
+    vertical-align: bottom; }
+
+::selection, ::-moz-selection, ::-webkit-selection {
+  background: #d5edf8;
+  color: #555; }
+
 hr {
   padding-top: 30px;
   border: 0px;
@@ -1432,73 +1369,15 @@ hr {
     padding: 0 0.05em;
     top: -0.9em; }
 
-.post_details {
-  display: inline; }
+table th {
+  background: #f2e8d1; }
 
-time {
-  /* 	@include font-size(10); */
-  font-weight: normal;
-  font-style: italic; }
-  time:before {
-    content: '\f303';
-    /* 		display: inline-block; */
-    -webkit-font-smoothing: antialiased;
-    font: normal 16px/1 'Genericons';
-    vertical-align: bottom; }
+table, th, tr, td {
+  border: 1px solid #b492bf; }
 
-a.comments-link {
-  /* 	@include font-size(10); */
-  text-decoration: none;
-  color: #444444; }
-  a.comments-link:before {
-    color: #444444;
-    content: '\f300';
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
-    font: normal 16px/1 'Genericons';
-    vertical-align: top; }
-
-::selection {
-  background: #d5edf8;
-  color: #555; }
-
-::-moz-selection {
-  background: #d5edf8;
-  color: #555; }
-
-::-webkit-selection {
-  background: #d5edf8;
-  color: #555; }
-
-.sticky {
-  background: #fcfaf5;
-  border: 2px solid #ebe2ee;
-  padding: 10px; }
-
-.wp-caption {
-  border: 1px solid #ebe2ee;
-  background: #fcfaf5;
-  text-align: center;
-  padding-top: 10px;
-  margin: 10px;
-  -moz-border-radius: 2px;
-  -khtml-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px; }
-  .wp-caption img {
-    margin: 0;
-    padding: 0;
-    border: 0 none; }
-
-.wp-caption p.wp-caption-text, .gallery-caption p.gallery-caption-text {
-  font-size: 12px;
-  line-height: 18px;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-style: italic;
-  padding: 0px 8px;
-  margin: 0; }
-
+/*********************************************************
+4.0 Header
+*********************************************************/
 #site_title {
   text-align: center; }
   #site_title h1 a, #site_title h4 a {
@@ -1524,6 +1403,9 @@ a.comments-link {
   font-size: 1.4rem;
   line-height: 2.1rem; }
 
+/*********************************************************
+5.0 Navigation
+*********************************************************/
 .menu_header {
   display: block;
   float: left;
@@ -1595,6 +1477,23 @@ a.comments-link {
 .menu_header ul ul :hover > a {
   background: #f2e8d1; }
 
+/*********************************************************
+6.0 Content
+*********************************************************/
+.post {
+  margin-top: 30px; }
+
+#page {
+  background-image: url("library/images/bg_left.png"), url("library/images/bg_right.png");
+  background-position: left top, right top;
+  background-repeat: repeat-y; }
+
+#container {
+  background: white; }
+
+/*********************************************************
+	6.1 Post Thumbnails
+*********************************************************/
 .thumbnail {
   width: 293px;
   height: 166px;
@@ -1623,12 +1522,18 @@ a.comments-link {
     box-shadow: 1px 1px 3px #f2e8d1;
     -webkit-transition: all .5s ease-in; }
 
+/*********************************************************
+	6.2 Entry Header
+*********************************************************/
+/*********************************************************
+	6.3 Entry Meta
+*********************************************************/
+/*********************************************************
+	6.4 Entry Content
+*********************************************************/
 .entry_excerpt p {
   text-align: justify;
   text-justify: newspaper; }
-
-.post {
-  margin-top: 30px; }
 
 .post_content h1 {
   font-size: 32px;
@@ -1697,12 +1602,13 @@ a.read_more:hover {
   background: #ffa145;
   color: black; }
 
-.navigation {
-  margin-top: 2em; }
-
-/* Wrapper for entire chat transcript. */
-/* Individual section of the chat. */
-/* Individual speaker in the chat. */
+/*********************************************************
+	6.5 Galleries
+*********************************************************/
+/*********************************************************
+	6.6 Post Formats
+*********************************************************/
+/* Chat Format */
 .chat-speaker-1 {
   border-left: 5px solid #b492bf; }
   .chat-speaker-1 .chat-text {
@@ -1718,7 +1624,6 @@ a.read_more:hover {
   .chat-speaker-3 .chat-text {
     background: #d8f1ff; }
 
-/* Chat author. */
 .chat-author {
   margin-top: 13px;
   background: white;
@@ -1727,9 +1632,38 @@ a.read_more:hover {
 .chat-author cite {
   font-weight: bold; }
 
-/* Chat text. */
 .chat-text {
   padding: 1px 5px 1px 13px; }
+
+/*********************************************************
+	6.7 Post/Page Navigation
+*********************************************************/
+/*********************************************************
+	6.8 Attachments
+*********************************************************/
+/*********************************************************
+	6.9 Archives
+*********************************************************/
+/*********************************************************
+	6.10 Contributor Page
+*********************************************************/
+/*********************************************************
+	6.11 404 Page
+*********************************************************/
+/*********************************************************
+	6.12 Full Width
+*********************************************************/
+/*********************************************************
+	6.13 Singular
+*********************************************************/
+/*********************************************************
+7.0 Comments
+*********************************************************/
+#respond {
+  margin-top: 6em; }
+
+.nocomments {
+  margin-top: 20px; }
 
 ol.commentlist {
   width: 100%;
@@ -1817,9 +1751,9 @@ ol.commentlist li.odd {
 ol.commentlist li.parent {
   border-left: 5px solid #9e64a5; }
 
-#respond {
-  margin-top: 6em; }
-
+/*********************************************************
+8.0 Sidebar
+*********************************************************/
 #sidebar {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
   #sidebar ul {
@@ -1829,6 +1763,35 @@ ol.commentlist li.parent {
       padding-left: 15px; }
   #sidebar a {
     border-bottom: 1px dotted; }
+
+.widget-title {
+  background-image: url("library/images/stripe.png"); }
+
+h3.widget-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #777777;
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem; }
+
+/*********************************************************
+	8.1 Widgets
+*********************************************************/
+/* search widget */
+.widget_search label {
+  display: none; }
+
+/* sponsors, categories, archives and text widget */
+#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+  -moz-column-count: 2;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 10px; }
+
+.sponsors .textwidget {
+  padding-left: 15px; }
 
 /* calendar widget */
 #wp-calendar {
@@ -1871,36 +1834,137 @@ ol.commentlist li.parent {
 #wp-calendar tfoot #next {
   border-left: 1px solid white; }
 
-.widget-title {
-  background-image: url("library/images/stripe.png"); }
-
-h3.widget-title {
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #777777;
-  font-size: 16px;
-  line-height: 24px;
-  font-size: 1.6rem;
-  line-height: 2.4rem; }
-
-.widget_search label {
-  display: none; }
-
-input#s {
-  width: 230px; }
-
-#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
-  -moz-column-count: 2;
-  -moz-column-gap: 10px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px; }
-
-.sponsors .textwidget {
-  padding-left: 15px; }
-
+/*********************************************************
+9.0 Footer
+*********************************************************/
 #footer ul {
   list-style: none;
   padding: 0px; }
+
+/*********************************************************
+10.0 Featured Content
+*********************************************************/
+.sticky {
+  background: #fcfaf5;
+  border: 2px solid #ebe2ee;
+  padding: 10px; }
+
+/*********************************************************
+11.0 Print
+*********************************************************/
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+#site-header img,
+.widget img,
+.wp-caption {
+  max-width: 100%; }
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+.comment-content img[height],
+.entry-content img,
+.entry-summary img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+  height: auto; }
+
+img.size-full,
+img.size-large,
+.wp-post-image,
+.post-thumbnail img {
+  height: auto;
+  max-width: 100%; }
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+#site-header img,
+.widget img,
+.wp-caption {
+  max-width: 100%; }
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+.comment-content img[height],
+.entry-content img,
+.entry-summary img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+  height: auto; }
+
+/* Make sure embeds and iframes fit their containers */
+p > embed,
+p > iframe,
+p > object,
+span > embed,
+span > iframe,
+span > object {
+  margin-bottom: 0;
+  overflow: auto; }
+
+.post_details {
+  display: inline; }
+
+a.comments-link {
+  /* 	@include font-size(10); */
+  text-decoration: none;
+  color: #444444; }
+  a.comments-link:before {
+    color: #444444;
+    content: '\f300';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 16px/1 'Genericons';
+    vertical-align: top; }
+
+.wp-caption {
+  border: 1px solid #ebe2ee;
+  background: #fcfaf5;
+  text-align: center;
+  padding-top: 10px;
+  margin: 10px;
+  -moz-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
+  .wp-caption img {
+    margin: 0;
+    padding: 0;
+    border: 0 none; }
+
+.wp-caption p.wp-caption-text, .gallery-caption p.gallery-caption-text {
+  font-size: 12px;
+  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-style: italic;
+  padding: 0px 8px;
+  margin: 0; }
+
+.navigation {
+  margin-top: 2em; }
+
+input#s {
+  width: 230px; }
 
 .site-info {
   text-align: center; }
