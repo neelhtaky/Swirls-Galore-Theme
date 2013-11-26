@@ -31,6 +31,12 @@ font-family: 'Georgia', Arial, sans-serif;
 	padding: 5px;
 	@include font-size(12);
 }
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+   .sticky{
+   		margin-top: 50px;
+	}
+}
 #entries{
 	padding-top: 130px;
 	h2{

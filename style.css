@@ -617,6 +617,9 @@ a[rel="category tag"]:before {
   font: normal 16px/1 'Genericons';
   vertical-align: top; }
 
+p.tags {
+  display: inline; }
+
 p.tags:before {
   color: #444444;
   content: '\f302';
@@ -707,6 +710,16 @@ table, th, tr, td {
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     text-decoration: none; }
+    #site_title h1 a:hover, #site_title h4 a:hover {
+      border-bottom: none !important; }
+
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  #site_title h1 a, #site_title h4 a {
+    background: none;
+    color: #9e64a5;
+    text-align: center;
+    font-variant: small-caps; } }
 
 #description p {
   text-align: center;
@@ -752,6 +765,8 @@ table, th, tr, td {
       font-size: 6rem;
       line-height: 9rem;
       line-height: 0.6; }
+    .menu_header a:hover {
+      border: none; }
 
 .menu_header ul, div.menu ul {
   list-style: none;
@@ -771,7 +786,7 @@ table, th, tr, td {
   width: 180px;
   z-index: 99999; }
   .menu_header ul ul a {
-    background: #fff;
+    background: #f2e8d1;
     line-height: 2em;
     padding: 10px 10px 0px 10px;
     width: 160px;
@@ -789,7 +804,7 @@ table, th, tr, td {
 
 .menu_header li:hover > a,
 .menu_header ul ul :hover > a {
-  background: #f2e8d1; }
+  background: #f8f2e5; }
 
 /*********************************************************
 5.0 Content
@@ -1171,6 +1186,9 @@ ol.commentlist li.parent {
   #sidebar a {
     border-bottom: 1px dotted; }
 
+#sidebar .thumbnail {
+  margin: 0 auto; }
+
 .widget-title {
   background-image: url("library/images/stripe.png"); }
 
@@ -1196,6 +1214,9 @@ h3.widget-title {
   -moz-column-gap: 10px;
   -webkit-column-count: 2;
   -webkit-column-gap: 10px; }
+
+.textwidget {
+  text-align: center; }
 
 .sponsors .textwidget {
   padding-left: 15px; }
@@ -1340,6 +1361,11 @@ h3.widget-title {
     font-size: 1.2rem;
     line-height: 1.8rem; }
 
+  /*This will work for firefox*/
+  @-moz-document url-prefix() {
+    .sticky {
+      margin-top: 50px; } }
+
   #entries {
     padding-top: 130px; }
     #entries h2 a {
@@ -1461,13 +1487,13 @@ h3.widget-title {
     float: left;
     width: 428px;
     margin-left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: -15px;
     text-align: justify;
-    text-justify: newspaper; }
+    text-justify: newspaper;
+    margin-right: 0px; }
     #entries .thumbnail {
-      background: CadetBlue;
       margin: 0 auto; }
 
   .post_title_long {
@@ -1770,12 +1796,15 @@ h3.widget-title {
     line-height: 2.1rem; }
 
   #entries {
+    background: lightblue;
     float: left;
     width: 828px;
     margin-left: 0;
     padding-left: 5px;
-    padding-right: 20px;
-    margin-top: -15px; }
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 0px; }
     #entries .thumbnail {
       margin: 0 auto; }
     #entries h2 a {
@@ -1801,6 +1830,7 @@ h3.widget-title {
     height: 452px; }
 
   #sidebar {
+    background: pink;
     float: left;
     width: 360px;
     margin-left: 30px;

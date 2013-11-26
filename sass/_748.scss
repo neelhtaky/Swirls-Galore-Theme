@@ -37,22 +37,20 @@ body{
 }
 #entries{
 	@include grid(7,true);
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin-top: -15px;
 	text-align: justify;
 	text-justify: newspaper;
 	.thumbnail{
-		background: CadetBlue;
-
 		margin: 0 auto;
 	}
+	margin-right: 0px;
 }
 .post_title_long{display: none;}
 .post_content {
 	h2{text-align: left;
 		a{
-
 			@include font-size(18);
 		}
 	}
@@ -77,7 +75,6 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 	@include grid(5);
 	margin-right: 0px;
 	margin-left: 0px;
-
 }
 #footer{
 	clear: both;

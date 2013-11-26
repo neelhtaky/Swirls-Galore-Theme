@@ -47,22 +47,22 @@ body{
 	@include font-size(14);
 }
 #entries{
+	background: lightblue;
 	@include grid(11,true);
 	padding-left: 5px;
-	padding-right: 20px;
-	margin-top: -15px;
+	padding-right: 15px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 0px;
 	.thumbnail{margin: 0 auto;}
 	h2{
 		a{@include font-size(24);}
 }
-
 .entriescol1{
 	@include grid(5,true);
 }
-
 #entries .post_content {
-@include grid(5);
-
+	@include grid(5);
 	}
 }
 embed,
@@ -74,14 +74,13 @@ video {
 	height: 452px;
 }
 #sidebar{
+	background: pink;
 	@include grid(5);
-
 	margin: 0px;}
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(16);
 }
-
 ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
 	@include font-size(14);
 }

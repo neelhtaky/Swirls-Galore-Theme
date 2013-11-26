@@ -92,6 +92,9 @@ a[rel="category tag"]:before{
 	font: normal 16px/1 'Genericons';
 	vertical-align: top;
 }
+p.tags{
+	display: inline;
+}
 p.tags:before{
 	color: $text-col;
 	content: '\f302';
@@ -177,6 +180,19 @@ table, th, tr, td{border: 1px solid $col-purple-light;}
 		-webkit-text-fill-color: transparent;
 		font-weight: bold;
 		text-decoration: none;
+		&:hover{
+			border-bottom: none !important;
+		}
+	}
+}
+
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+    #site_title h1 a, #site_title h4 a{
+    background: none;
+    color: $col-purple-dark;
+    text-align: center;
+    font-variant: small-caps;
 	}
 }
 #description p{
@@ -215,6 +231,9 @@ table, th, tr, td{border: 1px solid $col-purple-light;}
 			@include font-size(60);
 			line-height: 0.6;
 		}
+		&:hover{
+			border: none;
+		}
 	}
 }
 .menu_header ul, div.menu ul {
@@ -235,7 +254,7 @@ table, th, tr, td{border: 1px solid $col-purple-light;}
 	width: 180px;
 	z-index: 99999;
     a{
-	    background: #fff;
+	    background: $col-tan;
 		line-height: 2em;
 		padding: 10px 10px 0px 10px;
 		width: 160px;
@@ -249,7 +268,7 @@ table, th, tr, td{border: 1px solid $col-purple-light;}
 }
 .menu_header ul li:hover > ul {display: block;}
 .menu_header li:hover > a,
-.menu_header ul ul :hover > a {background: $col-tan;}
+.menu_header ul ul :hover > a {background: lighten($col-tan,5%);}
 .menu_header ul li.current_page_item > a,
 .menu_header ul li.current-menu-ancestor > a,
 .menu_header ul li.current-menu-item > a,
@@ -615,6 +634,9 @@ ol.commentlist li.thread-odd {}
 	}
 	a{border-bottom: 1px dotted;}
 }
+#sidebar .thumbnail{
+	margin:0 auto;
+}
 .widget-title{background-image: url('library/images/stripe.png');}
 h3.widget-title{
 	text-transform: uppercase;
@@ -633,6 +655,9 @@ h3.widget-title{
        -moz-column-gap: 10px;
        -webkit-column-count: 2;
        -webkit-column-gap: 10px;
+}
+.textwidget{
+	text-align: center;
 }
 .sponsors .textwidget{
 	padding-left: 15px;
