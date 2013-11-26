@@ -29,13 +29,6 @@ $layoutwidth : 1800;
 @import "978gs";
 @include layout;
 
-
-/*
-
-#page{
-	width: 1800px;
-	margin: 0 auto;
-}
 @media screen and (min-width:1408px){
 	.post_title{display: none;}
 }
@@ -106,4 +99,8 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 .entriescol1{
 	@include grid(5,true);
 }
+
+/*
+
+
  */

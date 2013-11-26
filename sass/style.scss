@@ -716,8 +716,8 @@ h3.widget-title{
 @media only screen and (min-width:0px) and (max-width: 767px){@import "300";}
 @media only screen and (min-width: 768px) and (max-width:1247px) {@import "748";}
 @media screen and (min-width:1248px) and (max-width:1407px){@import "978";}
-@media screen and (min-width:1408px) /* and (max-width:1799px) */{@import "1218";}
-/* @media screen and (min-width:1800px) {@import "1800";} */
+@media screen and (min-width:1408px) and (max-width:1799px) {@import "1218";}
+
 /*********************************************************
 11.0 Print
 *********************************************************/

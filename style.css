@@ -1704,7 +1704,7 @@ h3.widget-title {
 @media screen and (min-width: 1248px) and (max-width: 1407px) and (min-width: 1248px) and (max-width: 1407px) {
   .post_title_wide {
     display: none; } }
-@media screen and (min-width: 1408px) {
+@media screen and (min-width: 1408px) and (max-width: 1799px) {
   /******************************************************************
   1218px - 16 Columns
   columns = 48px
@@ -1864,10 +1864,9 @@ h3.widget-title {
   .gallery-columns-9 .gallery-item {
     width: 32% !important;
     float: left; } }
-@media screen and (min-width: 1408px) and (min-width: 1408px) {
+@media screen and (min-width: 1408px) and (max-width: 1799px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
-/* @media screen and (min-width:1800px) {@import "1800";} */
 /*********************************************************
 11.0 Print
 *********************************************************/
