@@ -53,7 +53,7 @@ body{
 }
 #entries{
 	background: pink;
-	@include grid(13,true);
+	@include grid(11,true);
 	padding-left: 5px;
 	padding-right: 15px;
 	margin-top: 10px;
