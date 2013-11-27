@@ -64,7 +64,7 @@ body{
 		a{@include font-size(28);}
 }
 .entriescol1{
-	@include grid(4,true);
+	@include grid(3,true);
 }
 .entriescol2{
 	@include grid(7);
