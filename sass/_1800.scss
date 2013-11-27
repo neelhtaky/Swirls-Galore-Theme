@@ -67,10 +67,10 @@ body{
 	@include grid(4,true);
 }
 .entriescol2{
-	@include grid(8);
+	@include grid(7);
 }
 #entries .post_content {
-	@include grid(8);
+	@include grid(11, true);
 	}
 }
 embed,
@@ -83,7 +83,7 @@ video {
 }
 #sidebar{
 	background: lightblue;
-	@include grid(5);
+	@include grid(7);
 	margin: 0px;}
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {

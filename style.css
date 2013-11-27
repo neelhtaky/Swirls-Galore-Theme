@@ -1981,11 +1981,11 @@ h3.widget-title {
       margin-left: 0; }
     #entries .entriescol2 {
       float: left;
-      width: 586px;
+      width: 674px;
       margin-left: 30px; }
     #entries #entries .post_content {
       float: left;
-      width: 586px;
+      width: 1026px;
       margin-left: 30px; }
 
   embed,
@@ -2151,12 +2151,12 @@ h3.widget-title {
       margin-left: 0; }
     #entries .entriescol2 {
       float: left;
-      width: 768px;
+      width: 668px;
       margin-left: 32px; }
     #entries #entries .post_content {
       float: left;
-      width: 768px;
-      margin-left: 32px; }
+      width: 1068px;
+      margin-left: 0; }
 
   embed,
   iframe,
@@ -2169,7 +2169,7 @@ h3.widget-title {
   #sidebar {
     background: lightblue;
     float: left;
-    width: 468px;
+    width: 668px;
     margin-left: 32px;
     margin: 0px; }
 
