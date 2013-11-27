@@ -2002,10 +2002,6 @@ h3.widget-title {
       float: left;
       width: 674px;
       margin-left: 30px; }
-    #entries #entries .post_content {
-      float: left;
-      width: 1026px;
-      margin-left: 30px; }
 
   embed,
   iframe,
@@ -2168,24 +2164,19 @@ h3.widget-title {
       line-height: 42px;
       font-size: 2.8rem;
       line-height: 4.2rem; }
-    #entries .entriescol1 {
-      float: left;
-      width: 368px;
-      margin-left: 0;
-      padding-right: 5px; }
-    #entries .entriescol2 {
-      float: left;
-      width: 668px;
-      margin-left: 0; }
-    #entries #entries .post_content {
-      float: left;
-      width: 1068px;
-      margin-left: 32px; }
 
-  embed,
-  iframe,
-  object,
-  video {
+  .entriescol1 {
+    float: left;
+    width: 368px;
+    margin-left: 0;
+    padding-right: 5px; }
+
+  .entriescol2 {
+    float: left;
+    width: 668px;
+    margin-left: 0; }
+
+  embed, iframe, object, video {
     margin-bottom: 24px;
     max-width: 803px;
     height: 452px; }
@@ -2337,7 +2328,6 @@ h3.widget-title {
     line-height: 2.4rem; }
 
   #entries {
-    background: lightblue;
     float: left;
     width: 1268px;
     margin-left: 0;
@@ -2352,24 +2342,19 @@ h3.widget-title {
       line-height: 42px;
       font-size: 2.8rem;
       line-height: 4.2rem; }
-    #entries .entriescol1 {
-      float: left;
-      width: 368px;
-      margin-left: 0;
-      padding-right: 5px; }
-    #entries .entriescol2 {
-      float: left;
-      width: 668px;
-      margin-left: 0; }
-    #entries #entries .post_content {
-      float: left;
-      width: 1268px;
-      margin-left: 32px; }
 
-  embed,
-  iframe,
-  object,
-  video {
+  .entriescol1 {
+    float: left;
+    width: 368px;
+    margin-left: 0;
+    padding-right: 5px; }
+
+  .entriescol2 {
+    float: left;
+    width: 868px;
+    margin-left: 0; }
+
+  embed, iframe, object, video {
     margin-bottom: 24px;
     max-width: 803px;
     height: 452px; }
@@ -2378,9 +2363,8 @@ h3.widget-title {
     width: 150px; }
 
   #sidebar {
-    background: pink;
     float: left;
-    width: 968px;
+    width: 668px;
     margin-left: 32px;
     margin: 0px; }
 

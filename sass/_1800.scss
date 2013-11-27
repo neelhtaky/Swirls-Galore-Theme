@@ -33,7 +33,6 @@ $layoutwidth : 1800;
 @media screen and (min-width:1408px){
 	.post_title{display: none;}
 }
-
 body{
 	@include font-size(14);
 }
@@ -43,7 +42,6 @@ body{
 	padding:  1rem;
 	width:  100%;
 }
-
 #site_title h1 a, #site_title h4 a{
 	font-family: 'Georgia', Arial, sans-serif;
 	@include font-size(65);
@@ -60,6 +58,7 @@ body{
 	.thumbnail{margin: 0 auto;}
 	h2{
 		a{@include font-size(28);}
+	}
 }
 .entriescol1{
 	@include grid(4,true);
@@ -68,14 +67,7 @@ body{
 .entriescol2{
 	@include grid(7,true);
 }
-#entries .post_content {
-
-	}
-}
-embed,
-iframe,
-object,
-video {
+embed, iframe, object,video {
 	margin-bottom: 24px;
 	max-width: 803px;
 	height: 452px;
@@ -85,16 +77,17 @@ a.read_more {
 }
 #sidebar{
 	@include grid(7);
-	margin: 0px;}
+	margin: 0px;
+}
 .sponsors .textwidget{
 	padding-left: 0px;
 	text-align: center;
 }
-	#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 3;
-       -moz-column-gap: 10px;
-       -webkit-column-count: 3;
-       -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
 }
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
