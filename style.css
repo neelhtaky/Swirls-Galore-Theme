@@ -1796,7 +1796,6 @@ h3.widget-title {
     line-height: 2.1rem; }
 
   #entries {
-    background: lightblue;
     float: left;
     width: 828px;
     margin-left: 0;
@@ -1816,6 +1815,10 @@ h3.widget-title {
       float: left;
       width: 360px;
       margin-left: 0; }
+    #entries .entriescol2 {
+      float: left;
+      width: 360px;
+      margin-left: 30px; }
     #entries #entries .post_content {
       float: left;
       width: 360px;
@@ -1830,7 +1833,6 @@ h3.widget-title {
     height: 452px; }
 
   #sidebar {
-    background: pink;
     float: left;
     width: 360px;
     margin-left: 30px;
@@ -1867,13 +1869,11 @@ h3.widget-title {
 @media screen and (min-width: 1408px) and (max-width: 1799px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
-@media screen and (min-width: 1800) {
+@media screen and (min-width: 1800px) {
   /******************************************************************
-  1218px - 16 Columns
-  columns = 48px
-  gutters = 30px
-  1248px with 15px side margins
+  1378PX - 16 Columns
   
+  For reference:
   div.col1 { width: 58px; }
   div.col2 { width: 146px; }
   div.col3 { width: 234px; }
@@ -1890,6 +1890,7 @@ h3.widget-title {
   div.col14 { width: 1202px; }
   div.col15 { width: 1290px; }
   div.col16 { width: 1378px; }
+  
   ******************************************************************/
   /*
   
@@ -1918,8 +1919,8 @@ h3.widget-title {
   THE SOFTWARE.
   
   */
-  .layout-1218 {
-    width: 1218px;
+  .layout-1378 {
+    width: 1378px;
     margin: 0px auto; }
 
   .row {
@@ -1931,8 +1932,6 @@ h3.widget-title {
     height: 1px;
     overflow: hidden; }
 
-  width: 1218px;
-  margin: 0px auto;
   body {
     font-size: 14px;
     line-height: 21px;
@@ -1953,15 +1952,14 @@ h3.widget-title {
     line-height: 9.75rem; }
 
   #entries, #sidebar, #footer {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
 
   #entries {
-    background: lightblue;
     float: left;
-    width: 906px;
+    width: 1026px;
     margin-left: 0;
     padding-left: 5px;
     padding-right: 15px;
@@ -1971,17 +1969,21 @@ h3.widget-title {
     #entries .thumbnail {
       margin: 0 auto; }
     #entries h2 a {
-      font-size: 24px;
-      line-height: 36px;
-      font-size: 2.4rem;
-      line-height: 3.6rem; }
+      font-size: 28px;
+      line-height: 42px;
+      font-size: 2.8rem;
+      line-height: 4.2rem; }
     #entries .entriescol1 {
       float: left;
-      width: 360px;
+      width: 322px;
       margin-left: 0; }
+    #entries .entriescol2 {
+      float: left;
+      width: 586px;
+      margin-left: 30px; }
     #entries #entries .post_content {
       float: left;
-      width: 360px;
+      width: 410px;
       margin-left: 30px; }
 
   embed,
@@ -1993,9 +1995,8 @@ h3.widget-title {
     height: 452px; }
 
   #sidebar {
-    background: pink;
     float: left;
-    width: 282px;
+    width: 322px;
     margin-left: 30px;
     margin: 0px; }
 
@@ -2003,16 +2004,16 @@ h3.widget-title {
     clear: both; }
 
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+    font-size: 18px;
+    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem; }
+
+  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
     line-height: 2.4rem; }
-
-  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
 
   .gallery-columns-1 .gallery-item {
     max-width: 100%; }
@@ -2027,7 +2028,7 @@ h3.widget-title {
   .gallery-columns-9 .gallery-item {
     width: 32% !important;
     float: left; } }
-@media screen and (min-width: 1800) and (min-width: 1408px) {
+@media screen and (min-width: 1800px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
 /*********************************************************

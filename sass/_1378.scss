@@ -1,9 +1,7 @@
 /******************************************************************
-1218px - 16 Columns
-columns = 48px
-gutters = 30px
-1248px with 15px side margins
+1378PX - 16 Columns
 
+For reference:
 div.col1 { width: 58px; }
 div.col2 { width: 146px; }
 div.col3 { width: 234px; }
@@ -20,10 +18,10 @@ div.col13 { width: 1114px; }
 div.col14 { width: 1202px; }
 div.col15 { width: 1290px; }
 div.col16 { width: 1378px; }
+
 ******************************************************************/
-$layoutwidth : 1218;
+$layoutwidth : 1378;
 @import "978gs";
-@include layout;
 
 @media screen and (min-width:1408px){
 	.post_title{display: none;}
@@ -33,10 +31,10 @@ body{
 	@include font-size(14);
 }
 .entry_excerpt {
- display: inline-block;
- margin:  0.25rem;
- padding:  1rem;
- width:  100%;
+	display: inline-block;
+	margin:  0.25rem;
+	padding:  1rem;
+	width:  100%;
 }
 
 #site_title h1 a, #site_title h4 a{
@@ -44,10 +42,9 @@ body{
 	@include font-size(65);
 }
 #entries, #sidebar, #footer{
-	@include font-size(14);
+	@include font-size(16);
 }
 #entries{
-	background: lightblue;
 	@include grid(12,true);
 	padding-left: 5px;
 	padding-right: 15px;
@@ -56,10 +53,13 @@ body{
 	margin-left: 0px;
 	.thumbnail{margin: 0 auto;}
 	h2{
-		a{@include font-size(24);}
+		a{@include font-size(28);}
 }
 .entriescol1{
-	@include grid(5,true);
+	@include grid(4,true);
+}
+.entriescol2{
+	@include grid(7);
 }
 #entries .post_content {
 	@include grid(5);
@@ -74,15 +74,14 @@ video {
 	height: 452px;
 }
 #sidebar{
-	background: pink;
 	@include grid(4);
 	margin: 0px;}
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
-	@include font-size(16);
+	@include font-size(18);
 }
 ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
-	@include font-size(14);
+	@include font-size(16);
 }
 .gallery-columns-1 .gallery-item {max-width: 100%;}
 .gallery-columns-2 .gallery-item,
