@@ -48,11 +48,17 @@ body{
 }
 #entries{
 	@include grid(11,true);
-	padding-left: 5px;
-	padding-right: 15px;
-	margin-top: 10px;
-	margin-right: 10px;
+	margin-top: 15px;
+	margin-right: 30px;
+
+
+	/*
+
+padding-left: 5px;
+padding-right: 15px;
+
 	margin-left: 0px;
+*/
 	.thumbnail{margin: 0 auto;}
 	h2{
 		a{@include font-size(24);}
@@ -62,7 +68,7 @@ body{
 	@include grid(5,true);
 }
 .entriescol2{
-	@include grid(5);
+	@include grid(6,true);
 }
 embed,
 iframe,
@@ -88,6 +94,7 @@ ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
 	@include font-size(14);
 }
+/*
 .gallery-columns-1 .gallery-item {max-width: 100%;}
 .gallery-columns-2 .gallery-item,
 .gallery-columns-3 .gallery-item,
@@ -97,6 +104,8 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 .gallery-columns-7 .gallery-item,
 .gallery-columns-8 .gallery-item,
 .gallery-columns-9 .gallery-item{
+ 	width: 24% !important;
 	width: 32% !important;
 	float: left;
 }
+*/

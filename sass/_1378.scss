@@ -48,11 +48,14 @@ body{
 }
 #entries{
 	@include grid(12,true);
-	padding-left: 5px;
+	margin-right: 30px;
+	/*
+padding-left: 5px;
 	padding-right: 15px;
 	margin-top: 10px;
-	margin-right: 10px;
+
 	margin-left: 0px;
+*/
 	.thumbnail{margin: 0 auto;}
 	h2{
 		a{@include font-size(28);}
@@ -62,7 +65,7 @@ body{
 	@include grid(4,true);
 }
 .entriescol2{
-	@include grid(8);
+	@include grid(8,true);
 }
 
 embed,
@@ -76,11 +79,11 @@ video {
 #sidebar{
 	@include grid(4);
 	margin: 0px;}
-	#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 2;
-       -moz-column-gap: 10px;
-       -webkit-column-count: 2;
-       -webkit-column-gap: 10px;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
 }
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
@@ -89,6 +92,7 @@ ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
 	@include font-size(16);
 }
+/*
 .gallery-columns-1 .gallery-item {max-width: 100%;}
 .gallery-columns-2 .gallery-item,
 .gallery-columns-3 .gallery-item,
@@ -101,3 +105,4 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 	width: 32% !important;
 	float: left;
 }
+*/

@@ -934,14 +934,14 @@ a.read_more:hover {
 /*********************************************************
 	5.5 Galleries
 *********************************************************/
-.gallery br {
-  clear: none !important; }
+.gallery {
+  margin-bottom: 20px; }
 
 .gallery-item {
-  position: relative;
-  margin: 0 4px 4px 4px;
+  float: left;
+  margin: 0 4px 4px 0;
   overflow: hidden;
-  float: left; }
+  position: relative; }
 
 .gallery-columns-1 .gallery-item {
   max-width: 100%; }
@@ -950,6 +950,11 @@ a.read_more:hover {
   max-width: 48%;
   max-width: -webkit-calc(50% - 4px);
   max-width: calc(50% - 4px); }
+
+.gallery-columns-3 .gallery-item {
+  max-width: 32%;
+  max-width: -webkit-calc(33.3% - 4px);
+  max-width: calc(33.3% - 4px); }
 
 .gallery-columns-4 .gallery-item {
   max-width: 23%;
@@ -992,11 +997,6 @@ a.read_more:hover {
 .gallery-columns-9 .gallery-item:nth-of-type(9n) {
   margin-right: 0; }
 
-.gallery-columns-7 .gallery-caption,
-.gallery-columns-8 .gallery-caption,
-.gallery-columns-9 .gallery-caption {
-  display: none; }
-
 .gallery-caption {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-box-sizing: border-box;
@@ -1026,6 +1026,11 @@ a.read_more:hover {
 
 .gallery-item:hover .gallery-caption {
   opacity: 1; }
+
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+  display: none; }
 
 /*********************************************************
 	5.6 Post Formats
@@ -1550,9 +1555,8 @@ h3.widget-title {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  .gallery-columns-1 .gallery-item {
-    max-width: 100%; }
-
+  /*
+  .gallery-columns-1 .gallery-item {max-width: 100%;}
   .gallery-columns-2 .gallery-item,
   .gallery-columns-3 .gallery-item,
   .gallery-columns-4 .gallery-item,
@@ -1560,9 +1564,12 @@ h3.widget-title {
   .gallery-columns-6 .gallery-item,
   .gallery-columns-7 .gallery-item,
   .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item {
-    width: 48% !important;
-    float: left; } }
+  .gallery-columns-9 .gallery-item{
+  	width: 48% !important;
+  	float: left;
+  
+  }
+  */ }
 @media only screen and (min-width: 768px) and (max-width: 1247px) and (min-width: 768px) and (max-width: 1247px) {
   .post_title_wide {
     display: none; } }
@@ -1701,9 +1708,8 @@ h3.widget-title {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  .gallery-columns-1 .gallery-item {
-    max-width: 100%; }
-
+  /*
+  .gallery-columns-1 .gallery-item {max-width: 100%;}
   .gallery-columns-2 .gallery-item,
   .gallery-columns-3 .gallery-item,
   .gallery-columns-4 .gallery-item,
@@ -1711,9 +1717,11 @@ h3.widget-title {
   .gallery-columns-6 .gallery-item,
   .gallery-columns-7 .gallery-item,
   .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item {
-    width: 32% !important;
-    float: left; } }
+  .gallery-columns-9 .gallery-item{
+  	width: 32% !important;
+  	float: left;
+  }
+  */ }
 @media screen and (min-width: 1248px) and (max-width: 1407px) and (min-width: 1248px) and (max-width: 1407px) {
   .post_title_wide {
     display: none; } }
@@ -1812,11 +1820,15 @@ h3.widget-title {
     float: left;
     width: 828px;
     margin-left: 0;
+    margin-top: 15px;
+    margin-right: 30px;
+    	/*
+    
     padding-left: 5px;
     padding-right: 15px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 0px; }
+    
+    	margin-left: 0px;
+    */ }
     #entries .thumbnail {
       margin: 0 auto; }
     #entries h2 a {
@@ -1832,8 +1844,8 @@ h3.widget-title {
 
   .entriescol2 {
     float: left;
-    width: 360px;
-    margin-left: 30px; }
+    width: 438px;
+    margin-left: 0; }
 
   embed,
   iframe,
@@ -1870,9 +1882,8 @@ h3.widget-title {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  .gallery-columns-1 .gallery-item {
-    max-width: 100%; }
-
+  /*
+  .gallery-columns-1 .gallery-item {max-width: 100%;}
   .gallery-columns-2 .gallery-item,
   .gallery-columns-3 .gallery-item,
   .gallery-columns-4 .gallery-item,
@@ -1880,9 +1891,12 @@ h3.widget-title {
   .gallery-columns-6 .gallery-item,
   .gallery-columns-7 .gallery-item,
   .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item {
-    width: 32% !important;
-    float: left; } }
+  .gallery-columns-9 .gallery-item{
+   	width: 24% !important;
+  	width: 32% !important;
+  	float: left;
+  }
+  */ }
 @media screen and (min-width: 1408px) and (max-width: 1799px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -1980,11 +1994,14 @@ h3.widget-title {
     float: left;
     width: 1026px;
     margin-left: 0;
+    margin-right: 30px;
+    	/*
     padding-left: 5px;
-    padding-right: 15px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 0px; }
+    	padding-right: 15px;
+    	margin-top: 10px;
+    
+    	margin-left: 0px;
+    */ }
     #entries .thumbnail {
       margin: 0 auto; }
     #entries h2 a {
@@ -2001,7 +2018,7 @@ h3.widget-title {
   .entriescol2 {
     float: left;
     width: 674px;
-    margin-left: 30px; }
+    margin-left: 0; }
 
   embed,
   iframe,
@@ -2038,9 +2055,8 @@ h3.widget-title {
     font-size: 1.6rem;
     line-height: 2.4rem; }
 
-  .gallery-columns-1 .gallery-item {
-    max-width: 100%; }
-
+  /*
+  .gallery-columns-1 .gallery-item {max-width: 100%;}
   .gallery-columns-2 .gallery-item,
   .gallery-columns-3 .gallery-item,
   .gallery-columns-4 .gallery-item,
@@ -2048,9 +2064,11 @@ h3.widget-title {
   .gallery-columns-6 .gallery-item,
   .gallery-columns-7 .gallery-item,
   .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item {
-    width: 32% !important;
-    float: left; } }
+  .gallery-columns-9 .gallery-item{
+  	width: 32% !important;
+  	float: left;
+  }
+  */ }
 @media screen and (min-width: 1800px) and (max-width: 2000px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -2510,15 +2528,6 @@ a.comments-link {
     margin: 0;
     padding: 0;
     border: 0 none; }
-
-.wp-caption p.wp-caption-text, .gallery-caption p.gallery-caption-text {
-  font-size: 12px;
-  line-height: 18px;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-style: italic;
-  padding: 0px 8px;
-  margin: 0; }
 
 .navigation {
   margin-top: 2em; }
