@@ -2339,7 +2339,7 @@ h3.widget-title {
   #entries {
     background: lightblue;
     float: left;
-    width: 1062px;
+    width: 1268px;
     margin-left: 0;
     padding-left: 5px;
     margin-top: 10px;
@@ -2354,17 +2354,17 @@ h3.widget-title {
       line-height: 4.2rem; }
     #entries .entriescol1 {
       float: left;
-      width: 306px;
+      width: 368px;
       margin-left: 0;
       padding-right: 5px; }
     #entries .entriescol2 {
       float: left;
-      width: 558px;
+      width: 668px;
       margin-left: 0; }
     #entries #entries .post_content {
       float: left;
-      width: 1062px;
-      margin-left: 30px; }
+      width: 1268px;
+      margin-left: 32px; }
 
   embed,
   iframe,
@@ -2380,8 +2380,8 @@ h3.widget-title {
   #sidebar {
     background: pink;
     float: left;
-    width: 558px;
-    margin-left: 30px;
+    width: 668px;
+    margin-left: 32px;
     margin: 0px; }
 
   .sponsors .textwidget {
