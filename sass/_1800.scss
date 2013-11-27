@@ -54,7 +54,6 @@ body{
 #entries{
 	@include grid(11,true);
 	padding-left: 5px;
-	padding-right: 15px;
 	margin-top: 10px;
 	margin-right: 40px;
 	margin-left: 0px;
@@ -64,9 +63,10 @@ body{
 }
 .entriescol1{
 	@include grid(4,true);
+	padding-right: 5px;
 }
 .entriescol2{
-	@include grid(7);
+	@include grid(7,true);
 }
 #entries .post_content {
 	@include grid(11);
@@ -80,9 +80,22 @@ video {
 	max-width: 803px;
 	height: 452px;
 }
+a.read_more {
+	width: 150px;
+}
 #sidebar{
 	@include grid(7);
 	margin: 0px;}
+.sponsors .textwidget{
+	padding-left: 0px;
+	text-align: center;
+}
+	#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+	-moz-column-count: 3;
+       -moz-column-gap: 10px;
+       -webkit-column-count: 3;
+       -webkit-column-gap: 10px;
+}
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(18);

@@ -76,6 +76,12 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 	margin-right: 0px;
 	margin-left: 0px;
 }
+#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+	-moz-column-count: 2;
+       -moz-column-gap: 10px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 10px;
+}
 #footer{
 	clear: both;
 }

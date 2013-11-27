@@ -78,6 +78,12 @@ video {
 #sidebar{
 	@include grid(4);
 	margin: 0px;}
+	#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+	-moz-column-count: 2;
+       -moz-column-gap: 10px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 10px;
+}
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(18);

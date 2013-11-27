@@ -650,12 +650,6 @@ h3.widget-title{
 /* search widget */
 .widget_search label{display: none;}
 /* sponsors, categories, archives and text widget */
-#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
-	-moz-column-count: 2;
-       -moz-column-gap: 10px;
-       -webkit-column-count: 2;
-       -webkit-column-gap: 10px;
-}
 .textwidget{
 	text-align: center;
 }

@@ -5,27 +5,27 @@ gutters = 48px
 total  with 20px side margins
 
 For reference:
-div.col1 { width: 86px; }
-div.col2 { width: 220px; }
-div.col3 { width: 354px; }
-div.col4 { width: 488px; }
-div.col5 { width: 622px; }
-div.col6 { width: 756px; }
-div.col7 { width: 890px; }
-div.col8 { width: 1024px; }
-div.col9 { width: 1158px; }
-div.col10 { width: 1292px; }
-div.col11 { width: 1426px; }
-div.col12 { width: 1560px; }
-div.col13 { width: 1694px; }
-div.col14 { width: 1828px; }
-div.col15 { width: 1962px; }
-div.col16 { width: 2096px; }
-div.col17 { width: 2230px;}
-div.col18 ( width: 2364px;)
+div.col1 { width: ; }
+div.col2 { width: ; }
+div.col3 { width: ; }
+div.col4 { width: ; }
+div.col5 { width: ; }
+div.col6 { width: ; }
+div.col7 { width: ; }
+div.col8 { width: ; }
+div.col9 { width: ; }
+div.col10 { width: ; }
+div.col11 { width: ; }
+div.col12 { width: ; }
+div.col13 { width: ; }
+div.col14 { width: ; }
+div.col15 { width: ; }
+div.col16 { width: ; }
+div.col17 { width: ;}
+div.col18 ( width: ;)
 
 ******************************************************************/
-$layoutwidth : 1800;
+$layoutwidth : 2412;
 @import "978gs";
 @include layout;
 
@@ -52,9 +52,8 @@ body{
 	@include font-size(16);
 }
 #entries{
-	@include grid(13,true);
+	@include grid(11,true);
 	padding-left: 5px;
-	padding-right: 15px;
 	margin-top: 10px;
 	margin-right: 40px;
 	margin-left: 0px;
@@ -66,10 +65,11 @@ body{
 	@include grid(4,true);
 }
 .entriescol2{
-	@include grid(9);
+	@include grid(7,true);
+
 }
 #entries .post_content {
-	@include grid(13);
+	@include grid(11);
 	}
 }
 embed,
@@ -80,10 +80,21 @@ video {
 	max-width: 803px;
 	height: 452px;
 }
+a.read_more {
+	width: 150px;
+}
 #sidebar{
-	background: pink;
-	@include grid(5);
+	@include grid(7);
 	margin: 0px;}
+.sponsors .textwidget{
+	padding-left: 0px;
+}
+#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+	-moz-column-count: 3;
+   -moz-column-gap: 10px;
+   -webkit-column-count: 3;
+   -webkit-column-gap: 10px;
+}
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(18);
