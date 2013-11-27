@@ -1,30 +1,106 @@
 /******************************************************************
 1680px - 16 Columns
-colums = 60px
-gutters = 40px
+colums = 68px
+gutters = 32px
 total  with 20px side margins
 
 For reference:
-div.col1 { width: ; }
-div.col2 { width: ; }
-div.col3 { width: ; }
-div.col4 { width: ; }
-div.col5 { width: ; }
-div.col6 { width: ; }
-div.col7 { width: ; }
-div.col8 { width: ; }
-div.col9 { width: ; }
-div.col10 { width: ; }
-div.col11 { width: ; }
-div.col12 { width: ; }
-div.col13 { width: ; }
-div.col14 { width: ; }
-div.col15 { width: ; }
-div.col16 { width: ; }
-div.col17 { width: ;}
-div.col18 ( width: ;)
+div.col1 { width: 68px; }
+div.col2 { width: 168px; }
+div.col3 { width: 268px; }
+div.col4 { width: 368px; }
+div.col5 { width: 468px; }
+div.col6 { width: 568px; }
+div.col7 { width: 668px; }
+div.col8 { width: 768px; }
+div.col9 { width: 868px; }
+div.col10 { width: 968px; }
+div.col11 { width: 1068px; }
+div.col12 { width: 1168px; }
+div.col13 { width: 1268px; }
+div.col14 { width: 1368px; }
+div.col15 { width: 1468px; }
+div.col16 { width: 1568px; }
+div.col17 { width: 1668px;}
+div.col18 ( width: 1768px;)
 
 ******************************************************************/
 $layoutwidth : 1800;
 @import "978gs";
 @include layout;
+
+
+@media screen and (min-width:1408px){
+	.post_title{display: none;}
+}
+
+body{
+	@include font-size(14);
+}
+.entry_excerpt {
+	display: inline-block;
+	margin:  0.25rem;
+	padding:  1rem;
+	width:  100%;
+}
+
+#site_title h1 a, #site_title h4 a{
+	font-family: 'Georgia', Arial, sans-serif;
+	@include font-size(65);
+}
+#entries, #sidebar, #footer{
+	@include font-size(16);
+}
+#entries{
+	background: pink;
+	@include grid(13,true);
+	padding-left: 5px;
+	padding-right: 15px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 0px;
+	.thumbnail{margin: 0 auto;}
+	h2{
+		a{@include font-size(28);}
+}
+.entriescol1{
+	@include grid(4,true);
+}
+.entriescol2{
+	@include grid(9);
+}
+#entries .post_content {
+	@include grid(5);
+	}
+}
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 24px;
+	max-width: 803px;
+	height: 452px;
+}
+#sidebar{
+	background: lightblue;
+	@include grid(5);
+	margin: 0px;}
+#footer{clear: both;}
+ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+	@include font-size(18);
+}
+ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+	@include font-size(16);
+}
+.gallery-columns-1 .gallery-item {max-width: 100%;}
+.gallery-columns-2 .gallery-item,
+.gallery-columns-3 .gallery-item,
+.gallery-columns-4 .gallery-item,
+.gallery-columns-5 .gallery-item,
+.gallery-columns-6 .gallery-item,
+.gallery-columns-7 .gallery-item,
+.gallery-columns-8 .gallery-item,
+.gallery-columns-9 .gallery-item{
+	width: 32% !important;
+	float: left;
+}
