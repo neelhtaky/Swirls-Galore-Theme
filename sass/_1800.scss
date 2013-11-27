@@ -67,7 +67,7 @@ body{
 	@include grid(4,true);
 }
 .entriescol2{
-	@include grid(9);
+	@include grid(8);
 }
 #entries .post_content {
 	@include grid(5);
