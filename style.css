@@ -2242,31 +2242,30 @@ h3.widget-title {
     display: none; } }
 @media screen and (min-width: 2399px) {
   /******************************************************************
-  2400 - 20 Columns
-  colums = 80px
-  gutters = 40px
+  1680px - 16 Columns
+  colums = 68px
+  gutters = 32px
+  total  with 20px side margins
   
   For reference:
-  div.col1 { width: 80px; }
-  div.col2 { width: 200; }
-  div.col3 { width: 320px; }
-  div.col4 { width: 440px; }
-  div.col5 { width: 560px; }
-  div.col6 { width: 680px; }
-  div.col7 { width: 800px; }
-  div.col8 { width: 920px; }
-  div.col9 { width: 1040px; }
-  div.col10 { width: 1160px; }
-  div.col11 { width: 1280px; }
-  div.col12 { width: 1400px; }
-  div.col13 { width: 1520px; }
-  div.col14 { width: 1640px; }
-  div.col15 { width: 1760px; }
-  div.col16 { width: 1880px; }
-  div.col17 { width: 2000;}
-  div.col18 ( width: 2120px;)
-  2240px
-  2360 +40 gutter
+  div.col1 { width: 68px; }
+  div.col2 { width: 168px; }
+  div.col3 { width: 268px; }
+  div.col4 { width: 368px; }
+  div.col5 { width: 468px; }
+  div.col6 { width: 568px; }
+  div.col7 { width: 668px; }
+  div.col8 { width: 768px; }
+  div.col9 { width: 868px; }
+  div.col10 { width: 968px; }
+  div.col11 { width: 1068px; }
+  div.col12 { width: 1168px; }
+  div.col13 { width: 1268px; }
+  div.col14 { width: 1368px; }
+  div.col15 { width: 1468px; }
+  div.col16 { width: 1568px; }
+  div.col17 { width: 1668px;}
+  div.col18 ( width: 1768px;)
   
   ******************************************************************/
   /*
@@ -2296,8 +2295,8 @@ h3.widget-title {
   THE SOFTWARE.
   
   */
-  .layout-2400 {
-    width: 2400px;
+  .layout-1800 {
+    width: 1800px;
     margin: 0px auto; }
 
   .row {
@@ -2309,7 +2308,7 @@ h3.widget-title {
     height: 1px;
     overflow: hidden; }
 
-  width: 2400px;
+  width: 1800px;
   margin: 0px auto;
   body {
     font-size: 14px;
@@ -2338,7 +2337,7 @@ h3.widget-title {
 
   #entries {
     float: left;
-    width: 1640px;
+    width: 1068px;
     margin-left: 0;
     padding-left: 5px;
     margin-top: 10px;
@@ -2353,17 +2352,17 @@ h3.widget-title {
       line-height: 4.2rem; }
     #entries .entriescol1 {
       float: left;
-      width: 560px;
+      width: 368px;
       margin-left: 0;
       padding-right: 5px; }
     #entries .entriescol2 {
       float: left;
-      width: 1040px;
+      width: 668px;
       margin-left: 0; }
     #entries #entries .post_content {
       float: left;
-      width: 1640px;
-      margin-left: 40px; }
+      width: 1068px;
+      margin-left: 32px; }
 
   embed,
   iframe,
@@ -2378,8 +2377,8 @@ h3.widget-title {
 
   #sidebar {
     float: left;
-    width: 680px;
-    margin-left: 40px;
+    width: 668px;
+    margin-left: 32px;
     margin: 0px; }
 
   .sponsors .textwidget {
