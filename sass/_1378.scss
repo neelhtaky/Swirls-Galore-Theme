@@ -56,6 +56,7 @@ body{
 	.thumbnail{margin: 0 auto;}
 	h2{
 		a{@include font-size(28);}
+	}
 }
 .entriescol1{
 	@include grid(4,true);
@@ -63,9 +64,7 @@ body{
 .entriescol2{
 	@include grid(8);
 }
-#entries .post_content {
-	}
-}
+
 embed,
 iframe,
 object,

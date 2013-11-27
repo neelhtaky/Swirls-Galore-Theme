@@ -1824,18 +1824,16 @@ h3.widget-title {
       line-height: 36px;
       font-size: 2.4rem;
       line-height: 3.6rem; }
-    #entries .entriescol1 {
-      float: left;
-      width: 360px;
-      margin-left: 0; }
-    #entries .entriescol2 {
-      float: left;
-      width: 360px;
-      margin-left: 30px; }
-    #entries #entries .post_content {
-      float: left;
-      width: 360px;
-      margin-left: 30px; }
+
+  .entriescol1 {
+    float: left;
+    width: 360px;
+    margin-left: 0; }
+
+  .entriescol2 {
+    float: left;
+    width: 360px;
+    margin-left: 30px; }
 
   embed,
   iframe,
@@ -1994,14 +1992,16 @@ h3.widget-title {
       line-height: 42px;
       font-size: 2.8rem;
       line-height: 4.2rem; }
-    #entries .entriescol1 {
-      float: left;
-      width: 322px;
-      margin-left: 0; }
-    #entries .entriescol2 {
-      float: left;
-      width: 674px;
-      margin-left: 30px; }
+
+  .entriescol1 {
+    float: left;
+    width: 322px;
+    margin-left: 0; }
+
+  .entriescol2 {
+    float: left;
+    width: 674px;
+    margin-left: 30px; }
 
   embed,
   iframe,
