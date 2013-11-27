@@ -81,6 +81,7 @@ video {
 	height: 452px;
 }
 #sidebar{
+	background: pink;
 	@include grid(5);
 	margin: 0px;}
 #footer{clear: both;}

@@ -2336,6 +2336,7 @@ h3.widget-title {
     height: 452px; }
 
   #sidebar {
+    background: pink;
     float: left;
     width: 468px;
     margin-left: 32px;
