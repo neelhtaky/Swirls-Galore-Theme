@@ -30,7 +30,6 @@ $layoutwidth : 2000;
 @import "978gs";
 @include layout;
 
-
 @media screen and (min-width:1408px){
 	.post_title{display: none;}
 }
@@ -87,7 +86,7 @@ a.read_more {
 }
 #sidebar{
 background: pink;
-	@include grid(7);
+	@include grid(10);
 	margin: 0px;}
 .sponsors .textwidget{
 	padding-left: 0px;
