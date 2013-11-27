@@ -58,7 +58,7 @@ body{
 	padding-right: 15px;
 	margin-top: 10px;
 	margin-right: 10px;
-	margin-left: 0px;
+	margin-left: 30px;
 	.thumbnail{margin: 0 auto;}
 	h2{
 		a{@include font-size(28);}
@@ -67,7 +67,7 @@ body{
 	@include grid(3,true);
 }
 .entriescol2{
-	@include grid(8);
+	@include grid(7);
 }
 #entries .post_content {
 	@include grid(11);
