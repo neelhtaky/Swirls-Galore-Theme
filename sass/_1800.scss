@@ -67,10 +67,10 @@ body{
 	@include grid(3,true);
 }
 .entriescol2{
-	@include grid(7);
+	@include grid(8);
 }
 #entries .post_content {
-	@include grid(10, true);
+	@include grid(11, true);
 	}
 }
 embed,
