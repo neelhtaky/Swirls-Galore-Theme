@@ -2296,8 +2296,8 @@ h3.widget-title {
   THE SOFTWARE.
   
   */
-  .layout-1800 {
-    width: 1800px;
+  .layout-2000 {
+    width: 2000px;
     margin: 0px auto; }
 
   .row {
@@ -2309,7 +2309,7 @@ h3.widget-title {
     height: 1px;
     overflow: hidden; }
 
-  width: 1800px;
+  width: 2000px;
   margin: 0px auto;
   body {
     font-size: 14px;
@@ -2339,7 +2339,7 @@ h3.widget-title {
   #entries {
     background: lightblue;
     float: left;
-    width: 1268px;
+    width: 1062px;
     margin-left: 0;
     padding-left: 5px;
     margin-top: 10px;
@@ -2354,17 +2354,17 @@ h3.widget-title {
       line-height: 4.2rem; }
     #entries .entriescol1 {
       float: left;
-      width: 368px;
+      width: 306px;
       margin-left: 0;
       padding-right: 5px; }
     #entries .entriescol2 {
       float: left;
-      width: 668px;
+      width: 558px;
       margin-left: 0; }
     #entries #entries .post_content {
       float: left;
-      width: 1268px;
-      margin-left: 32px; }
+      width: 1062px;
+      margin-left: 30px; }
 
   embed,
   iframe,
@@ -2380,8 +2380,8 @@ h3.widget-title {
   #sidebar {
     background: pink;
     float: left;
-    width: 668px;
-    margin-left: 32px;
+    width: 558px;
+    margin-left: 30px;
     margin: 0px; }
 
   .sponsors .textwidget {
