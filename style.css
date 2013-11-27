@@ -2156,7 +2156,7 @@ h3.widget-title {
     #entries #entries .post_content {
       float: left;
       width: 1068px;
-      margin-left: 0; }
+      margin-left: 32px; }
 
   embed,
   iframe,
