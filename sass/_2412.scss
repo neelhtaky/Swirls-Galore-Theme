@@ -1,28 +1,28 @@
 /******************************************************************
-1680px - 16 Columns
-colums = 68px
-gutters = 32px
+2412px - 18 Columns
+colums = 86px
+gutters = 48px
 total  with 20px side margins
 
 For reference:
-div.col1 { width: 68px; }
-div.col2 { width: 168px; }
-div.col3 { width: 268px; }
-div.col4 { width: 368px; }
-div.col5 { width: 468px; }
-div.col6 { width: 568px; }
-div.col7 { width: 668px; }
-div.col8 { width: 768px; }
-div.col9 { width: 868px; }
-div.col10 { width: 968px; }
-div.col11 { width: 1068px; }
-div.col12 { width: 1168px; }
-div.col13 { width: 1268px; }
-div.col14 { width: 1368px; }
-div.col15 { width: 1468px; }
-div.col16 { width: 1568px; }
-div.col17 { width: 1668px;}
-div.col18 ( width: 1768px;)
+div.col1 { width: 86px; }
+div.col2 { width: 220px; }
+div.col3 { width: 354px; }
+div.col4 { width: 488px; }
+div.col5 { width: 622px; }
+div.col6 { width: 756px; }
+div.col7 { width: 890px; }
+div.col8 { width: 1024px; }
+div.col9 { width: 1158px; }
+div.col10 { width: 1292px; }
+div.col11 { width: 1426px; }
+div.col12 { width: 1560px; }
+div.col13 { width: 1694px; }
+div.col14 { width: 1828px; }
+div.col15 { width: 1962px; }
+div.col16 { width: 2096px; }
+div.col17 { width: 2230px;}
+div.col18 ( width: 2364px;)
 
 ******************************************************************/
 $layoutwidth : 1800;
@@ -52,7 +52,7 @@ body{
 	@include font-size(16);
 }
 #entries{
-	@include grid(11,true);
+	@include grid(13,true);
 	padding-left: 5px;
 	padding-right: 15px;
 	margin-top: 10px;
@@ -66,10 +66,10 @@ body{
 	@include grid(4,true);
 }
 .entriescol2{
-	@include grid(7);
+	@include grid(9);
 }
 #entries .post_content {
-	@include grid(11);
+	@include grid(13);
 	}
 }
 embed,
@@ -81,7 +81,7 @@ video {
 	height: 452px;
 }
 #sidebar{
-	@include grid(7);
+	@include grid(5);
 	margin: 0px;}
 #footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
