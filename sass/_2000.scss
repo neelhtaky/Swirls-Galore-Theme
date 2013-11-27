@@ -1,32 +1,32 @@
 /******************************************************************
-2400 - 20 Columns
-colums = 80px
-gutters = 40px
+2000 - 20 Columns
+colums = 68
+gutters = 32px
 
 For reference:
-div.col1 { width: 80px; }
-div.col2 { width: 200; }
-div.col3 { width: 320px; }
-div.col4 { width: 440px; }
-div.col5 { width: 560px; }
-div.col6 { width: 680px; }
-div.col7 { width: 800px; }
-div.col8 { width: 920px; }
-div.col9 { width: 1040px; }
-div.col10 { width: 1160px; }
-div.col11 { width: 1280px; }
-div.col12 { width: 1400px; }
-div.col13 { width: 1520px; }
-div.col14 { width: 1640px; }
-div.col15 { width: 1760px; }
-div.col16 { width: 1880px; }
-div.col17 { width: 2000;}
-div.col18 ( width: 2120px;)
+div.col1 { width: 68; }
+div.col2 { width: 168; }
+div.col3 { width: 268; }
+div.col4 { width: 368; }
+div.col5 { width: 468; }
+div.col6 { width: 568; }
+div.col7 { width: 668; }
+div.col8 { width: 768; }
+div.col9 { width: 868; }
+div.col10 { width: 968; }
+div.col11 { width: ; }
+div.col12 { width: ; }
+div.col13 { width: ; }
+div.col14 { width: ; }
+div.col15 { width: ; }
+div.col16 { width: ; }
+div.col17 { width: ;}
+div.col18 ( width: ;)
 2240px
 2360 +40 gutter
 
 ******************************************************************/
-$layoutwidth : 2400;
+$layoutwidth : 1800;
 @import "978gs";
 @include layout;
 
@@ -53,7 +53,8 @@ body{
 	@include font-size(16);
 }
 #entries{
-	@include grid(14,true);
+background: lightblue;
+	@include grid(13,true);
 	padding-left: 5px;
 	margin-top: 10px;
 	margin-right: 40px;
@@ -63,14 +64,14 @@ body{
 		a{@include font-size(28);}
 }
 .entriescol1{
-	@include grid(5,true);
+	@include grid(4,true);
 	padding-right: 5px;
 }
 .entriescol2{
-	@include grid(9,true);
+	@include grid(7,true);
 }
 #entries .post_content {
-	@include grid(14);
+	@include grid(13);
 	}
 }
 embed,
@@ -85,7 +86,8 @@ a.read_more {
 	width: 150px;
 }
 #sidebar{
-	@include grid(6);
+background: pink;
+	@include grid(7);
 	margin: 0px;}
 .sponsors .textwidget{
 	padding-left: 0px;
