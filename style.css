@@ -1276,6 +1276,7 @@ h3.widget-title {
 9.0 Featured Content
 *********************************************************/
 .sticky {
+  max-width: 100%;
   background: #fcfaf5;
   border: 2px solid #ebe2ee;
   padding: 10px; }
@@ -2033,7 +2034,7 @@ h3.widget-title {
 @media screen and (min-width: 1800px) and (max-width: 2000px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
-@media screen and (min-width: 2001px) {
+@media screen and (min-width: 2001px) and (max-width: 2400px) {
   /******************************************************************
   1680px - 16 Columns
   colums = 68px
@@ -2199,7 +2200,176 @@ h3.widget-title {
   .gallery-columns-9 .gallery-item {
     width: 32% !important;
     float: left; } }
-@media screen and (min-width: 2001px) and (min-width: 1408px) {
+@media screen and (min-width: 2001px) and (max-width: 2400px) and (min-width: 1408px) {
+  .post_title {
+    display: none; } }
+@media screen and (min-width: 24001px) {
+  /******************************************************************
+  2412px - 18 Columns
+  colums = 86px
+  gutters = 48px
+  total  with 20px side margins
+  
+  For reference:
+  div.col1 { width: 86px; }
+  div.col2 { width: 220px; }
+  div.col3 { width: 354px; }
+  div.col4 { width: 488px; }
+  div.col5 { width: 622px; }
+  div.col6 { width: 756px; }
+  div.col7 { width: 890px; }
+  div.col8 { width: 1024px; }
+  div.col9 { width: 1158px; }
+  div.col10 { width: 1292px; }
+  div.col11 { width: 1426px; }
+  div.col12 { width: 1560px; }
+  div.col13 { width: 1694px; }
+  div.col14 { width: 1828px; }
+  div.col15 { width: 1962px; }
+  div.col16 { width: 2096px; }
+  div.col17 { width: 2230px;}
+  div.col18 ( width: 2364px;)
+  
+  ******************************************************************/
+  /*
+  
+  978 Grid System CSS Framework
+  http://978.gs
+  
+  Copyright (c) 2011 Brothers Roloff
+  http://www.brothersroloff.com
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  
+  */
+  .layout-1800 {
+    width: 1800px;
+    margin: 0px auto; }
+
+  .row {
+    height: 1%; }
+
+  .row-end {
+    clear: both;
+    font: 1px/1px sans-serif;
+    height: 1px;
+    overflow: hidden; }
+
+  width: 1800px;
+  margin: 0px auto;
+  body {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  .entry_excerpt {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 1rem;
+    width: 100%; }
+
+  #site_title h1 a, #site_title h4 a {
+    font-family: 'Georgia', Arial, sans-serif;
+    font-size: 65px;
+    line-height: 97.5px;
+    font-size: 6.5rem;
+    line-height: 9.75rem; }
+
+  #entries, #sidebar, #footer {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  #entries {
+    float: left;
+    width: 1268px;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 0px; }
+    #entries .thumbnail {
+      margin: 0 auto; }
+    #entries h2 a {
+      font-size: 28px;
+      line-height: 42px;
+      font-size: 2.8rem;
+      line-height: 4.2rem; }
+    #entries .entriescol1 {
+      float: left;
+      width: 368px;
+      margin-left: 0; }
+    #entries .entriescol2 {
+      float: left;
+      width: 868px;
+      margin-left: 32px; }
+    #entries #entries .post_content {
+      float: left;
+      width: 1268px;
+      margin-left: 32px; }
+
+  embed,
+  iframe,
+  object,
+  video {
+    margin-bottom: 24px;
+    max-width: 803px;
+    height: 452px; }
+
+  #sidebar {
+    float: left;
+    width: 468px;
+    margin-left: 32px;
+    margin: 0px; }
+
+  #footer {
+    clear: both; }
+
+  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+    font-size: 18px;
+    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem; }
+
+  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  .gallery-columns-1 .gallery-item {
+    max-width: 100%; }
+
+  .gallery-columns-2 .gallery-item,
+  .gallery-columns-3 .gallery-item,
+  .gallery-columns-4 .gallery-item,
+  .gallery-columns-5 .gallery-item,
+  .gallery-columns-6 .gallery-item,
+  .gallery-columns-7 .gallery-item,
+  .gallery-columns-8 .gallery-item,
+  .gallery-columns-9 .gallery-item {
+    width: 32% !important;
+    float: left; } }
+@media screen and (min-width: 24001px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
 /*********************************************************
