@@ -1548,28 +1548,22 @@ h3.widget-title {
 
   #footer {
     clear: both; }
+    #footer ul {
+      margin: 0px; }
+      #footer ul li {
+        float: left;
+        width: 172px;
+        margin-left: 20px; }
+        #footer ul li:first-child {
+          float: left;
+          width: 172px;
+          margin-left: 0; }
 
   .site-info {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  /*
-  .gallery-columns-1 .gallery-item {max-width: 100%;}
-  .gallery-columns-2 .gallery-item,
-  .gallery-columns-3 .gallery-item,
-  .gallery-columns-4 .gallery-item,
-  .gallery-columns-5 .gallery-item,
-  .gallery-columns-6 .gallery-item,
-  .gallery-columns-7 .gallery-item,
-  .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item{
-  	width: 48% !important;
-  	float: left;
-  
-  }
-  */ }
+    line-height: 2.1rem; } }
 @media only screen and (min-width: 768px) and (max-width: 1247px) and (min-width: 768px) and (max-width: 1247px) {
   .post_title_wide {
     display: none; } }
@@ -1706,22 +1700,7 @@ h3.widget-title {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  /*
-  .gallery-columns-1 .gallery-item {max-width: 100%;}
-  .gallery-columns-2 .gallery-item,
-  .gallery-columns-3 .gallery-item,
-  .gallery-columns-4 .gallery-item,
-  .gallery-columns-5 .gallery-item,
-  .gallery-columns-6 .gallery-item,
-  .gallery-columns-7 .gallery-item,
-  .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item{
-  	width: 32% !important;
-  	float: left;
-  }
-  */ }
+    line-height: 2.1rem; } }
 @media screen and (min-width: 1248px) and (max-width: 1407px) and (min-width: 1248px) and (max-width: 1407px) {
   .post_title_wide {
     display: none; } }

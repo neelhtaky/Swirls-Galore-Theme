@@ -21,19 +21,14 @@ $layoutwidth:748;
 @import "978gs";
 @include layout;
 @media only screen and (min-width: 768px) and (max-width:1247px) {
-.post_title_wide{display: none;}
-}
-
-body{
-	@include font-size(14);
-}
+.post_title_wide{display: none;}}
+body{@include font-size(14);}
 #site_title h1 a, #site_title h4 a{
 	font-family: 'Georgia', Arial, sans-serif;
 	@include font-size(55);
 }
 #entries, #sidebar, #footer{
 	@include font-size(14);
-
 }
 #entries{
 	@include grid(7,true);
@@ -42,17 +37,13 @@ body{
 	margin-top: -15px;
 	text-align: justify;
 	text-justify: newspaper;
-	.thumbnail{
-		margin: 0 auto;
-	}
 	margin-right: 0px;
+	.thumbnail{margin: 0 auto;}
 }
 .post_title_long{display: none;}
 .post_content {
 	h2{text-align: left;
-		a{
-			@include font-size(18);
-		}
+		a{@include font-size(18);}
 	}
 }
 embed,
@@ -63,14 +54,8 @@ video {
 	max-width: 398px;
 	height: 224px;
 }
-ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
-	@include font-size(16);
-}
-
-ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
-	@include font-size(14);
-}
-
+ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {@include font-size(16);}
+ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {@include font-size(14);}
 #sidebar{
 	@include grid(5);
 	margin-right: 0px;
@@ -78,29 +63,20 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 }
 #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 2;
-       -moz-column-gap: 10px;
-       -webkit-column-count: 2;
-       -webkit-column-gap: 10px;
+   -moz-column-gap: 10px;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 10px;
 }
 #footer{
 	clear: both;
+	ul{
+		margin: 0px;
+		li{
+			@include grid(3);
+			&:first-child{
+				@include grid(3,true);
+			}
+		}
+	}
 }
-.site-info{
-	@include font-size(14);
-}
-/*
-.gallery-columns-1 .gallery-item {max-width: 100%;}
-.gallery-columns-2 .gallery-item,
-.gallery-columns-3 .gallery-item,
-.gallery-columns-4 .gallery-item,
-.gallery-columns-5 .gallery-item,
-.gallery-columns-6 .gallery-item,
-.gallery-columns-7 .gallery-item,
-.gallery-columns-8 .gallery-item,
-.gallery-columns-9 .gallery-item{
-	width: 48% !important;
-	float: left;
-
-}
-*/
-
+.site-info{@include font-size(14);}

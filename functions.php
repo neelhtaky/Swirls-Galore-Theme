@@ -1,9 +1,8 @@
 <?php
-/******************************************************************
+/****************************************************************
 ADD THEME SUPPORT
-******************************************************************/
+***************************************************************/
 if ( ! isset( $content_width ) ) $content_width = 1060;
-
 if(function_exists('add_theme_support')) {
     add_theme_support( 'post-thumbnails' );
 	add_theme_support('menus');
@@ -30,15 +29,10 @@ if ( function_exists('register_sidebar') ) {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	));
-
     register_nav_menus( array(
 		'nav_primary' => ( 'Primary Navigation')
 	) );
 }
-
-// Hook into the 'after_setup_theme' action
-add_action( 'after_setup_theme', 'custom_theme_features' );
-
 //Puts link in excerpts more tag
 function new_excerpt_more($more) {
 	global $post;
@@ -47,9 +41,8 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 //Create several different excerpt lengths depending upon need
-function wpe_excerptlength_splash($length) {return 30;}
-function wpe_excerptlength_index($length) {return 100;}
-function wpe_excerptlength_posts($length) {return 120;}
+function wpe_excerptlength_index($length) {return 150;}
+function wpe_excerptlength_posts($length) {return 250;}
 function wpe_excerpt($length_callback='', $more_callback='') {
     global $post;
     if(function_exists($length_callback)){
