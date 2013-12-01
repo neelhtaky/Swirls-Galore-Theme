@@ -31,6 +31,7 @@ Tags: white, two-columns, custom-header
  *   5.12 - 404 Page
  *   5.13 - Full-width
  *   5.14 - Singular
+ *   5.15 - Related Content
  * 6.0 - Comments
  * 7.0 - Sidebar
  *   7.1 - Widgets
@@ -747,7 +748,7 @@ table, th, tr, td {
   margin: 0 auto;
   width: 100%;
   height: auto;
-  background-image: url("library/images/navbar.jpg");
+  background-image: url("library/images/bg.jpg");
   background-repeat: repeat;
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-variant: small-caps;
@@ -827,6 +828,9 @@ table, th, tr, td {
 
 #container {
   background: white; }
+
+hr {
+  clear: both; }
 
 /*********************************************************
 	5.1 Post Thumbnails
@@ -1156,6 +1160,41 @@ img[class*="attachment-"],
 /*********************************************************
 	5.14 Singular
 *********************************************************/
+/*********************************************************
+	5.15 Related Content
+*********************************************************/
+.related img {
+  width: 293px;
+  height: 166px;
+  overflow: hidden;
+  background: #f4f4f4;
+  border: 1px solid #f2e8d1;
+  margin-left: -3px;
+  position: relative; }
+  .related img:before {
+    border: 1px solid white;
+    content: '';
+    width: 291px;
+    height: 164px;
+    position: absolute; }
+  .related img:after {
+    content: '';
+    position: absolute;
+    width: 289px;
+    height: 162px;
+    border: 1px solid #f2e8d1;
+    left: 1px;
+    top: 1px; }
+  .related img:hover {
+    -moz-box-shadow: 1px 1px 3px #f2e8d1;
+    -webkit-box-shadow: 1px 1px 3px #f2e8d1;
+    box-shadow: 1px 1px 3px #f2e8d1;
+    -webkit-transition: all .5s ease-in; }
+
+.related {
+  width: 300px;
+  float: left; }
+
 /*********************************************************
 6.0 Comments
 *********************************************************/
@@ -1599,18 +1638,6 @@ h3.widget-title {
     max-width: 398px;
     height: 224px; }
 
-  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 1.6rem;
-    line-height: 2.4rem; }
-
-  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; }
-
   #sidebar {
     float: left;
     width: 300px;
@@ -1623,6 +1650,23 @@ h3.widget-title {
     -moz-column-gap: 10px;
     -webkit-column-count: 2;
     -webkit-column-gap: 10px; }
+
+  #related, #comments {
+    float: left;
+    width: 748px;
+    margin-left: 0; }
+
+  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+
+  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
 
   #footer {
     clear: both; }

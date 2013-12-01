@@ -31,6 +31,7 @@ Tags: white, two-columns, custom-header
  *   5.12 - 404 Page
  *   5.13 - Full-width
  *   5.14 - Singular
+ *   5.15 - Related Content
  * 6.0 - Comments
  * 7.0 - Sidebar
  *   7.1 - Widgets
@@ -222,7 +223,7 @@ table, th, tr, td{border: 1px solid $col-purple-light;}
     margin: 0 auto;
     width: 100%;
     height: auto;
-    background-image: url('library/images/navbar.jpg');
+    background-image: url('library/images/bg.jpg');
     background-repeat: repeat;
     font-family: $serif;
     font-variant: small-caps;
@@ -296,6 +297,7 @@ table, th, tr, td{border: 1px solid $col-purple-light;}
 }
 #container{background: white;}
 #main{}
+hr{clear: both;}
 /*********************************************************
 	5.1 Post Thumbnails
 *********************************************************/
@@ -616,6 +618,43 @@ img[class*="attachment-"],
 /*********************************************************
 	5.14 Singular
 *********************************************************/
+/*********************************************************
+	5.15 Related Content
+*********************************************************/
+.related img{
+	width: 293px;
+	height: 166px;
+	overflow: hidden;
+	background: #f4f4f4;
+	border: 1px solid $col-tan;
+    margin-left: -3px;
+    position: relative;
+    &:before{
+	    border: 1px solid white;
+        content: '';
+        width: 291px;
+        height: 164px;
+        position: absolute;
+    }
+    &:after{
+	    content: '';
+        position: absolute;
+        width: 289px;
+        height: 162px;
+        border: 1px solid $col-tan;
+        left: 1px; top: 1px;
+    }
+    &:hover{
+	    -moz-box-shadow: 1px 1px 3px $col-tan;
+		-webkit-box-shadow: 1px 1px 3px $col-tan;
+        box-shadow: 1px 1px 3px $col-tan;
+        -webkit-transition:all .5s ease-in;
+    }
+}
+.related{
+	width: 300px;
+	float: left;
+}
 /*********************************************************
 6.0 Comments
 *********************************************************/

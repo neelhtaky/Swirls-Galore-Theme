@@ -53,10 +53,7 @@ video {
 	margin-bottom: 24px;
 	max-width: 398px;
 	height: 224px;
-}
-ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {@include font-size(16);}
-ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {@include font-size(14);}
-#sidebar{
+}#sidebar{
 	@include grid(5);
 	margin-right: 0px;
 	margin-left: 0px;
@@ -67,6 +64,12 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
    -webkit-column-count: 2;
    -webkit-column-gap: 10px;
 }
+
+#related, #comments{
+	@include grid(12,true);
+}
+ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {@include font-size(16);}
+ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {@include font-size(14);}
 #footer{
 	clear: both;
 	ul{
