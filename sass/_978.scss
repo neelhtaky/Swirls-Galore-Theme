@@ -63,7 +63,7 @@ video {
 	@include grid(4);
 	margin: 0px;
 }
-#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+#sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget, .sponsors .textwidget ins{
 	-moz-column-count: 2;
    -moz-column-gap: 10px;
    -webkit-column-count: 2;

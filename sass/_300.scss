@@ -19,41 +19,37 @@ $layoutwidth:300;
 @media only screen and (min-width:0px) and (max-width: 767px){
 	.post_title_wide{display: none;}
 }
-body{
-	@include font-size(14);
-}
-#site_title h1 a, #site_title h4 a{
-font-family: 'Georgia', Arial, sans-serif;
-@include font-size(55);
-}
-
-#entries, #sidebar, #footer{
-	padding: 5px;
-	@include font-size(12);
-}
 /*This will work for firefox*/
 @-moz-document url-prefix() {
    .sticky{
    		margin-top: 50px;
 	}
 }
+body{@include font-size(14);}
+#site_title h1 a, #site_title h4 a{
+	font-family: 'Georgia', Arial, sans-serif;
+	@include font-size(55);
+}
+#entries, #sidebar, #footer{
+	padding: 5px;
+	@include font-size(12);
+}
 #entries{
 	padding-top: 130px;
 	h2{
-		a{
-			@include font-size(16);
-		}
+		a{@include font-size(16);}
 	}
 }
 .post_title_short{display: none;}
-
-ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
-	@include font-size(14);
-}
-
-ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
-	@include font-size(12);
-}
+ol.commentlist li.comment div.vcard,
+ol.commentlist li.comment ul {
+	@include font-size(14);}
+ol.commentlist li.comment div.vcard span.says,
+.site-info,
+ol.commentlist li.comment div.reply,
+ol.commentlist li.comment p,
+ol.commentlist li.comment div.comment-meta {
+	@include font-size(12);}
 embed,
 iframe,
 object,
@@ -67,7 +63,7 @@ video {
 }
 #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 2;
-       -moz-column-gap: 10px;
-       -webkit-column-count: 2;
-       -webkit-column-gap: 10px;
+   -moz-column-gap: 10px;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 10px;
 }

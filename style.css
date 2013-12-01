@@ -21,15 +21,16 @@ Tags: white, two-columns, custom-header
  *   5.2 - Entry Header
  *   5.3 - Entry Meta
  *   5.4 - Entry Content
- *   5.5 - Galleries
- *   5.6 - Post Formats
- *   5.7 - Post/Paging Navigation
- *   5.8 - Attachments
- *   5.9 - Archives
- *   5.10 - Contributor Page
- *   5.11 - 404 Page
- *   5.12 - Full-width
- *   5.13 - Singular
+ *   5.5 - Images
+ *   5.6 - Galleries
+ *   5.7 - Post Formats
+ *   5.8 - Post/Paging Navigation
+ *   5.9 - Attachments
+ *   5.10 - Archives
+ *   5.11 - Contributor Page
+ *   5.12 - 404 Page
+ *   5.13 - Full-width
+ *   5.14 - Singular
  * 6.0 - Comments
  * 7.0 - Sidebar
  *   7.1 - Widgets
@@ -596,10 +597,16 @@ a[href]:after {
   font: normal 16px/1 'Genericons';
   vertical-align: top; }
 
-a[href*="quickneed"], a[href^="/"], a[href^="#"], a[href^="mailto:"], a[href^="javascript:"] {
+a[href*="quickneed"],
+a[href^="/"], a[href^="#"],
+a[href^="mailto:"],
+a[href^="javascript:"] {
   display: inline; }
 
-a[href*="quickneed"]:after, a[href^="/"]:after, a[href^="#"]:after, a[href^="mailto:"]:after, a[href^="javascript:"]:after {
+a[href*="quickneed"]:after,
+a[href^="/"]:after, a[href^="#"]:after,
+a[href^="mailto:"]:after,
+a[href^="javascript:"]:after {
   content: none; }
 
 a[rel="author"]:before {
@@ -715,7 +722,8 @@ table, th, tr, td {
 
 /*This will work for firefox*/
 @-moz-document url-prefix() {
-  #site_title h1 a, #site_title h4 a {
+  #site_title h1 a,
+  #site_title h4 a {
     background: none;
     color: #9e64a5;
     text-align: center;
@@ -860,6 +868,9 @@ table, th, tr, td {
 /*********************************************************
 	5.4 Entry Content
 *********************************************************/
+.post {
+  padding-left: 5px; }
+
 .entry_excerpt p {
   text-align: justify;
   text-justify: newspaper; }
@@ -932,7 +943,69 @@ a.read_more:hover {
   color: black; }
 
 /*********************************************************
-	5.5 Galleries
+	5.5 Images
+*********************************************************/
+img.size-full,
+img.size-large,
+.wp-post-image,
+.post-thumbnail img {
+  height: auto;
+  max-width: 100%; }
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img,
+.entry_content img,
+.entry_excerpt img,
+#site_header img,
+.widget img,
+.wp-caption {
+  max-width: 100%; }
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+.comment-content img[height],
+.entry_content img,
+.entry_excerpt img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+  height: auto; }
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+#site-header img,
+.widget img,
+.wp-caption {
+  max-width: 100%; }
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+.comment-content img[height],
+.entry-content img,
+.entry-summary img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+  height: auto; }
+
+/*********************************************************
+	5.6 Galleries
 *********************************************************/
 .gallery {
   margin-bottom: 20px; }
@@ -1033,7 +1106,7 @@ a.read_more:hover {
   display: none; }
 
 /*********************************************************
-	5.6 Post Formats
+	5.7 Post Formats
 *********************************************************/
 /* Chat Format */
 .chat-speaker-1 {
@@ -1063,25 +1136,25 @@ a.read_more:hover {
   padding: 1px 5px 1px 13px; }
 
 /*********************************************************
-	5.7 Post/Page Navigation
+	5.8 Post/Page Navigation
 *********************************************************/
 /*********************************************************
-	5.8 Attachments
+	5.9 Attachments
 *********************************************************/
 /*********************************************************
-	5.9 Archives
+	5.10 Archives
 *********************************************************/
 /*********************************************************
-	5.10 Contributor Page
+	5.11 Contributor Page
 *********************************************************/
 /*********************************************************
-	5.11 404 Page
+	5.12 404 Page
 *********************************************************/
 /*********************************************************
-	5.12 Full Width
+	5.13 Full Width
 *********************************************************/
 /*********************************************************
-	5.13 Singular
+	5.14 Singular
 *********************************************************/
 /*********************************************************
 6.0 Comments
@@ -1341,6 +1414,11 @@ h3.widget-title {
 
   width: 300px;
   margin: 0px auto;
+  /*This will work for firefox*/
+  @-moz-document url-prefix() {
+    .sticky {
+      margin-top: 50px; } }
+
   body {
     font-size: 14px;
     line-height: 21px;
@@ -1361,11 +1439,6 @@ h3.widget-title {
     font-size: 1.2rem;
     line-height: 1.8rem; }
 
-  /*This will work for firefox*/
-  @-moz-document url-prefix() {
-    .sticky {
-      margin-top: 50px; } }
-
   #entries {
     padding-top: 130px; }
     #entries h2 a {
@@ -1377,13 +1450,18 @@ h3.widget-title {
   .post_title_short {
     display: none; }
 
-  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+  ol.commentlist li.comment div.vcard,
+  ol.commentlist li.comment ul {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+  ol.commentlist li.comment div.vcard span.says,
+  .site-info,
+  ol.commentlist li.comment div.reply,
+  ol.commentlist li.comment p,
+  ol.commentlist li.comment div.comment-meta {
     font-size: 12px;
     line-height: 18px;
     font-size: 1.2rem;
@@ -1681,7 +1759,7 @@ h3.widget-title {
     margin-left: 30px;
     margin: 0px; }
 
-  #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
+  #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget, .sponsors .textwidget ins {
     -moz-column-count: 2;
     -moz-column-gap: 10px;
     -webkit-column-count: 2;
@@ -1776,12 +1854,6 @@ h3.widget-title {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
-  .entry_excerpt {
-    display: inline-block;
-    margin: 0.25rem;
-    padding: 1rem;
-    width: 100%; }
-
   #site_title h1 a, #site_title h4 a {
     font-family: 'Georgia', Arial, sans-serif;
     font-size: 65px;
@@ -1795,19 +1867,16 @@ h3.widget-title {
     font-size: 1.4rem;
     line-height: 2.1rem; }
 
+  .entry_excerpt {
+    display: inline-block;
+    width: 100%; }
+
   #entries {
     float: left;
     width: 828px;
     margin-left: 0;
-    margin-top: 15px;
     margin-right: 30px;
-    	/*
-    
-    padding-left: 5px;
-    padding-right: 15px;
-    
-    	margin-left: 0px;
-    */ }
+    padding-left: 15px; }
     #entries .thumbnail {
       margin: 0 auto; }
     #entries h2 a {
@@ -1824,7 +1893,8 @@ h3.widget-title {
   .entriescol2 {
     float: left;
     width: 438px;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-top: -5px; }
 
   embed,
   iframe,
@@ -1849,7 +1919,8 @@ h3.widget-title {
   #footer {
     clear: both; }
 
-  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+  ol.commentlist li.comment div.vcard,
+  ol.commentlist li.comment ul {
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
@@ -1859,23 +1930,7 @@ h3.widget-title {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; }
-
-  /*
-  .gallery-columns-1 .gallery-item {max-width: 100%;}
-  .gallery-columns-2 .gallery-item,
-  .gallery-columns-3 .gallery-item,
-  .gallery-columns-4 .gallery-item,
-  .gallery-columns-5 .gallery-item,
-  .gallery-columns-6 .gallery-item,
-  .gallery-columns-7 .gallery-item,
-  .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item{
-   	width: 24% !important;
-  	width: 32% !important;
-  	float: left;
-  }
-  */ }
+    line-height: 2.1rem; } }
 @media screen and (min-width: 1408px) and (max-width: 1799px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -2409,65 +2464,6 @@ h3.widget-title {
 /*********************************************************
 11.0 Print
 *********************************************************/
-/* Responsive images. Fluid images for posts, comments, and widgets */
-.comment-content img,
-.entry_content img,
-.entry_excerpt img,
-#site_header img,
-.widget img,
-.wp-caption {
-  max-width: 100%; }
-
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
-.comment-content img[height],
-.entry_content img,
-.entry_excerpt img,
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"],
-#site-header img {
-  height: auto; }
-
-img.size-full,
-img.size-large,
-.wp-post-image,
-.post-thumbnail img {
-  height: auto;
-  max-width: 100%; }
-
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-  max-width: 100%;
-  height: auto; }
-
-/* Responsive images. Fluid images for posts, comments, and widgets */
-.comment-content img,
-.entry-content img,
-.entry-summary img,
-#site-header img,
-.widget img,
-.wp-caption {
-  max-width: 100%; }
-
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
-.comment-content img[height],
-.entry-content img,
-.entry-summary img,
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"],
-#site-header img {
-  height: auto; }
-
 /* Make sure embeds and iframes fit their containers */
 p > embed,
 p > iframe,

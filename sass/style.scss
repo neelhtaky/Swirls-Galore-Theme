@@ -21,15 +21,16 @@ Tags: white, two-columns, custom-header
  *   5.2 - Entry Header
  *   5.3 - Entry Meta
  *   5.4 - Entry Content
- *   5.5 - Galleries
- *   5.6 - Post Formats
- *   5.7 - Post/Paging Navigation
- *   5.8 - Attachments
- *   5.9 - Archives
- *   5.10 - Contributor Page
- *   5.11 - 404 Page
- *   5.12 - Full-width
- *   5.13 - Singular
+ *   5.5 - Images
+ *   5.6 - Galleries
+ *   5.7 - Post Formats
+ *   5.8 - Post/Paging Navigation
+ *   5.9 - Attachments
+ *   5.10 - Archives
+ *   5.11 - Contributor Page
+ *   5.12 - 404 Page
+ *   5.13 - Full-width
+ *   5.14 - Singular
  * 6.0 - Comments
  * 7.0 - Sidebar
  *   7.1 - Widgets
@@ -75,8 +76,18 @@ a[href]:after {
 	font: normal 16px/1 'Genericons';
 	vertical-align: top;
 }
-a[href*="quickneed"], a[href^="/"], a[href^="#"], a[href^="mailto:"], a[href^="javascript:"] { display: inline;}
-a[href*="quickneed"]:after, a[href^="/"]:after, a[href^="#"]:after, a[href^="mailto:"]:after, a[href^="javascript:"]:after {content: none;}
+a[href*="quickneed"],
+a[href^="/"], a[href^="#"],
+a[href^="mailto:"],
+a[href^="javascript:"] {
+	display: inline;
+}
+a[href*="quickneed"]:after,
+a[href^="/"]:after, a[href^="#"]:after,
+a[href^="mailto:"]:after,
+a[href^="javascript:"]:after {
+	content: none;
+}
 a[rel="author"]:before{
 	color: $text-col;
 	content: '\f304';
@@ -188,11 +199,12 @@ table, th, tr, td{border: 1px solid $col-purple-light;}
 
 /*This will work for firefox*/
 @-moz-document url-prefix() {
-    #site_title h1 a, #site_title h4 a{
-    background: none;
-    color: $col-purple-dark;
-    text-align: center;
-    font-variant: small-caps;
+    #site_title h1 a,
+    #site_title h4 a{
+	    background: none;
+	    color: $col-purple-dark;
+	    text-align: center;
+	    font-variant: small-caps;
 	}
 }
 #description p{
@@ -326,6 +338,9 @@ table, th, tr, td{border: 1px solid $col-purple-light;}
 /*********************************************************
 	5.4 Entry Content
 *********************************************************/
+.post{
+	padding-left: 5px;
+}
 .entry_excerpt {
 	p{
 		text-align: justify;
@@ -381,7 +396,70 @@ a.read_more {
 		color: black;
 	}
 /*********************************************************
-	5.5 Galleries
+	5.5 Images
+*********************************************************/
+img.size-full,
+img.size-large,
+.wp-post-image,
+.post-thumbnail img {
+	height: auto;
+	max-width: 100%;
+}
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img,
+.entry_content img,
+.entry_excerpt img,
+#site_header img,
+.widget img,
+.wp-caption {
+	max-width: 100%;
+}
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+.comment-content img[height],
+.entry_content img,
+.entry_excerpt img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+	height: auto;
+}
+
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+#site-header img,
+.widget img,
+.wp-caption {
+	max-width: 100%;
+}
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+.comment-content img[height],
+.entry-content img,
+.entry-summary img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"],
+#site-header img {
+	height: auto;
+}
+/*********************************************************
+	5.6 Galleries
 *********************************************************/
 .gallery {
 	margin-bottom: 20px;
@@ -496,10 +574,8 @@ a.read_more {
 .gallery-columns-9 .gallery-caption {
 	display: none;
 }
-
-
 /*********************************************************
-	5.6 Post Formats
+	5.7 Post Formats
 *********************************************************/
 /* Chat Format */
 .chat-transcript { }
@@ -520,25 +596,25 @@ a.read_more {
 .chat-author cite {font-weight: bold;}
 .chat-text {padding: 1px 5px 1px 13px;}
 /*********************************************************
-	5.7 Post/Page Navigation
+	5.8 Post/Page Navigation
 *********************************************************/
 /*********************************************************
-	5.8 Attachments
+	5.9 Attachments
 *********************************************************/
 /*********************************************************
-	5.9 Archives
+	5.10 Archives
 *********************************************************/
 /*********************************************************
-	5.10 Contributor Page
+	5.11 Contributor Page
 *********************************************************/
 /*********************************************************
-	5.11 404 Page
+	5.12 404 Page
 *********************************************************/
 /*********************************************************
-	5.12 Full Width
+	5.13 Full Width
 *********************************************************/
 /*********************************************************
-	5.13 Singular
+	5.14 Singular
 *********************************************************/
 /*********************************************************
 6.0 Comments
@@ -742,65 +818,7 @@ h3.widget-title{
 
 
 
-/* Responsive images. Fluid images for posts, comments, and widgets */
-.comment-content img,
-.entry_content img,
-.entry_excerpt img,
-#site_header img,
-.widget img,
-.wp-caption {
-	max-width: 100%;
-}
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
-.comment-content img[height],
-.entry_content img,
-.entry_excerpt img,
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"],
-#site-header img {
-	height: auto;
-}
-img.size-full,
-img.size-large,
-.wp-post-image,
-.post-thumbnail img {
-	height: auto;
-	max-width: 100%;
-}
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-	max-width: 100%;
-	height: auto;
-}
-/* Responsive images. Fluid images for posts, comments, and widgets */
-.comment-content img,
-.entry-content img,
-.entry-summary img,
-#site-header img,
-.widget img,
-.wp-caption {
-	max-width: 100%;
-}
-/**
- * Make sure images with WordPress-added height and width attributes are
- * scaled correctly.
- */
-.comment-content img[height],
-.entry-content img,
-.entry-summary img,
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"],
-#site-header img {
-	height: auto;
-}
+
 /* Make sure embeds and iframes fit their containers */
 p > embed,
 p > iframe,
@@ -842,10 +860,6 @@ a.comments-link{
 		border: 0 none;
 	}
 }
-
-.navigation{
-	margin-top: 2em;
+.navigation{margin-top: 2em;
 }
-input#s{
-	width: 230px;
-}
+input#s{width: 230px;}

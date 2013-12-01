@@ -24,51 +24,34 @@ div.col16 { width: 1218px; }
 $layoutwidth : 1218;
 @import "978gs";
 @include layout;
-
 @media screen and (min-width:1408px){
 	.post_title{display: none;}
 }
-
 body{
 	@include font-size(14);
 }
-.entry_excerpt {
- display: inline-block;
- margin:  0.25rem;
- padding:  1rem;
- width:  100%;
-}
-
 #site_title h1 a, #site_title h4 a{
 	font-family: 'Georgia', Arial, sans-serif;
 	@include font-size(65);
 }
-#entries, #sidebar, #footer{
-	@include font-size(14);
+#entries, #sidebar, #footer{@include font-size(14);}
+.entry_excerpt {
+	 display: inline-block;
+	 width:  100%;
 }
 #entries{
 	@include grid(11,true);
-	margin-top: 15px;
+
 	margin-right: 30px;
-
-
-	/*
-
-padding-left: 5px;
-padding-right: 15px;
-
-	margin-left: 0px;
-*/
+	padding-left: 15px;
 	.thumbnail{margin: 0 auto;}
 	h2{
 		a{@include font-size(24);}
 	}
 }
-.entriescol1{
-	@include grid(5,true);
-}
-.entriescol2{
-	@include grid(6,true);
+.entriescol1{@include grid(5,true);}
+.entriescol2{@include grid(6,true);
+	margin-top: -5px;
 }
 embed,
 iframe,
@@ -83,31 +66,14 @@ video {
 	margin: 0px;}
 #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 2;
-       -moz-column-gap: 10px;
-       -webkit-column-count: 2;
-       -webkit-column-gap: 10px;
+   -moz-column-gap: 10px;
+   -webkit-column-count: 2;
+   -webkit-column-gap: 10px;
 }
-#footer{clear: both;
-
-}
-ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
-	@include font-size(16);
-}
+#footer{clear: both;}
+ol.commentlist li.comment div.vcard,
+ol.commentlist li.comment ul {
+	@include font-size(16);}
 ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
 	@include font-size(14);
 }
-/*
-.gallery-columns-1 .gallery-item {max-width: 100%;}
-.gallery-columns-2 .gallery-item,
-.gallery-columns-3 .gallery-item,
-.gallery-columns-4 .gallery-item,
-.gallery-columns-5 .gallery-item,
-.gallery-columns-6 .gallery-item,
-.gallery-columns-7 .gallery-item,
-.gallery-columns-8 .gallery-item,
-.gallery-columns-9 .gallery-item{
- 	width: 24% !important;
-	width: 32% !important;
-	float: left;
-}
-*/
