@@ -41,7 +41,6 @@ body{
 }
 #entries{
 	@include grid(11,true);
-
 	margin-right: 30px;
 	padding-left: 15px;
 	.thumbnail{margin: 0 auto;}

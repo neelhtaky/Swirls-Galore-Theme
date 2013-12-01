@@ -21,9 +21,8 @@
 				<?php } ?>
 
 		 <p><?php echo the_content(); ?></p>
-
-
 		</article>
+
 		<hr>
 		<?php if( is_single() || is_page() ){ ?>
 			<?php comments_template(); ?>
