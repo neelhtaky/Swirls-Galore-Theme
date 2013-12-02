@@ -16,20 +16,34 @@ div.col8 { width: 300px; }
 $layoutwidth:300;
 @import "978gs";
 @include layout;
+
+body{@include font-size(14);}
+#site_title h1 a, #site_title h4 a{
+	font-family: 'Georgia', Arial, sans-serif;
+	@include font-size(50);
+}
+
+#entries{
+	@include grid(8,true);
+}
+#sidebar{
+	@include grid(8,true);
+}
+.footer{
+	@include grid(8,true);
+}
+.site-info{}
+/*
 @media only screen and (min-width:0px) and (max-width: 767px){
 	.post_title_wide{display: none;}
 }
-/*This will work for firefox*/
 @-moz-document url-prefix() {
    .sticky{
    		margin-top: 50px;
 	}
 }
-body{@include font-size(14);}
-#site_title h1 a, #site_title h4 a{
-	font-family: 'Georgia', Arial, sans-serif;
-	@include font-size(55);
-}
+
+
 #entries, #sidebar, #footer{
 	padding: 5px;
 	@include font-size(12);
@@ -41,12 +55,10 @@ body{@include font-size(14);}
 	}
 }
 .post_title_short{display: none;}
-#sidebar{
-	@include grid(8,true);
-}
 #related, #comments{
 	@include grid(8,true);
 }
+
 ol.commentlist li.comment div.vcard,
 ol.commentlist li.comment ul {
 	@include font-size(14);}
@@ -64,12 +76,16 @@ video {
 	max-width: 290px;
 	height: 163px;
 }
-.gallery-item {
-	width: 100% !important;
-}
+.gallery-item {width: 100% !important;}
+
+#sidebar{@include grid(8,true);}
 #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 2;
    -moz-column-gap: 10px;
    -webkit-column-count: 2;
    -webkit-column-gap: 10px;
 }
+#footer{
+
+	@include grid(8,true);
+}*/

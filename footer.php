@@ -1,22 +1,17 @@
-			</div><!-- #main -->
-			<footer id="footer">
-				<ul>
-					<?php if ( is_active_sidebar( 'footer' ) ) : ?>
-						<?php dynamic_sidebar( 'footer' ); ?>
-					<?php else : ?>
-						<div class="alert alert-help">
-							<p>Please activate some Widgets.</p>
-						</div>
-					<?php endif; ?>
-				</ul>
-			</div> <!-- close #container -->
-			<section class="site-info">
-				<p id="copyright">Copyright &copy; <?php echo date("Y") ?> <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>. All Rights Reserved.</p>
-				<p id="attribution">Theme for <?php bloginfo('name'); ?> Designed By <a href="<?php echo esc_url( __( 'http://katskinner.com/') ); ?>" title="<?php esc_attr_e( 'Kat Skinner' ); ?>">Kat Skinner</a></p>
-				<p id="site-generator">Proudly powered by <a href="<?php echo esc_url( __( 'http://wordpress.org/') ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform' ); ?>"><?php printf( __( '%s'), 'WordPress' ); ?></a></p>
-				</section><!-- .site-info -->
-			</footer>
-		</div><!-- #page -->
+</div><!-- #main -->
+<footer class="footer">
+	<?php if ( is_active_sidebar( 'footer' ) ) { ?>
+	 	<?php dynamic_sidebar( 'footer' ); ?>
+	<?php } ?>
+</footer>
+</div><!-- #container -->
+
+	<section class="site-info">
+	<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	</section><!-- .site-info -->
+
+</div><!-- page -->
+
 	<?php wp_footer(); ?>
 	</body> <!-- close body tag -->
 </html> <!-- close html tag -->

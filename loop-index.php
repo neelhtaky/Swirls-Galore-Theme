@@ -49,7 +49,6 @@
 <?php comments_number( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.'); ?></a>
 
 					<?php the_tags(); ?>
-</p>
 				</footer>
 
 				<p><?php echo the_excerpt(); ?></p>

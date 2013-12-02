@@ -22,13 +22,10 @@
 								<p>
 									<time pubdate class="published" title="<?php the_time('l, F jS, Y, g:i a'); ?>"><?php the_time('F j, Y'); ?></time>.
 									<?php the_category(', ') ?>
-									<?php if ( comments_open() ) :
-										echo '<p>';
-										comments_popup_link( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.');
-										echo '</p>';
-									endif; ?>
+									<a href="<?php comments_link(); ?>" class="comments-link">
+<?php comments_number( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.'); ?></a>
 
-									<?php if (function_exists('the_tags')) { ?> <?php the_tags( '<p class="tags">', ', ', '.</p>' ); ?> <?php } ?>
+									<?php the_tags(); ?>
 								</p>
 							</footer>
 						</div><!-- #entriescol1 -->
@@ -50,12 +47,9 @@
 						<p>
 							<time pubdate class="published" title="<?php the_time('l, F jS, Y, g:i a'); ?>"><?php the_time('F j, Y'); ?></time>.
 							<?php the_category(', ') ?>
-							<?php if ( comments_open() ) :
-								echo '<p>';
-								comments_popup_link( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.');
-								echo '</p>';
-							endif; ?>
-							<?php if (function_exists('the_tags')) { ?> <?php the_tags( '<p class="tags">', ', ', '.</p>' ); ?> <?php } ?>
+							<a href="<?php comments_link(); ?>" class="comments-link">
+<?php comments_number( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.'); ?></a>
+							<?php the_tags(); ?>
 						</p>
 					</footer>
 				<p><?php echo the_excerpt(); ?></p>

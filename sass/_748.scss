@@ -20,13 +20,29 @@ div.col12 { width: 748px; }
 $layoutwidth:748;
 @import "978gs";
 @include layout;
-@media only screen and (min-width: 768px) and (max-width:1247px) {
-.post_title_wide{display: none;}}
+
+
 body{@include font-size(14);}
 #site_title h1 a, #site_title h4 a{
 	font-family: 'Georgia', Arial, sans-serif;
 	@include font-size(55);
 }
+
+#entries{
+	@include grid(7,true);
+}
+#sidebar{
+	@include grid(5);
+
+}
+.footer{
+	clear: both;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1247px) {
+.post_title_wide{display: none;}}
+
+
 #entries, #sidebar, #footer{
 	@include font-size(14);
 }
