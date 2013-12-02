@@ -7,12 +7,12 @@
 						        	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><?php the_post_thumbnail(); ?></a>
 						        </aside>
 					        <?php } else {}?>
-						        <aside class="byline meta">
+						        <aside class="byline meta postmetadata">
 									<p class="post_details">
 										This post was written by <address class="author vcard"><?php the_author_posts_link(); ?></address>
-										on	<time pubdate class="published" title="<?php the_time(get_option('date_format')); ?>"><?php the_time(get_option('date_format')); ?></time>.
+										on what I think was a <?php the_time('l'); ?>, but I know it was the <?php the_time('jS'); ?> day in <?php the_time('F, Y'); ?>.
 										It was posted under <?php the_category(', ') ?>.
-										It is tagged with <?php the_tags( '<p class="tags">', ', ', '.</p>' ); ?>
+										It is tagged with <?php the_tags(); ?>
 										<?php if ( comments_open() ) :
 											echo '<p>';
 											comments_popup_link( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.');

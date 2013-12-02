@@ -845,6 +845,19 @@ table, th, tr, td {
 hr {
   clear: both; }
 
+/* Make sure embeds and iframes fit their containers */
+p > embed,
+p > iframe,
+p > object,
+span > embed,
+span > iframe,
+span > object {
+  margin-bottom: 0;
+  overflow: auto; }
+
+.post_details {
+  display: inline; }
+
 /*********************************************************
 	5.1 Post Thumbnails
 *********************************************************/
@@ -885,9 +898,6 @@ hr {
 /*********************************************************
 	5.4 Entry Content
 *********************************************************/
-.post {
-  padding-left: 5px; }
-
 .entry_excerpt p {
   text-align: justify;
   text-justify: newspaper; }
@@ -1020,6 +1030,21 @@ img[class*="wp-image-"],
 img[class*="attachment-"],
 #site-header img {
   height: auto; }
+
+.wp-caption {
+  border: 1px solid #ebe2ee;
+  background: #fcfaf5;
+  text-align: center;
+  padding-top: 10px;
+  margin: 10px;
+  -moz-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
+  .wp-caption img {
+    margin: 0;
+    padding: 0;
+    border: 0 none; }
 
 /*********************************************************
 	5.6 Galleries
@@ -1155,6 +1180,28 @@ img[class*="attachment-"],
 /*********************************************************
 	5.8 Post/Page Navigation
 *********************************************************/
+.navigation {
+  margin-top: 2em; }
+  .navigation a {
+    display: block;
+    text-align: center;
+    width: 180px;
+    margin: 0 auto;
+    color: #444444;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #f2e8d1;
+    border: 4px double #f2e8d1;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    line-height: 35px;
+    clear: both; }
+  .navigation a:hover {
+    background: #ffa145;
+    color: black; }
+
 /*********************************************************
 	5.9 Attachments
 *********************************************************/
@@ -1501,6 +1548,16 @@ h3.widget-title {
 
   .post_title_short {
     display: none; }
+
+  #sidebar {
+    float: left;
+    width: 300px;
+    margin-left: 0; }
+
+  #related, #comments {
+    float: left;
+    width: 300px;
+    margin-left: 0; }
 
   ol.commentlist li.comment div.vcard,
   ol.commentlist li.comment ul {
@@ -2521,36 +2578,5 @@ h3.widget-title {
 /*********************************************************
 11.0 Print
 *********************************************************/
-/* Make sure embeds and iframes fit their containers */
-p > embed,
-p > iframe,
-p > object,
-span > embed,
-span > iframe,
-span > object {
-  margin-bottom: 0;
-  overflow: auto; }
-
-.post_details {
-  display: inline; }
-
-.wp-caption {
-  border: 1px solid #ebe2ee;
-  background: #fcfaf5;
-  text-align: center;
-  padding-top: 10px;
-  margin: 10px;
-  -moz-border-radius: 2px;
-  -khtml-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px; }
-  .wp-caption img {
-    margin: 0;
-    padding: 0;
-    border: 0 none; }
-
-.navigation {
-  margin-top: 2em; }
-
 input#s {
   width: 230px; }

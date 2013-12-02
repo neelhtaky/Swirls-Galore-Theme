@@ -41,6 +41,12 @@ body{@include font-size(14);}
 	}
 }
 .post_title_short{display: none;}
+#sidebar{
+	@include grid(8,true);
+}
+#related, #comments{
+	@include grid(8,true);
+}
 ol.commentlist li.comment div.vcard,
 ol.commentlist li.comment ul {
 	@include font-size(14);}

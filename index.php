@@ -10,9 +10,9 @@
 		if (have_posts()) :
 			while (have_posts()) : the_post(); ?>
 				<?php get_template_part( 'loop', 'index' ); ?>
-			<?php endwhile;
-		endif; } ?>
+			<?php endwhile; ?>
 		<hr>
+		<?php endif; } ?>
 
 	<?php wp_reset_query(); ?>
 

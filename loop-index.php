@@ -9,15 +9,15 @@
 
 				<h2 class="post_title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-				<footer class="byline meta">
-					<time pubdate class="published" title="<?php the_time('l, F jS, Y, g:i a'); ?>"><?php the_time('F j, Y'); ?></time>.
+				<footer class="byline meta postmetadata">
+					<time class="published" datetime="<?php the_date('Y-m-d')?>"><?php the_date(); ?></time>.
 
-					<?php the_category(', ') ?>
+					<?php the_category(', ') ?>.
 
 					<a href="<?php comments_link(); ?>" class="comments-link">
 <?php comments_number( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.'); ?></a>
 
-					<?php if (function_exists('the_tags')) { ?> <?php the_tags( '<p class="tags">', ', ', '.</p>' ); ?> <?php } ?>
+					<?php the_tags(); ?>
 				</footer>
 
 			</div><!-- #entriescol1 -->
@@ -39,16 +39,16 @@
 
 			<h2 class="post_title_wide"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-				<footer class="byline meta">
+				<footer class="byline meta postmetadata">
 <p>
-					<time pubdate class="published" title="<?php the_time('l, F jS, Y, g:i a'); ?>"><?php the_time('F j, Y'); ?></time>.
+					<time class="published" datetime="<?php the_date('Y-m-d')?>"><?php the_date(); ?></time>.
 
-					<?php the_category(', ') ?>
+					<?php the_category(', ') ?>.
 
 					<a href="<?php comments_link(); ?>" class="comments-link">
 <?php comments_number( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.'); ?></a>
 
-					<?php if (function_exists('the_tags')) { ?> <?php the_tags( '<p class="tags">', ', ', '.</p>' ); ?> <?php } ?>
+					<?php the_tags(); ?>
 </p>
 				</footer>
 

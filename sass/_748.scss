@@ -53,7 +53,8 @@ video {
 	margin-bottom: 24px;
 	max-width: 398px;
 	height: 224px;
-}#sidebar{
+}
+#sidebar{
 	@include grid(5);
 	margin-right: 0px;
 	margin-left: 0px;
