@@ -25,7 +25,7 @@
 
 		<hr>
 		<div id="clearfix"></div>
-		<aside id="related">
+		<div id="related">
 			<h1>Related Posts</h1>
 			<?php $tags = wp_get_post_tags($post->ID);
 			if ($tags) {
@@ -33,7 +33,7 @@
 				$args=array(
 				'tag__in' => array($first_tag),
 				'post__not_in' => array($post->ID),
-				'posts_per_page'=>5,
+				'posts_per_page'=>6,
 				'caller_get_posts'=>1
 			);
 			$my_query = new WP_Query($args);
@@ -54,7 +54,7 @@
 			}
 			wp_reset_query();
 			} ?>
-		</aside>
+		</div>
 
 		<hr>
 		<?php if( is_single() || is_page() ){ ?>

@@ -1254,10 +1254,6 @@ img[class*="attachment-"],
     box-shadow: 1px 1px 3px #f2e8d1;
     -webkit-transition: all .5s ease-in; }
 
-.related {
-  width: 300px;
-  float: left; }
-
 /*********************************************************
 6.0 Comments
 *********************************************************/
@@ -1582,6 +1578,13 @@ h3.widget-title {
   .gallery-item {
     width: 100% !important; }
 
+  #related {
+    padding: 0px;
+    margin: 30px 0px 0px -3px; }
+
+  .related:nth-child(n+3) {
+    display: none; }
+
   #sidebar {
     float: left;
     width: 300px;
@@ -1734,6 +1737,27 @@ h3.widget-title {
     float: left;
     width: 748px;
     margin-left: 0; }
+
+  #related {
+    margin-left: -7px;
+    padding: 5px;
+    text-align: left; }
+
+  .related {
+    float: left;
+    width: 172px;
+    margin-left: 0;
+    margin-left: 16px; }
+    .related img {
+      width: 170px;
+      height: 96px; }
+    .related:first-of-type {
+      float: left;
+      width: 172px;
+      margin-left: 0; }
+
+  .related:nth-child(n+6) {
+    display: none; }
 
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 16px;
@@ -1892,6 +1916,30 @@ h3.widget-title {
     -moz-column-gap: 10px;
     -webkit-column-count: 2;
     -webkit-column-gap: 10px; }
+
+  #related {
+    margin-left: -7px;
+    padding: 5px;
+    text-align: left;
+    float: left;
+    width: 978px;
+    margin-left: 0; }
+
+  .related {
+    float: left;
+    width: 222px;
+    margin-left: 0;
+    margin-left: 20px; }
+    .related img {
+      width: 222px;
+      height: 125px; }
+    .related:first-of-type {
+      float: left;
+      width: 222px;
+      margin-left: 0; }
+
+  .related:nth-child(n+6) {
+    display: none; }
 
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 16px;
@@ -2065,6 +2113,32 @@ h3.widget-title {
     -webkit-column-count: 2;
     -webkit-column-gap: 10px; }
 
+  #related {
+    margin-left: -7px;
+    padding: 5px;
+    text-align: left;
+    float: left;
+    width: 1218px;
+    margin-left: 0; }
+
+  .related {
+    float: left;
+    width: 282px;
+    margin-left: 0;
+    margin-left: 20px; }
+    .related img {
+      width: 282px;
+      height: 159px; }
+    .related:first-of-type {
+      float: left;
+      width: 282px;
+      margin-left: 0; }
+    .related:last-child {
+      display: none; }
+
+  .related:nth-child(n+6) {
+    display: none; }
+
   ol.commentlist li.comment div.vcard,
   ol.commentlist li.comment ul {
     font-size: 16px;
@@ -2198,7 +2272,8 @@ h3.widget-title {
     float: left;
     width: 1026px;
     margin-left: 0;
-    margin-right: 30px; }
+    margin-right: 25px;
+    padding-left: 15px; }
     #entries .thumbnail {
       margin: 0 auto; }
     #entries h2 a {
@@ -2239,6 +2314,27 @@ h3.widget-title {
     -moz-column-gap: 10px;
     -webkit-column-count: 2;
     -webkit-column-gap: 10px; }
+
+  #related {
+    margin-left: -7px;
+    padding: 5px;
+    text-align: left;
+    float: left;
+    width: 1378px;
+    margin-left: 0; }
+
+  .related {
+    float: left;
+    width: 234px;
+    margin-left: 0;
+    margin-left: 40px; }
+    .related img {
+      width: 222px;
+      height: 125px; }
+    .related:first-of-type {
+      float: left;
+      width: 234px;
+      margin-left: 0; }
 
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 18px;
@@ -2424,6 +2520,27 @@ h3.widget-title {
     -webkit-column-count: 3;
     -webkit-column-gap: 10px; }
 
+  #related {
+    margin-left: -7px;
+    padding: 5px;
+    text-align: left;
+    float: left;
+    width: 1768px;
+    margin-left: 0; }
+
+  .related {
+    float: left;
+    width: 268px;
+    margin-left: 32px;
+    margin-left: 30px; }
+    .related img {
+      width: 268px;
+      height: 153px; }
+    .related:first-of-type {
+      float: left;
+      width: 268px;
+      margin-left: 0; }
+
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 18px;
     line-height: 27px;
@@ -2608,6 +2725,28 @@ h3.widget-title {
     -moz-column-gap: 10px;
     -webkit-column-count: 3;
     -webkit-column-gap: 10px; }
+
+  #related {
+    margin-left: -7px;
+    padding: 5px;
+    text-align: left;
+    float: left;
+    width: 1968px;
+    margin-left: 0; }
+
+  .related {
+    float: left;
+    width: 268px;
+    margin-left: 32px;
+    margin-left: 60px; }
+    .related img {
+      width: 268px;
+      height: 153px; }
+    .related:first-of-type {
+      float: left;
+      width: 268px;
+      margin-left: 0;
+      margin-left: 30px; }
 
   #footer {
     clear: both; }

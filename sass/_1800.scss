@@ -89,6 +89,24 @@ a.read_more {
     -webkit-column-count: 3;
     -webkit-column-gap: 10px;
 }
+#related{
+margin-left: -7px;
+padding: 5px;
+text-align: left;
+@include grid(18,true);
+}
+.related{
+	@include grid(3);
+	img{
+		width: 268px;
+		height: 153px;
+	}
+	&:first-of-type{
+		@include grid(3,true);
+	}
+	margin-left:30px;
+
+}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
 	@include font-size(18);
 }

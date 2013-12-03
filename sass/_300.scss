@@ -33,6 +33,7 @@ body{@include font-size(14);}
 	@include font-size(12);
 }
 #entries{
+
 	padding-top: 130px;
 	h2{
 		a{@include font-size(16);}
@@ -57,8 +58,14 @@ video {
 	height: 163px;
 }
 .gallery-item {width: 100% !important;}
-
-#sidebar{@include grid(8,true);}
+#related{
+	padding: 0px;
+	margin: 30px 0px 0px -3px;
+}
+.related:nth-child(n+3){display: none;}
+#sidebar{
+	@include grid(8,true);
+	}
 #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 2;
    -moz-column-gap: 10px;
