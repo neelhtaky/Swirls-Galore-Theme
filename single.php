@@ -23,10 +23,11 @@
 		<p><?php echo the_content(); ?></p>
 		</article>
 
-		<hr>
+
 		<div id="clearfix"></div>
 		<div id="related">
-			<h1>Related Posts</h1>
+		<hr>
+			<h1>Similar Posts</h1>
 			<?php $tags = wp_get_post_tags($post->ID);
 			if ($tags) {
 				$first_tag = $tags[0]->term_id;
@@ -54,9 +55,10 @@
 			}
 			wp_reset_query();
 			} ?>
+			<hr>
 		</div>
 
-		<hr>
+
 		<?php if( is_single() || is_page() ){ ?>
 			<?php comments_template(); ?>
 		<?php } ?>

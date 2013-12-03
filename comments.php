@@ -22,7 +22,7 @@ die ('Please do not load this page directly. Thanks!'); ?>
 		<?php if (!empty($comments_by_type['comment'])) { ?>
 	    	<h3 id="comments">Comments</h3>
 			<ol class="commentlist">
-	        	<?php wp_list_comments('type=comment&avatar_size=65'); ?>
+	        	<?php wp_list_comments('type=comment&avatar_size=165'); ?>
 			</ol>
 		<?php } if (!empty($comments_by_type['pingback'])) { ?>
 			<h3 id="pingbacks">Pingbacks</h3>
@@ -54,9 +54,8 @@ die ('Please do not load this page directly. Thanks!'); ?>
 
 <?php if ('open' == $post->comment_status) : ?>
 
-<div id="respond">
-	<?php comment_form() ?>
-</div>
+<?php comment_form() ?>
+
 
 <?php endif; // if you delete this the sky will fall on your head ?>
 </div><!-- #comments -->

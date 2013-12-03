@@ -1257,9 +1257,6 @@ img[class*="attachment-"],
 /*********************************************************
 6.0 Comments
 *********************************************************/
-#respond {
-  margin-top: 6em; }
-
 .nocomments {
   margin-top: 20px; }
 
@@ -1271,8 +1268,8 @@ ol.commentlist {
 
 ol.commentlist {
   list-style: none;
-  margin: 0 0 1em;
-  padding: 0;
+  margin: 0 0 0 -10px;
+  padding: 0px;
   text-indent: 0; }
 
 ol.commentlist li.bypostauthor {
@@ -1550,6 +1547,9 @@ h3.widget-title {
   .post_title_short {
     display: none; }
 
+  #comments {
+    margin-top: 20px; }
+
   ol.commentlist li.comment div.vcard,
   ol.commentlist li.comment ul {
     font-size: 14px;
@@ -1580,9 +1580,11 @@ h3.widget-title {
 
   #related {
     padding: 0px;
-    margin: 30px 0px 0px -3px; }
+    margin: 0px 0px 0px -3px; }
+    #related hr {
+      margin-bottom: 25px; }
 
-  .related:nth-child(n+3) {
+  .related:nth-child(n+4) {
     display: none; }
 
   #sidebar {
@@ -1759,13 +1761,18 @@ h3.widget-title {
   .related:nth-child(n+6) {
     display: none; }
 
-  ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
+  ol.commentlist li.comment div.vcard,
+  ol.commentlist li.comment ul {
     font-size: 16px;
     line-height: 24px;
     font-size: 1.6rem;
     line-height: 2.4rem; }
 
-  ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+  ol.commentlist li.comment div.vcard span.says,
+  .site-info,
+  ol.commentlist li.comment div.reply,
+  ol.commentlist li.comment p,
+  ol.commentlist li.comment div.comment-meta {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
@@ -1940,6 +1947,11 @@ h3.widget-title {
 
   .related:nth-child(n+6) {
     display: none; }
+
+  #comments {
+    float: left;
+    width: 978px;
+    margin-left: 0; }
 
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 16px;

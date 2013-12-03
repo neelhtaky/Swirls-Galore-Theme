@@ -717,7 +717,7 @@ img[class*="attachment-"],
 /*********************************************************
 6.0 Comments
 *********************************************************/
-#respond{margin-top:6em;}
+
 .nocomments{margin-top: 20px;}
 ol.commentlist {
 	width: 100%;
@@ -728,8 +728,8 @@ ol.commentlist {
 }
 ol.commentlist {
 	list-style:none;
-	margin:0 0 1em;
-	padding:0;
+	margin:0 0 0 -10px;
+	padding:0px;
 	text-indent:0; }
 ol.commentlist li { }
 ol.commentlist li.alt { }

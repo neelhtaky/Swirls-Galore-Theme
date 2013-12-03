@@ -33,13 +33,16 @@ body{@include font-size(14);}
 	@include font-size(12);
 }
 #entries{
-
 	padding-top: 130px;
 	h2{
 		a{@include font-size(16);}
 	}
 }
 .post_title_short{display: none;}
+#comments{
+	margin-top: 20px;
+}
+
 ol.commentlist li.comment div.vcard,
 ol.commentlist li.comment ul {
 	@include font-size(14);}
@@ -60,9 +63,13 @@ video {
 .gallery-item {width: 100% !important;}
 #related{
 	padding: 0px;
-	margin: 30px 0px 0px -3px;
+	margin: 0px 0px 0px -3px;
+	hr{
+		margin-bottom: 25px;
+	}
 }
-.related:nth-child(n+3){display: none;}
+.related:nth-child(n+4){display: none;}
+
 #sidebar{
 	@include grid(8,true);
 	}
