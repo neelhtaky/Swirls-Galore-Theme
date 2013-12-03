@@ -69,8 +69,25 @@ video {
    -webkit-column-count: 2;
    -webkit-column-gap: 10px;
 }
-#footer{clear: both;}
 ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {@include font-size(16);}
 ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
 	@include font-size(14);
 }
+#footer{
+	clear: both;
+	@include grid(12,true);
+
+	.widget{
+		@include grid(3);
+		padding: 1px;
+	}
+	.widget-first{
+		@include grid(3,true);
+		padding-left: 10px;
+	}
+	.widget-last{
+		padding-right: 10px;
+	}
+
+}
+.site-info{@include font-size(14);}

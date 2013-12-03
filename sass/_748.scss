@@ -35,9 +35,6 @@ body{@include font-size(14);}
 	@include grid(5);
 
 }
-.footer{
-	clear: both;
-}
 
 @media only screen and (min-width: 768px) and (max-width:1247px) {
 .post_title_wide{display: none;}}
@@ -72,8 +69,8 @@ video {
 }
 #sidebar{
 	@include grid(5);
-	margin-right: 0px;
-	margin-left: 0px;
+	padding-right: 5px;
+
 }
 #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
 	-moz-column-count: 2;
@@ -89,14 +86,19 @@ ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {@include font
 ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {@include font-size(14);}
 #footer{
 	clear: both;
-	ul{
-		margin: 0px;
-		li{
-			@include grid(3);
-			&:first-child{
-				@include grid(3,true);
-			}
-		}
+	@include grid(12,true);
+
+	.widget{
+		@include grid(3);
+		padding: 1px;
 	}
+	.widget-first{
+		@include grid(3,true);
+		padding-left: 5px;
+	}
+	.widget-last{
+		padding-right: 5px;
+	}
+
 }
-.site-info{@include font-size(14);}
+.site-info{@include font-size(12);}

@@ -816,18 +816,16 @@ ol.commentlist li.thread-odd {}
 /*********************************************************
 7.0 Sidebar
 *********************************************************/
-/*
 #sidebar{
 	font-family: $serif;
 	ul{
 		list-style: none;
 		padding: 0px;
-		ul li{padding-left: 15px;}
+		ul li, .tagcloud{
+			padding-left: 15px;
+		}
 	}
 	a{border-bottom: 1px dotted;}
-}
-#sidebar .thumbnail{
-	margin:0 auto;
 }
 .widget-title{background-image: url('library/images/stripe.png');}
 h3.widget-title{
@@ -835,24 +833,25 @@ h3.widget-title{
 	font-weight: normal;
 	color: lighten($text-col,20%);
 	@include font-size(16);
+	padding-left: 3px;
 }
-*/
+#sidebar .thumbnail{
+	margin:0 auto;
+}
+
 /*********************************************************
 	7.1 Widgets
 *********************************************************/
 /* search widget */
-/* .widget_search label{display: none;} */
+.widget_search label{display: none;}
 /* sponsors, categories, archives and text widget */
-/*
 #sidebar .textwidget{
 	text-align: center;
 }
 .sponsors .textwidget{
 	padding-left: 15px;
 }
-*/
 /* calendar widget */
-/*
 .widget_calendar {}
 #wp-calendar {
 	width: 100%;
@@ -883,7 +882,7 @@ h3.widget-title{
 #wp-calendar tfoot #prev{border-right: 1px solid white;}
 #wp-calendar tfoot #next{border-left: 1px solid white;}
 .tagcloud{padding-left: 15px;}
-*/
+
 /*********************************************************
 8.0 Footer
 *********************************************************/
@@ -916,10 +915,6 @@ h3.widget-title{
 /*********************************************************
 11.0 Print
 *********************************************************/
-
-
-
-
 
 
 

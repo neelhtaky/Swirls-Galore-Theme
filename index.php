@@ -29,8 +29,8 @@
 	<?php endif; ?>
 
 	<div class="navigation">
-		<div class="alignleft"><?php previous_posts_link('&laquo; Newer Posts') ?></div>
-		<div class="alignright"><?php next_posts_link('Older Posts &raquo;','') ?></div>
+		<?php previous_posts_link('&laquo; Newer Posts') ?>
+		<?php next_posts_link('Older Posts &raquo;','') ?>
 	</div><!-- .navigation -->
 </section><!-- #entries -->
 <?php get_sidebar(); ?>

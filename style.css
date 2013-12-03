@@ -64,6 +64,9 @@ Tags: white, two-columns, custom-header
   border-color: #deeaae;
   background: #e6efc2; }
 
+#clearfix {
+  clear: both; }
+
 .alignleft, img.alignleft {
   display: inline;
   float: left;
@@ -1353,74 +1356,90 @@ ol.commentlist li.parent {
 /*********************************************************
 7.0 Sidebar
 *********************************************************/
-/*
-#sidebar{
-	font-family: $serif;
-	ul{
-		list-style: none;
-		padding: 0px;
-		ul li{padding-left: 15px;}
-	}
-	a{border-bottom: 1px dotted;}
-}
-#sidebar .thumbnail{
-	margin:0 auto;
-}
-.widget-title{background-image: url('library/images/stripe.png');}
-h3.widget-title{
-	text-transform: uppercase;
-	font-weight: normal;
-	color: lighten($text-col,20%);
-	@include font-size(16);
-}
-*/
+#sidebar {
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
+  #sidebar ul {
+    list-style: none;
+    padding: 0px; }
+    #sidebar ul ul li, #sidebar ul .tagcloud {
+      padding-left: 15px; }
+  #sidebar a {
+    border-bottom: 1px dotted; }
+
+.widget-title {
+  background-image: url("library/images/stripe.png"); }
+
+h3.widget-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #777777;
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-left: 3px; }
+
+#sidebar .thumbnail {
+  margin: 0 auto; }
+
 /*********************************************************
 	7.1 Widgets
 *********************************************************/
 /* search widget */
-/* .widget_search label{display: none;} */
+.widget_search label {
+  display: none; }
+
 /* sponsors, categories, archives and text widget */
-/*
-#sidebar .textwidget{
-	text-align: center;
-}
-.sponsors .textwidget{
-	padding-left: 15px;
-}
-*/
+#sidebar .textwidget {
+  text-align: center; }
+
+.sponsors .textwidget {
+  padding-left: 15px; }
+
 /* calendar widget */
-/*
-.widget_calendar {}
 #wp-calendar {
-	width: 100%;
-	border: 1px solid #fff; }
+  width: 100%;
+  border: 1px solid #fff; }
+
 #wp-calendar caption {
-	text-align: right;
-	margin-top: 10px;
-	margin-bottom: 15px; }
-#wp-calendar thead { text-align: center; }
-#wp-calendar thead th { }
-#wp-calendar tbody { color: lighten($text-col,30%);}
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+#wp-calendar thead {
+  text-align: center; }
+
+#wp-calendar tbody {
+  color: #919191; }
+
 #wp-calendar tbody td {
-	background: #f5f5f5;
-	text-align: center;
-	padding:8px;
-	&:hover{
-		color: $text-col;
-		background: #fff;
-	}
-}
-#wp-calendar tbody .pad { background: none;}
+  background: #f5f5f5;
+  text-align: center;
+  padding: 8px; }
+  #wp-calendar tbody td:hover {
+    color: #444444;
+    background: #fff; }
+
+#wp-calendar tbody .pad {
+  background: none; }
+
 #wp-calendar tfoot #next {
-	text-transform: uppercase;
-	text-align: right; }
+  text-transform: uppercase;
+  text-align: right; }
+
 #wp-calendar tfoot #prev {
-	text-transform: uppercase;
-	padding-top: 10px; }
-#wp-calendar tfoot #prev{border-right: 1px solid white;}
-#wp-calendar tfoot #next{border-left: 1px solid white;}
-.tagcloud{padding-left: 15px;}
-*/
+  text-transform: uppercase;
+  padding-top: 10px; }
+
+#wp-calendar tfoot #prev {
+  border-right: 1px solid white; }
+
+#wp-calendar tfoot #next {
+  border-left: 1px solid white; }
+
+.tagcloud {
+  padding-left: 15px; }
+
 /*********************************************************
 8.0 Footer
 *********************************************************/
@@ -1514,77 +1533,68 @@ h3.widget-title{
     font-size: 5rem;
     line-height: 7.5rem; }
 
+  #container {
+    padding: 5px; }
+
+  #entries, #sidebar, #footer {
+    padding: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem; }
+
   #entries {
-    float: left;
-    width: 300px;
-    margin-left: 0; }
+    padding-top: 130px; }
+    #entries h2 a {
+      font-size: 16px;
+      line-height: 24px;
+      font-size: 1.6rem;
+      line-height: 2.4rem; }
+
+  .post_title_short {
+    display: none; }
+
+  ol.commentlist li.comment div.vcard,
+  ol.commentlist li.comment ul {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  ol.commentlist li.comment div.vcard span.says,
+  .site-info,
+  ol.commentlist li.comment div.reply,
+  ol.commentlist li.comment p,
+  ol.commentlist li.comment div.comment-meta {
+    font-size: 12px;
+    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem; }
+
+  embed,
+  iframe,
+  object,
+  video {
+    margin-bottom: 24px;
+    max-width: 290px;
+    height: 163px; }
+
+  .gallery-item {
+    width: 100% !important; }
 
   #sidebar {
     float: left;
     width: 300px;
     margin-left: 0; }
 
-  .footer {
-    float: left;
-    width: 300px;
-    margin-left: 0; }
-
-  /*
-  @media only screen and (min-width:0px) and (max-width: 767px){
-  	.post_title_wide{display: none;}
-  }
-  @-moz-document url-prefix() {
-     .sticky{
-     		margin-top: 50px;
-  	}
-  }
-  
-  
-  #entries, #sidebar, #footer{
-  	padding: 5px;
-  	@include font-size(12);
-  }
-  #entries{
-  	padding-top: 130px;
-  	h2{
-  		a{@include font-size(16);}
-  	}
-  }
-  .post_title_short{display: none;}
-  #related, #comments{
-  	@include grid(8,true);
-  }
-  
-  ol.commentlist li.comment div.vcard,
-  ol.commentlist li.comment ul {
-  	@include font-size(14);}
-  ol.commentlist li.comment div.vcard span.says,
-  .site-info,
-  ol.commentlist li.comment div.reply,
-  ol.commentlist li.comment p,
-  ol.commentlist li.comment div.comment-meta {
-  	@include font-size(12);}
-  embed,
-  iframe,
-  object,
-  video {
-  	margin-bottom: 24px;
-  	max-width: 290px;
-  	height: 163px;
-  }
-  .gallery-item {width: 100% !important;}
-  
-  #sidebar{@include grid(8,true);}
   #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
-  	-moz-column-count: 2;
-     -moz-column-gap: 10px;
-     -webkit-column-count: 2;
-     -webkit-column-gap: 10px;
-  }
-  #footer{
-  
-  	@include grid(8,true);
-  }*/ }
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px; } }
+@media only screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
+  .post_title_wide {
+    display: none; } }
 @media only screen and (min-width: 768px) and (max-width: 1247px) {
   /******************************************************************
   748px - 12 Columns
@@ -1670,9 +1680,6 @@ h3.widget-title{
     width: 300px;
     margin-left: 20px; }
 
-  .footer {
-    clear: both; }
-
   #entries, #sidebar, #footer {
     font-size: 14px;
     line-height: 21px;
@@ -1715,8 +1722,7 @@ h3.widget-title{
     float: left;
     width: 300px;
     margin-left: 20px;
-    margin-right: 0px;
-    margin-left: 0px; }
+    padding-right: 5px; }
 
   #sidebar .widget_categories ul, #sidebar .widget_archive ul, .sponsors .textwidget {
     -moz-column-count: 2;
@@ -1742,23 +1748,28 @@ h3.widget-title{
     line-height: 2.1rem; }
 
   #footer {
-    clear: both; }
-    #footer ul {
-      margin: 0px; }
-      #footer ul li {
-        float: left;
-        width: 172px;
-        margin-left: 20px; }
-        #footer ul li:first-child {
-          float: left;
-          width: 172px;
-          margin-left: 0; }
+    clear: both;
+    float: left;
+    width: 748px;
+    margin-left: 0; }
+    #footer .widget {
+      float: left;
+      width: 172px;
+      margin-left: 20px;
+      padding: 1px; }
+    #footer .widget-first {
+      float: left;
+      width: 172px;
+      margin-left: 0;
+      padding-left: 5px; }
+    #footer .widget-last {
+      padding-right: 5px; }
 
   .site-info {
-    font-size: 14px;
-    line-height: 21px;
-    font-size: 1.4rem;
-    line-height: 2.1rem; } }
+    font-size: 12px;
+    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem; } }
 @media only screen and (min-width: 768px) and (max-width: 1247px) and (min-width: 768px) and (max-width: 1247px) {
   .post_title_wide {
     display: none; } }
@@ -1882,9 +1893,6 @@ h3.widget-title{
     -webkit-column-count: 2;
     -webkit-column-gap: 10px; }
 
-  #footer {
-    clear: both; }
-
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 16px;
     line-height: 24px;
@@ -1892,6 +1900,30 @@ h3.widget-title{
     line-height: 2.4rem; }
 
   ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  #footer {
+    clear: both;
+    float: left;
+    width: 978px;
+    margin-left: 0; }
+    #footer .widget {
+      float: left;
+      width: 222px;
+      margin-left: 30px;
+      padding: 1px; }
+    #footer .widget-first {
+      float: left;
+      width: 222px;
+      margin-left: 0;
+      padding-left: 10px; }
+    #footer .widget-last {
+      padding-right: 10px; }
+
+  .site-info {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
@@ -1992,7 +2024,7 @@ h3.widget-title{
     float: left;
     width: 828px;
     margin-left: 0;
-    margin-right: 30px;
+    margin-right: 25px;
     padding-left: 15px; }
     #entries .thumbnail {
       margin: 0 auto; }
@@ -2033,9 +2065,6 @@ h3.widget-title{
     -webkit-column-count: 2;
     -webkit-column-gap: 10px; }
 
-  #footer {
-    clear: both; }
-
   ol.commentlist li.comment div.vcard,
   ol.commentlist li.comment ul {
     font-size: 16px;
@@ -2044,6 +2073,30 @@ h3.widget-title{
     line-height: 2.4rem; }
 
   ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; }
+
+  #footer {
+    clear: both;
+    float: left;
+    width: 1218px;
+    margin-left: 0; }
+    #footer .widget {
+      float: left;
+      width: 282px;
+      margin-left: 30px;
+      padding: 1px; }
+    #footer .widget-first {
+      float: left;
+      width: 282px;
+      margin-left: 0;
+      padding-left: 15px; }
+    #footer .widget-last {
+      padding-right: 10px; }
+
+  .site-info {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
@@ -2145,14 +2198,7 @@ h3.widget-title{
     float: left;
     width: 1026px;
     margin-left: 0;
-    margin-right: 30px;
-    	/*
-    padding-left: 5px;
-    	padding-right: 15px;
-    	margin-top: 10px;
-    
-    	margin-left: 0px;
-    */ }
+    margin-right: 30px; }
     #entries .thumbnail {
       margin: 0 auto; }
     #entries h2 a {
@@ -2170,6 +2216,9 @@ h3.widget-title{
     float: left;
     width: 674px;
     margin-left: 0; }
+
+  a.read_more {
+    width: 150px; }
 
   embed,
   iframe,
@@ -2191,9 +2240,6 @@ h3.widget-title{
     -webkit-column-count: 2;
     -webkit-column-gap: 10px; }
 
-  #footer {
-    clear: both; }
-
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 18px;
     line-height: 27px;
@@ -2206,20 +2252,29 @@ h3.widget-title{
     font-size: 1.6rem;
     line-height: 2.4rem; }
 
-  /*
-  .gallery-columns-1 .gallery-item {max-width: 100%;}
-  .gallery-columns-2 .gallery-item,
-  .gallery-columns-3 .gallery-item,
-  .gallery-columns-4 .gallery-item,
-  .gallery-columns-5 .gallery-item,
-  .gallery-columns-6 .gallery-item,
-  .gallery-columns-7 .gallery-item,
-  .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item{
-  	width: 32% !important;
-  	float: left;
-  }
-  */ }
+  #footer {
+    clear: both;
+    float: left;
+    width: 1378px;
+    margin-left: 0; }
+    #footer .widget {
+      float: left;
+      width: 322px;
+      margin-left: 30px;
+      padding: 1px; }
+    #footer .widget-first {
+      float: left;
+      width: 322px;
+      margin-left: 0;
+      padding-left: 5px; }
+    #footer .widget-last {
+      padding-right: 5px; }
+
+  .site-info {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; } }
 @media screen and (min-width: 1800px) and (max-width: 2000px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -2369,9 +2424,6 @@ h3.widget-title{
     -webkit-column-count: 3;
     -webkit-column-gap: 10px; }
 
-  #footer {
-    clear: both; }
-
   ol.commentlist li.comment div.vcard, ol.commentlist li.comment ul {
     font-size: 18px;
     line-height: 27px;
@@ -2384,19 +2436,29 @@ h3.widget-title{
     font-size: 1.6rem;
     line-height: 2.4rem; }
 
-  .gallery-columns-1 .gallery-item {
-    max-width: 100%; }
+  #footer {
+    clear: both;
+    float: left;
+    width: 1768px;
+    margin-left: 0; }
+    #footer .widget {
+      float: left;
+      width: 368px;
+      margin-left: 32px;
+      margin: 0px 35px; }
+    #footer .widget-first {
+      float: left;
+      width: 368px;
+      margin-left: 0;
+      margin-left: 25px; }
+    #footer .widget-last {
+      margin-right: 5px; }
 
-  .gallery-columns-2 .gallery-item,
-  .gallery-columns-3 .gallery-item,
-  .gallery-columns-4 .gallery-item,
-  .gallery-columns-5 .gallery-item,
-  .gallery-columns-6 .gallery-item,
-  .gallery-columns-7 .gallery-item,
-  .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item {
-    width: 32% !important;
-    float: left; } }
+  .site-info {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; } }
 @media screen and (min-width: 2001px) and (max-width: 2398px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -2562,19 +2624,28 @@ h3.widget-title{
     font-size: 1.6rem;
     line-height: 2.4rem; }
 
-  .gallery-columns-1 .gallery-item {
-    max-width: 100%; }
+  #footer {
+    clear: both;
+    float: left;
+    width: 1968px;
+    margin-left: 0; }
+    #footer .widget {
+      float: left;
+      width: 468px;
+      margin-left: 32px; }
+    #footer .widget-first {
+      float: left;
+      width: 468px;
+      margin-left: 0;
+      padding-left: 5px; }
+    #footer .widget-last {
+      padding-right: 5px; }
 
-  .gallery-columns-2 .gallery-item,
-  .gallery-columns-3 .gallery-item,
-  .gallery-columns-4 .gallery-item,
-  .gallery-columns-5 .gallery-item,
-  .gallery-columns-6 .gallery-item,
-  .gallery-columns-7 .gallery-item,
-  .gallery-columns-8 .gallery-item,
-  .gallery-columns-9 .gallery-item {
-    width: 32% !important;
-    float: left; } }
+  .site-info {
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 1.4rem;
+    line-height: 2.1rem; } }
 @media screen and (min-width: 2399px) and (min-width: 1408px) {
   .post_title {
     display: none; } }

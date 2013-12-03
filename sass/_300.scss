@@ -22,28 +22,12 @@ body{@include font-size(14);}
 	font-family: 'Georgia', Arial, sans-serif;
 	@include font-size(50);
 }
-
-#entries{
-	@include grid(8,true);
+#container{
+	padding: 5px;
 }
-#sidebar{
-	@include grid(8,true);
-}
-.footer{
-	@include grid(8,true);
-}
-.site-info{}
-/*
 @media only screen and (min-width:0px) and (max-width: 767px){
 	.post_title_wide{display: none;}
 }
-@-moz-document url-prefix() {
-   .sticky{
-   		margin-top: 50px;
-	}
-}
-
-
 #entries, #sidebar, #footer{
 	padding: 5px;
 	@include font-size(12);
@@ -55,10 +39,6 @@ body{@include font-size(14);}
 	}
 }
 .post_title_short{display: none;}
-#related, #comments{
-	@include grid(8,true);
-}
-
 ol.commentlist li.comment div.vcard,
 ol.commentlist li.comment ul {
 	@include font-size(14);}
@@ -85,7 +65,3 @@ video {
    -webkit-column-count: 2;
    -webkit-column-gap: 10px;
 }
-#footer{
-
-	@include grid(8,true);
-}*/

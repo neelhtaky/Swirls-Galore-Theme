@@ -41,7 +41,7 @@ body{
 }
 #entries{
 	@include grid(11,true);
-	margin-right: 30px;
+	margin-right: 25px;
 	padding-left: 15px;
 	.thumbnail{margin: 0 auto;}
 	h2{
@@ -69,10 +69,27 @@ video {
    -webkit-column-count: 2;
    -webkit-column-gap: 10px;
 }
-#footer{clear: both;}
 ol.commentlist li.comment div.vcard,
 ol.commentlist li.comment ul {
 	@include font-size(16);}
 ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.comment div.reply, ol.commentlist li.comment p, ol.commentlist li.comment div.comment-meta {
 	@include font-size(14);
 }
+#footer{
+	clear: both;
+	@include grid(16,true);
+
+	.widget{
+		@include grid(4);
+		padding: 1px;
+	}
+	.widget-first{
+		@include grid(4,true);
+		padding-left: 15px;
+	}
+	.widget-last{
+		padding-right: 10px;
+	}
+
+}
+.site-info{@include font-size(14);}

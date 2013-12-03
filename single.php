@@ -24,6 +24,7 @@
 		</article>
 
 		<hr>
+		<div id="clearfix"></div>
 		<aside id="related">
 			<h1>Related Posts</h1>
 			<?php $tags = wp_get_post_tags($post->ID);

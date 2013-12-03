@@ -45,6 +45,9 @@ $link-hover:      	lighten($link-col, 15%);
 	border-color: darken($alert-green, 5%);
 	background: $alert-green;
 }
+#clearfix{
+	clear:both;
+}
 .alignleft, img.alignleft {
 	display: inline;
 	float: left;
