@@ -915,6 +915,20 @@ h3.widget-title{
 	}
 }
 .site-info{text-align: center;}
+
+#wordpress{
+	display: inline;
+	font-weight: normal;
+	font-style: italic;
+	&:before{
+		content: '\f205';
+		-webkit-font-smoothing: antialiased;
+		font: normal 16px/1 'Genericons';
+		vertical-align:text-bottom;
+	}
+}
+
+
 /*********************************************************
 9.0 Featured Content
 *********************************************************/
