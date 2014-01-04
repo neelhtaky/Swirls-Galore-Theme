@@ -10,14 +10,14 @@
 				<h2 class="post_title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 				<footer class="byline meta postmetadata">
-					<time class="published" datetime="<?php the_date('Y-m-d')?>"><?php the_date(); ?></time>.
+					<time class="published" datetime="<?php the_time('l, F jS, Y') ?>"><?php the_time('l, F jS, Y') ?></time>.
 
 					<?php the_category(', ') ?>.
 
 					<a href="<?php comments_link(); ?>" class="comments-link">
 <?php comments_number( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.'); ?></a>
 
-					<?php the_tags(); ?>
+					<?php the_tags(); ?>.
 				</footer>
 
 			</div><!-- #entriescol1 -->
@@ -42,6 +42,8 @@
 				<footer class="byline meta postmetadata">
 <p>
 					<time class="published" datetime="<?php the_date('Y-m-d')?>"><?php the_date(); ?></time>.
+
+					Written by <?php the_author(); ?>.
 
 					<?php the_category(', ') ?>.
 

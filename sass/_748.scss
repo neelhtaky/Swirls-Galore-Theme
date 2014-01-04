@@ -78,14 +78,11 @@ video {
    -webkit-column-gap: 10px;
 }
 
+/*
 #related, #comments{
 	@include grid(12,true);
 }
-#related{
-	margin-left: -7px;
-	padding: 5px;
-	text-align: left;
-}
+
 .related{
 	@include grid(3,true);
 	img{
@@ -97,7 +94,25 @@ video {
 	}
 	margin-left:16px;
 }
-.related:nth-child(n+6){display: none;}
+
+*/
+.related{
+	@include grid(3,true);
+	img{
+		width: 170px;
+		height: 96px;
+	}
+	&:first-of-type{
+		@include grid(3,true);
+	}
+	margin-left:16px;
+}
+#related{
+	margin-left: -7px;
+	padding: 5px;
+	text-align: left;
+}
+.related:nth-child(n+7){display: none;}
 
 ol.commentlist li.comment div.vcard,
 ol.commentlist li.comment ul {
