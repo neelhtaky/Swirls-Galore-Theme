@@ -12,7 +12,7 @@
 										This post was written by <address class="author vcard"><?php the_author_posts_link(); ?></address>
 										on what I think was a <?php the_time('l'); ?>, but I know it was the <?php the_time('jS'); ?> day in <?php the_time('F, Y'); ?>.
 										It was posted under <?php the_category(', ') ?>.
-										It is tagged with <?php the_tags(); ?>
+										It is tagged with <span class="tags"><?php the_tags('', ', ', '. '); ?></span>
 										<?php if ( comments_open() ) :
 											echo '<p>';
 											comments_popup_link( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.');

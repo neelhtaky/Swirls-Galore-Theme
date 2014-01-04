@@ -89,13 +89,7 @@ a[href^="mailto:"]:after,
 a[href^="javascript:"]:after {
 	content: none;
 }
-a[rel="author"]:before{
-	color: $text-col;
-	content: '\f304';
-	-webkit-font-smoothing: antialiased;
-	font: normal 16px/1 'Genericons';
-	vertical-align:text-bottom;
-}
+
 
 .author{
 	display: inline;

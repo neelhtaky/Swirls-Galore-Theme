@@ -19,7 +19,7 @@
 					<a href="<?php comments_link(); ?>" class="comments-link">
 <?php comments_number( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.'); ?></a>
 					<?php the_category(', ') ?>.
-					<span class="tags"><?php the_tags(); ?>.</span>
+					<span class="tags"><?php the_tags('Tags: ', ', ', '. '); ?></span>
 				</footer>
 
 			</div><!-- #entriescol1 -->
@@ -51,7 +51,7 @@
 <?php comments_number( 'No Responses Yet. Leave a response?','1 Response.', '% Responses.', 'comments-link', 'Sorry, Comments are closed.'); ?></a>
 
 					<?php the_category(', ') ?>.
-					<span class="tags"><?php the_tags(); ?>.</span>
+					<span class="tags"><?php the_tags('Tags: ', ', ', '. '); ?></span>
 				</footer>
 
 				<p><?php echo the_excerpt(); ?></p>
