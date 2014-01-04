@@ -94,26 +94,41 @@ a[rel="author"]:before{
 	content: '\f304';
 	-webkit-font-smoothing: antialiased;
 	font: normal 16px/1 'Genericons';
-	vertical-align: top;
+	vertical-align:text-bottom;
 }
-a[rel="category tag"]:before{
-	color: $text-col;
-	content: '\f301';
-	display: inline-block;
-	-webkit-font-smoothing: antialiased;
-	font: normal 16px/1 'Genericons';
-	vertical-align: top;
+
+.author{
+	display: inline;
+	font-weight: normal;
+	font-style: italic;
+	&:before{
+		content: '\f304';
+		-webkit-font-smoothing: antialiased;
+		font: normal 16px/1 'Genericons';
+		vertical-align:text-bottom;
+	}
 }
-p.tags{
+a[rel="category tag"]{
+	&::before{
+		color: $text-col;
+		content: '\f301';
+		display: inline-block;
+		-webkit-font-smoothing: antialiased;
+		font: normal 16px/1 'Genericons';
+		vertical-align:text-bottom;
+	}
+}
+a[rel="category tag"]
+.tags{
 	display: inline;
 }
-p.tags:before{
+.tags:before{
 	color: $text-col;
 	content: '\f302';
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
 	font: normal 16px/1 'Genericons';
-	vertical-align: top;
+	vertical-align:text-bottom;
 }
 a.comments-link{
 	text-decoration: none;
@@ -155,13 +170,25 @@ blockquote {
 	}
 }
 time{
+	display: inline;
 	font-weight: normal;
 	font-style: italic;
 	&:before{
 		content: '\f303';
 		-webkit-font-smoothing: antialiased;
 		font: normal 16px/1 'Genericons';
-		vertical-align:top;
+		vertical-align:text-bottom;
+	}
+}
+.written_by{
+	display: inline;
+	font-weight: normal;
+	font-style: italic;
+	&:before{
+		content: '\f304';
+		-webkit-font-smoothing: antialiased;
+		font: normal 16px/1 'Genericons';
+		vertical-align:text-bottom;
 	}
 }
 ::selection, ::-moz-selection, ::-webkit-selection {
