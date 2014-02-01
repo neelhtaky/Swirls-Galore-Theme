@@ -5,6 +5,7 @@
 		$sticky = get_option('sticky_posts');
 		rsort( $sticky );
 		$sticky = array_slice( $sticky, 0, 5);
+		if ( $sticky[0] ) {
 		query_posts( array( 'post__in' => $sticky, 'caller_get_posts' => 1 ) );
 
 		if (have_posts()) :
@@ -12,7 +13,7 @@
 				<?php get_template_part( 'loop', 'index' ); ?>
 			<?php endwhile; ?>
 		<hr>
-		<?php endif; } ?>
+		<?php endif; } } ?>
 
 	<?php wp_reset_query(); ?>
 
