@@ -43,7 +43,6 @@ Tags: white, two-columns, custom-header
 /*********************************************************
 1.0 Import Styles and Resources
 *********************************************************/
-/* $menu-col:			#606060; */
 .alert-help, .alert-info, .alert-error, .alert-success {
   padding: 5px 10px;
   border: 1px solid; }
@@ -1392,6 +1391,36 @@ h3.widget-title {
 
 #sidebar .thumbnail {
   margin: 0 auto; }
+
+.postauthor img {
+  float: left;
+  margin: 5px 10px 5px 0px;
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+  background: #f4f4f4;
+  border: 1px solid #f2e8d1;
+  margin-left: -3px;
+  position: relative; }
+  .postauthor img:before {
+    border: 1px solid white;
+    content: '';
+    width: 93px;
+    height: 93px;
+    position: absolute; }
+  .postauthor img:after {
+    content: '';
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    border: 1px solid #f2e8d1;
+    left: 1px;
+    top: 1px; }
+  .postauthor img:hover {
+    -moz-box-shadow: 1px 1px 3px #f2e8d1;
+    -webkit-box-shadow: 1px 1px 3px #f2e8d1;
+    box-shadow: 1px 1px 3px #f2e8d1;
+    -webkit-transition: all .5s ease-in; }
 
 /*********************************************************
 	7.1 Widgets

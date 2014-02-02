@@ -21,9 +21,16 @@
 									</p>
 
 								<div class="postauthor">
-								<?php echo get_avatar( get_the_author_id() , 80 ); ?>
-								<p>
-									Hi, I am <?php the_author_meta( 'nickname', $author_id ); ?>. I have written <a href="<?php bloginfo('url'); ?>/?author=<?php the_author_ID(); ?>"><?php the_author_posts(); ?> articles</a> articles for <?php bloginfo('name'); ?>.</a>
+								<p><?php echo get_avatar( get_the_author_id() , 95 ); ?>
+
+									Hi, I am <?php the_author_meta( 'nickname', $author_id ); ?>. I have written <a href="<?php bloginfo('url'); ?>/?author=<?php the_author_ID(); ?>"><?php the_author_posts(); ?> article<?php
+									$postcnt =(int)get_the_author_posts();
+									if ($postcnt>=2){
+									echo "s";
+									}
+									?>
+									</a> for <?php bloginfo('name'); ?>.
+									</a>
 									<?php the_author_meta( 'description' ); ?>
 									</p>
 </div>
