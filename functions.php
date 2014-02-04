@@ -248,7 +248,7 @@ function jk_change_breadcrumb_delimiter( $defaults ) {
 /* customise the shop home url */
 add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' );
 function woo_custom_breadrumb_home_url() {
-    return 'http://woothemes.com';
+    return 'http://quickneed.com';
 }
 add_action( 'wp', 'init' );
 

@@ -126,3 +126,22 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 		}
 	}
 }
+.cart_totals table{float: right;}
+table.cart, #content table.cart {
+	.product-thumbnail {
+		min-width: 120px !important;
+padding: 0px !important;
+	}
+	img {
+		min-width:120px !important;
+		height:auto;
+
+	}
+}
+/* one column checkout page */
+.woocommerce #customer_details.col2-set .col-1, .woocommerce-page #customer_details.col2-set .col-1,
+.woocommerce #customer_details.col2-set .col-2, .woocommerce-page #customer_details.col2-set .col-2 {
+    h3{
+	    margin-top: 0px;
+    }
+}

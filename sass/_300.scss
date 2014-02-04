@@ -80,9 +80,22 @@ video {
    -webkit-column-gap: 10px;
 }
 
-
 .products{
-	li{
-		width: 48% !important;
-	}
+	li{width: 48% !important;}
 }
+.shop_table{
+	td.product-thumbnail, th.product-thumbnail, td.product-remove, th.product-remove{display: none;}
+}
+.checkout-button {margin-top: 10px !important;}
+
+/* one column checkout page */
+.woocommerce #customer_details.col2-set .col-1, .woocommerce .addresses.col2-set .col-1, .woocommerce-page #customer_details.col2-set .col-1, .woocommerce-page .addresses.col2-set .col-1,
+.woocommerce #customer_details.col2-set .col-2, .woocommerce .addresses.col2-set .col-2, .woocommerce-page #customer_details.col2-set .col-2, .woocommerce-page .addresses.col2-set .col-2 {
+    clear: both;
+    float: none !important;
+    width: 100% !important;
+    margin-right:0 !important;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.cart-collaterals h2{font-size: 200%;}
