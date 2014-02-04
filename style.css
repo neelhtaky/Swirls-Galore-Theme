@@ -37,8 +37,9 @@ Tags: white, two-columns, custom-header
  *   7.1 - Widgets
  * 8.0 - Footer
  * 9.0 - Featured Content
- * 10.0 - Media Queries
- * 11.0 - Print
+ * 10.0 - WooCommerce
+ * 11.0 - Media Queries
+ * 12.0 - Print
  */
 /*********************************************************
 1.0 Import Styles and Resources
@@ -1510,7 +1511,48 @@ h3.widget-title {
   padding: 10px; }
 
 /*********************************************************
-10.0 Media queries
+10.0 WooCommerce
+*********************************************************/
+.woocomm {
+  margin-top: 15px; }
+  .woocomm h1 {
+    color: #9e64a5; }
+  .woocomm h4 {
+    font-size: 18px;
+    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem; }
+  .woocomm h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: bold; }
+  .woocomm h6 {
+    font-size: 8px;
+    line-height: 12px;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-style: italic; }
+
+.woocommerce-result-count {
+  font-size: 100%; }
+
+/* form validation */
+.form-row.woocomemerce-invalid .chzn-single,
+.form-row.woocomemerce-invalid .chzn-drop,
+.form-row.woocomemerce-invalid input.input-text,
+.form-row.woocomemerce-invalid select {
+  border: 1px solid red; }
+
+.form-row.woocommerce-validated .chzn-single,
+.form-row.woocommerce-validated .chzn-drop,
+.form-row.woocommerce-validated input.input-text,
+.form-row.woocommerce-validated select {
+  border: 1px solid green; }
+
+/*********************************************************
+11.0 Media queries
 *********************************************************/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   /******************************************************************
@@ -1653,7 +1695,10 @@ h3.widget-title {
     -moz-column-count: 2;
     -moz-column-gap: 10px;
     -webkit-column-count: 2;
-    -webkit-column-gap: 10px; } }
+    -webkit-column-gap: 10px; }
+
+  .products li {
+    width: 48% !important; } }
 @media only screen and (min-width: 0px) and (max-width: 767px) and (min-width: 0px) and (max-width: 767px) {
   .post_title_wide {
     display: none; } }
@@ -1870,7 +1915,10 @@ h3.widget-title {
     font-size: 12px;
     line-height: 18px;
     font-size: 1.2rem;
-    line-height: 1.8rem; } }
+    line-height: 1.8rem; }
+
+  .products li {
+    width: 48% !important; } }
 @media only screen and (min-width: 768px) and (max-width: 1247px) and (min-width: 768px) and (max-width: 1247px) {
   .post_title_wide {
     display: none; } }
@@ -2060,7 +2108,15 @@ h3.widget-title {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; } }
+    line-height: 2.1rem; }
+
+  .products li.first {
+    clear: none !important;
+    float: left !important; }
+  .products li.last {
+    margin-right: 5% !important; }
+    .products li.last:nth-child(4n+4) {
+      margin-right: 0px !important; } }
 @media screen and (min-width: 1248px) and (max-width: 1407px) and (min-width: 1248px) and (max-width: 1407px) {
   .post_title_wide {
     display: none; } }
@@ -2259,7 +2315,15 @@ h3.widget-title {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; } }
+    line-height: 2.1rem; }
+
+  .products li.first {
+    clear: none !important;
+    float: left !important; }
+  .products li.last {
+    margin-right: 4% !important; }
+    .products li.last:nth-child(4n+4) {
+      margin-right: 0px !important; } }
 @media screen and (min-width: 1408px) and (max-width: 1799px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -2455,7 +2519,15 @@ h3.widget-title {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; } }
+    line-height: 2.1rem; }
+
+  .products li.first {
+    clear: none !important;
+    float: left !important; }
+  .products li.last {
+    margin-right: 4% !important; }
+    .products li.last:nth-child(4n+4) {
+      margin-right: 0px !important; } }
 @media screen and (min-width: 1800px) and (max-width: 2000px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -2660,7 +2732,15 @@ h3.widget-title {
     font-size: 14px;
     line-height: 21px;
     font-size: 1.4rem;
-    line-height: 2.1rem; } }
+    line-height: 2.1rem; }
+
+  .products li.first {
+    clear: none !important;
+    float: left !important; }
+  .products li.last {
+    margin-right: 4% !important; }
+    .products li.last:nth-child(4n+4) {
+      margin-right: 0px !important; } }
 @media screen and (min-width: 2001px) and (max-width: 2398px) and (min-width: 1408px) {
   .post_title {
     display: none; } }
@@ -2874,7 +2954,7 @@ h3.widget-title {
   .post_title {
     display: none; } }
 /*********************************************************
-11.0 Print
+12.0 Print
 *********************************************************/
 input#s {
   width: 230px; }

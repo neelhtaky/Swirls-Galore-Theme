@@ -120,3 +120,16 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 
 }
 .site-info{@include font-size(14);}
+
+.products{
+	li.first{
+		clear:none !important;
+		float: left !important;
+	}
+	li.last{
+		margin-right: 5% !important;
+		&:nth-child(4n+4){
+			margin-right: 0px !important;
+		}
+	}
+}

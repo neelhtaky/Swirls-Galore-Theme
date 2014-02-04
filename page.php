@@ -25,7 +25,7 @@
 
 		</article>
 		<hr>
-		<?php if( is_single() || is_page() ){ ?>
+		<?php if( is_single() |! is_page() ){ ?>
 			<?php comments_template(); ?>
 		<?php } ?>
 </section>
