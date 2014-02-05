@@ -77,6 +77,25 @@ video {
    -webkit-column-count: 2;
    -webkit-column-gap: 10px;
 }
+
+/*
+#related, #comments{
+	@include grid(12,true);
+}
+
+.related{
+	@include grid(3,true);
+	img{
+		width: 170px;
+		height: 96px;
+	}
+	&:first-of-type{
+		@include grid(3,true);
+	}
+	margin-left:16px;
+}
+
+*/
 .related{
 	@include grid(3,true);
 	img{
@@ -128,24 +147,4 @@ ol.commentlist li.comment div.comment-meta {
 	li{
 		width: 48% !important;
 	}
-}
-table.cart, #content table.cart {
-	.product-thumbnail {
-		min-width: 60px !important;
-	}
-	img {
-		min-width: 60px !important;
-		height:auto;
-	}
-}
-
-/* one column checkout page */
-.woocommerce #customer_details.col2-set .col-1, .woocommerce .addresses.col2-set .col-1, .woocommerce-page #customer_details.col2-set .col-1, .woocommerce-page .addresses.col2-set .col-1,
-.woocommerce #customer_details.col2-set .col-2, .woocommerce .addresses.col2-set .col-2, .woocommerce-page #customer_details.col2-set .col-2, .woocommerce-page .addresses.col2-set .col-2 {
-    clear: both;
-    float: none !important;
-    width: 100% !important;
-    margin-right:0 !important;
-    text-align: left;
-    padding-bottom: 20px;
 }

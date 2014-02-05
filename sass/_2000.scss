@@ -133,37 +133,3 @@ ol.commentlist li.comment div.vcard span.says, .site-info, ol.commentlist li.com
 
 }
 .site-info{@include font-size(14);}
-
-.products{
-li{
-	width: 15% !important;
-	margin-right:2% !important;
-}
-	li.first{
-		clear:none !important;
-		float: left !important;
-
-	}
-	li.last{
-		&:nth-child(6n+6){
-			margin-right: 0px !important;
-		}
-	}
-}
-.cart_totals table{float: right;}
-table.cart, #content table.cart {
-	.product-thumbnail {
-		min-width: 120px !important;
-	}
-	img {
-		min-width:120px !important;
-		height:auto;
-	}
-}
-/* one column checkout page */
-.woocommerce #customer_details.col2-set .col-1, .woocommerce-page #customer_details.col2-set .col-1,
-.woocommerce #customer_details.col2-set .col-2, .woocommerce-page #customer_details.col2-set .col-2 {
-    h3{
-	    margin-top: 0px;
-    }
-}
