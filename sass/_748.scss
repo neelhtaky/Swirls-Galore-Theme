@@ -38,7 +38,6 @@ body{@include font-size(14);}
 @media only screen and (min-width: 768px) and (max-width:1247px) {
 .post_title_wide{display: none;}}
 
-
 #entries, #sidebar, #footer{
 	@include font-size(14);
 }
@@ -77,25 +76,6 @@ video {
    -webkit-column-count: 2;
    -webkit-column-gap: 10px;
 }
-
-/*
-#related, #comments{
-	@include grid(12,true);
-}
-
-.related{
-	@include grid(3,true);
-	img{
-		width: 170px;
-		height: 96px;
-	}
-	&:first-of-type{
-		@include grid(3,true);
-	}
-	margin-left:16px;
-}
-
-*/
 .related{
 	@include grid(3,true);
 	img{
@@ -144,7 +124,16 @@ ol.commentlist li.comment div.comment-meta {
 .site-info{@include font-size(12);}
 
 .products{
-	li{
-		width: 48% !important;
+	li{width: 48% !important;}
+}
+#main-course{
+	img{
+		margin:0px 0px 0px 60px !important;
+	}
+	a{
+	}
+	h2{
+		clear: both !important;
+		font-weight: bolder !important;
 	}
 }

@@ -92,7 +92,7 @@ a[href^="javascript:"]:after {
 }
 
 
-.author{
+.author, .course-author a{
 	display: inline;
 	font-weight: normal;
 	font-style: italic;
@@ -103,7 +103,7 @@ a[href^="javascript:"]:after {
 		vertical-align:text-bottom;
 	}
 }
-a[rel="category tag"]{
+a[rel="category tag"], .course-category a{
 	&::before{
 		color: $text-col;
 		content: '\f301';
@@ -392,7 +392,7 @@ span > object {
 /*********************************************************
 	5.4 Entry Content
 *********************************************************/
-.entry_excerpt {
+.entry_excerpt, .course-container {
 	p{
 		text-align: justify;
 		text-justify:newspaper;
@@ -896,6 +896,17 @@ h3.widget-title{
 
 	}
 }
+.widget_sensei_course_component{
+	img{
+		width: 90px;
+		height: auto;
+		padding: 1px;
+		margin: 3px 5px 5px 0px !important;
+	}
+	.course-author{}
+	br{ display: none;}
+	li{margin-bottom: 5px;}
+}
 /*********************************************************
 	7.1 Widgets
 *********************************************************/
@@ -1001,6 +1012,88 @@ h3.widget-title{
 .form-row.woocommerce-validated input.input-text,
 .form-row.woocommerce-validated select {
     border:1px solid green;
+}
+
+/*********************************************************
+10.0 Sensei
+*********************************************************/
+.course{border-bottom: 0px !important;}
+.course-container  {
+	h1{
+		 @include font-size(32);
+		 line-height: 32px;
+		 text-align: left;
+	}
+	h2{
+		color: $col-purple-dark;
+		@include font-size(32);
+		font-family: $sans-serif;
+		line-height: 30px;
+		margin: 0px;
+		a{
+			color: darken($col-coral,15%);
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+	h3 {
+		 @include font-size(24);
+		 line-height: 25px;
+		 margin-bottom: 0px;
+	}
+	h4 { @include font-size(18);}
+	h5 {  @include font-size(16);font-weight: bold;}
+	h6 { @include font-size(8); font-style: italic;}
+	.archive-header  {
+		h1  {border-bottom: 0px !important;}
+	}
+	img.thumbnail{
+		width: 293px;
+		height: 166px;
+		overflow: hidden;
+		background: #f4f4f4;
+	    border: 1px solid $col-tan;
+	    position: relative;
+	    margin: 0.6em 1em 0em -3px !important;
+	    &:before{
+		    border: 1px solid white;
+	        content: '';
+	        width: 291px;
+	        height: 164px;
+	        position: absolute;
+	    }
+	    &:after{
+		    content: '';
+	        position: absolute;
+	        width: 289px;
+	        height: 162px;
+	        border: 1px solid $col-tan;
+	        left: 1px; top: 1px;
+	    }
+	    &:hover{
+		    -moz-box-shadow: 1px 1px 3px $col-tan;
+			-webkit-box-shadow: 1px 1px 3px $col-tan;
+	        box-shadow: 1px 1px 3px $col-tan;
+	        -webkit-transition:all .5s ease-in;
+	    }
+	}
+}
+.sensei-course-meta {
+
+	a{
+		color: darken($col-coral,15%) !important;
+		text-decoration: none !important;
+		&:hover{
+			color: orangered !important;
+			border-bottom: 1px dotted !important;
+		}
+	}
+	p{
+	}
+	span{padding-left: 0px !important;}
+}
+.course .entry p{
+	clear: none !important;
 }
 
 /*********************************************************
